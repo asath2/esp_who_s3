@@ -1,0 +1,2610 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.4\tools/idf_monitor.py -p COM15 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Espressif\frameworks\esp-idf-v5.5.4\esp-who\examples\object_detect\build\object_detect.elf C:\Espressif\frameworks\esp-idf-v5.5.4\esp-who\examples\object_detect\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.4\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1668
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x317c
+entry 0x403c894c
+[0;32mI (24) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time May 18 2026 18:15:35[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3c150020 size=89a10h (563728) map[0m
+[0;32mI (174) esp_image: segment 1: paddr=00099a38 vaddr=3fc9ac00 size=05e98h ( 24216) load[0m
+[0;32mI (179) esp_image: segment 2: paddr=0009f8d8 vaddr=40378000 size=00740h (  1856) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=1423f8h (1319928) map[0m
+[0;32mI (382) esp_image: segment 4: paddr=001e2420 vaddr=40378740 size=12448h ( 74824) load[0m
+[0;32mI (396) esp_image: segment 5: paddr=001f4870 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (404) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (405) boot: Disabling RNG early entropy source...[0m
+[0;32mI (415) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (415) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (415) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (417) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (421) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (426) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (430) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (435) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (439) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (444) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (449) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (453) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (458) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (461) esp_psram: Speed: 80MHz[0m
+[0;32mI (498) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (589) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (590) cpu_start: Multicore app[0m
+[0;32mI (808) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (816) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (817) cpu_start: Pro cpu start user code[0m
+[0;32mI (817) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (819) app_init: Application information:[0m
+[0;32mI (823) app_init: Project name:     object_detect[0m
+[0;32mI (827) app_init: App version:      v0.9.4-256-g68f9e6b-dirty[0m
+[0;32mI (832) app_init: Compile time:     May 19 2026 10:32:34[0m
+[0;32mI (838) app_init: ELF file SHA256:  31b4c0d3c...[0m
+[0;32mI (842) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (846) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (850) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (853) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (857) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (864) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (869) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (874) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (880) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (892) spi_flash: detected chip: boya[0m
+[0;32mI (895) spi_flash: flash io: qio[0m
+[0;32mI (898) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (904) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (911) main_task: Started on CPU0[0m
+[0;32mI (924) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (924) main_task: Calling app_main()[0m
+[0;32mI (1925) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (1925) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (1925) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (1927) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (1932) MAIN: Score threshold    : 0.60[0m
+[0;32mI (1936) MAIN: Brightness thresh  : 100[0m
+[0;32mI (1940) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (1944) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (1950) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (1957) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1991) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1991) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1991) MAIN: SD not available - saving disabled[0m
+[0;32mI (1996) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (2002) MAIN: Loading model...[0m
+[0;33mW (2006) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (2013) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (2111) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (2114) MAIN: Model ready.[0m
+[0;32mI (2116) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2118) cam_hal: cam init ok[0m
+[0;32mI (2632) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (2632) camera: Detected OV3660 camera[0m
+[0;32mI (2632) camera: Detected camera at address=0x3c[0m
+[0;32mI (2940) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (2940) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (2940) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (2949) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (2959) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (2965) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C0A0[0m
+[0;32mI (2970) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (2976) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AFD0[0m
+[0;32mI (2981) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (2986) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9F00[0m
+[0;32mI (2991) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (2997) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8E30[0m
+[0;32mI (3002) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3007) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7D60[0m
+[0;32mI (3013) cam_hal: cam config ok[0m
+[0;32mI (3027) ov3660: Calculated VCO: 128000000 Hz, PLLCLK: 128000000 Hz, SYSCLK: 32000000 Hz, PCLK: 8000000 Hz[0m
+[0;32mI (3044) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (3044) cam_hal: cam init ok[0m
+[0;32mI (3555) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (3555) camera: Detected OV3660 camera[0m
+[0;32mI (3555) camera: Detected camera at address=0x3c[0m
+[1;31mE (4735) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (4735) sccb-ng: W [581c]=0b fail[0m
+
+[1;31mE (4735) camera: Camera probe failed with error 0xffffffff(ESP_FAIL)[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x4200ca70
+file: "/IDF/esp-who/components/who_peripherals/who_cam/who_s3_cam/who_s3_cam.cpp" line 27
+func: who::cam::WhoS3Cam::WhoS3Cam(pixformat_t, framesize_t, uint8_t, bool, bool)
+expression: esp_camera_set_psram_mode(true)
+
+abort() was called at PC 0x4038109b on core 0
+
+
+Backtrace: 0x403810d9:0x3fca7ad0 0x403810a5:0x3fca7af0 0x4038852a:0x3fca7b10 0x4038109b:0x3fca7b80 0x4200ca70:0x3fca7bb0 0x4200bf94:0x3fca7c60 0x4200b8dd:0x3fca7c90 0x421417b3:0x3fca7d50
+
+
+
+
+ELF file SHA256: 31b4c0d3c
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40381268
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1668
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x317c
+entry 0x403c894c
+[0;32mI (29) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time May 18 2026 18:15:35[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.2[0m
+[0;32mI (32) boot: efuse block revision: v1.4[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c150020 size=89a10h (563728) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=00099a38 vaddr=3fc9ac00 size=05e98h ( 24216) load[0m
+[0;32mI (183) esp_image: segment 2: paddr=0009f8d8 vaddr=40378000 size=00740h (  1856) load[0m
+[0;32mI (184) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=1423f8h (1319928) map[0m
+[0;32mI (386) esp_image: segment 4: paddr=001e2420 vaddr=40378740 size=12448h ( 74824) load[0m
+[0;32mI (401) esp_image: segment 5: paddr=001f4870 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (409) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (409) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (419) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (419) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (421) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (425) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (430) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (434) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (439) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (444) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (448) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (453) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (458) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (462) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (465) esp_psram: Speed: 80MHz[0m
+[0;32mI (502) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (594) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (594) cpu_start: Multicore app[0m
+[0;32mI (813) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (821) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (821) cpu_start: Pro cpu start user code[0m
+[0;32mI (821) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (823) app_init: Application information:[0m
+[0;32mI (827) app_init: Project name:     object_detect[0m
+[0;32mI (831) app_init: App version:      v0.9.4-256-g68f9e6b-dirty[0m
+[0;32mI (837) app_init: Compile time:     May 19 2026 10:32:34[0m
+[0;32mI (842) app_init: ELF file SHA256:  31b4c0d3c...[0m
+[0;32mI (846) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (850) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (854) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (858) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (862) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (868) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (873) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (878) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (885) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (896) spi_flash: detected chip: boya[0m
+[0;32mI (899) spi_flash: flash io: qio[0m
+[0;32mI (903) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (909) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (915) main_task: Started on CPU0[0m
+[0;32mI (928) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (928) main_task: Calling app_main()[0m
+[0;32mI (1929) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (1929) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (1929) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (1931) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (1936) MAIN: Score threshold    : 0.60[0m
+[0;32mI (1940) MAIN: Brightness thresh  : 100[0m
+[0;32mI (1944) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (1948) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (1954) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (1961) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1995) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1995) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1995) MAIN: SD not available - saving disabled[0m
+[0;32mI (2000) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (2006) MAIN: Loading model...[0m
+[0;33mW (2010) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (2017) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (2115) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (2118) MAIN: Model ready.[0m
+[0;32mI (2120) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2122) cam_hal: cam init ok[0m
+[1;31mE (2635) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (2635) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x0a, data:0x60, ret:259[0m
+[0;32mI (2637) ov7725: Mismatch PID=0x60[0m
+[1;31mE (2640) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (2647) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x0a, data:0x60, ret:259[0m
+[0;32mI (2654) ov7760: Mismatch PID=0x60[0m
+[1;31mE (2657) sccb-ng: SCCB_Read Failed addr:0x21, reg:0xf1, data:0x60, ret:259[0m
+[1;31mE (2663) sccb-ng: SCCB_Read Failed addr:0x21, reg:0xf0, data:0x60, ret:259[0m
+[0;32mI (2670) gc032a: Mismatch PID=0x6060[0m
+[1;31mE (2673) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xfe, data:0x00, ret:259[0m
+[1;31mE (2680) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x00, data:0x60, ret:259[0m
+[0;32mI (2686) gc0308: Mismatch PID=0x60[0m
+[0;32mI (2691) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (2695) camera: Detected OV3660 camera[0m
+[0;32mI (2699) camera: Detected camera at address=0x3c[0m
+[0;32mI (3008) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (3008) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (3008) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (3017) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (3027) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3033) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C0A0[0m
+[0;32mI (3038) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3044) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AFD0[0m
+[0;32mI (3049) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3054) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9F00[0m
+[0;32mI (3059) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3065) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8E30[0m
+[0;32mI (3070) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3075) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7D60[0m
+[0;32mI (3081) cam_hal: cam config ok[0m
+[0;32mI (3095) ov3660: Calculated VCO: 128000000 Hz, PLLCLK: 128000000 Hz, SYSCLK: 32000000 Hz, PCLK: 8000000 Hz[0m
+[0;32mI (3112) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (3112) cam_hal: cam init ok[0m
+[0;32mI (3623) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (3623) camera: Detected OV3660 camera[0m
+[0;32mI (3623) camera: Detected camera at address=0x3c[0m
+[0;32mI (3931) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (3931) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (3931) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (3940) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (3950) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3956) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C0A0[0m
+[0;32mI (3961) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3967) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AFD0[0m
+[0;32mI (3972) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3977) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9F00[0m
+[0;32mI (3982) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3988) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8E30[0m
+[0;32mI (3993) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3998) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7D60[0m
+[0;32mI (4004) cam_hal: cam config ok[0m
+[0;32mI (4018) ov3660: Calculated VCO: 128000000 Hz, PLLCLK: 128000000 Hz, SYSCLK: 32000000 Hz, PCLK: 8000000 Hz[0m
+[0;32mI (4034) WhoS3Cam: WhoS3Cam args: vertical_flip=0 horizontal_flip=1 -> sensor vflip=1 hmirror=0[0m
+[0;32mI (4037) MAIN: Running from 2026-05-17 10:00:03 | Every 7 frames | 2-frame confirm | Score >= 0.60[0m
+[0;32mI (4040) main_task: Returned from app_main()[0m
+[0;32mI (4336) LightController: Darkness detected -> Light ON | Brightness: 10[0m
+[0;32mI (4900) MAIN: [2026-05-17 10:00:04] No person confirmed (2/2) | f1=N f2=N | Brightness: 12 | Light: ON[0m
+[0;32mI (5448) MAIN: [2026-05-17 10:00:04] No person confirmed (2/2) | f1=N f2=N | Brightness: 10 | Light: ON[0m
+[0;32mI (5998) MAIN: [2026-05-17 10:00:05] No person confirmed (2/2) | f1=N f2=N | Brightness: 12 | Light: ON[0m
+[0;32mI (6001) LightController: Brightness normal -> starting OFF timer[0m
+[0;32mI (6548) MAIN: [2026-05-17 10:00:05] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: ON[0m
+[0;32mI (7098) MAIN: [2026-05-17 10:00:06] No person confirmed (2/2) | f1=N f2=N | Brightness: 126 | Light: ON[0m
+[0;32mI (7649) MAIN: [2026-05-17 10:00:06] No person confirmed (2/2) | f1=N f2=N | Brightness: 127 | Light: ON[0m
+[0;32mI (8199) MAIN: [2026-05-17 10:00:07] No person confirmed (2/2) | f1=N f2=N | Brightness: 127 | Light: ON[0m
+[0;32mI (8749) MAIN: [2026-05-17 10:00:07] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: ON[0m
+[0;32mI (9299) MAIN: [2026-05-17 10:00:08] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: ON[0m
+[0;32mI (9849) MAIN: [2026-05-17 10:00:08] No person confirmed (2/2) | f1=N f2=N | Brightness: 125 | Light: ON[0m
+-g68f9e6b-dirty
+[0;32mI (832) app_init: Compile time:     May 19 2026 10:32:34[0m
+[0;32mI (838) app_init: ELF file SHA256:  31b4c0d3c...[0m
+[0;32mI (842) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (846) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (850) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (853) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (857) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (864) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (869) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (874) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (880) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (892) spi_flash: detected chip: boya[0m
+[0;32mI (895) spi_flash: flash io: qio[0m
+[0;32mI (898) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (904) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (911) main_task: Started on CPU0[0m
+[0;32mI (924) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (924) main_task: Calling app_main()[0m
+[0;32mI (1925) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (1925) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (1925) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (1927) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (1932) MAIN: Score threshold    : 0.60[0m
+[0;32mI (1936) MAIN: Brightness thresh  : 100[0m
+[0;32mI (1940) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (1944) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (1950) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (1957) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1991) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1991) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1991) MAIN: SD not available - saving disabled[0m
+[0;32mI (1996) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (2002) MAIN: Loading model...[0m
+[0;33mW (2006) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (2013) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (2111) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (2114) MAIN: Model ready.[0m
+[0;32mI (2116) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2118) cam_hal: cam init ok[0m
+[0;32mI (2632) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (2632) camera: Detected OV3660 camera[0m
+[0;32mI (2632) camera: Detected camera at address=0x3c[0m
+[0;32mI (2940) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (2940) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (2940) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (2949) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (2959) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (2965) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C0A0[0m
+[0;32mI (2970) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (2976) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AFD0[0m
+[0;32mI (2981) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (2986) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9F00[0m
+[0;32mI (2991) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (2997) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8E30[0m
+[0;32mI (3002) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3007) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7D60[0m
+[0;32mI (3013) cam_hal: cam config ok[0m
+[1;31mE (4021) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (4021) sccb-ng: W [380a]=00 fail[0m
+
+[1;31mE (4021) ov3660: Setting framesize to: 240x240 failed[0m
+[1;31mE (4024) camera: Failed to set frame size[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x20002 (ERROR) at 0x4200ca55
+file: "/IDF/esp-who/components/who_peripherals/who_cam/who_s3_cam/who_s3_cam.cpp" line 26
+func: who::cam::WhoS3Cam::WhoS3Cam(pixformat_t, framesize_t, uint8_t, bool, bool)
+expression: esp_camera_init(&camera_config)
+
+abort() was called at PC 0x4038109b on core 0
+
+
+Backtrace: 0x403810d9:0x3fca7ad0 0x403810a5:0x3fca7af0 0x4038852a:0x3fca7b10 0x4038109b:0x3fca7b80 0x4200ca55:0x3fca7bb0 0x4200bf94:0x3fca7c60 0x4200b8dd:0x3fca7c90 0x421417b3:0x3fca7d50
+
+
+
+
+ELF file SHA256: 31b4c0d3c
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40381268
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1668
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x317c
+entry 0x403c894c
+[0;32mI (29) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time May 18 2026 18:15:35[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.2[0m
+[0;32mI (32) boot: efuse block revision: v1.4[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c150020 size=89a10h (563728) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=00099a38 vaddr=3fc9ac00 size=05e98h ( 24216) load[0m
+[0;32mI (183) esp_image: segment 2: paddr=0009f8d8 vaddr=40378000 size=00740h (  1856) load[0m
+[0;32mI (184) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=1423f8h (1319928) map[0m
+[0;32mI (386) esp_image: segment 4: paddr=001e2420 vaddr=40378740 size=12448h ( 74824) load[0m
+[0;32mI (401) esp_image: segment 5: paddr=001f4870 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (409) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (409) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (419) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (419) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (421) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (425) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (430) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (434) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (439) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (444) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (448) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (453) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (458) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (462) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (465) esp_psram: Speed: 80MHz[0m
+[0;32mI (502) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (594) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (594) cpu_start: Multicore app[0m
+[0;32mI (813) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (821) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (821) cpu_start: Pro cpu start user code[0m
+[0;32mI (821) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (823) app_init: Application information:[0m
+[0;32mI (827) app_init: Project name:     object_detect[0m
+[0;32mI (831) app_init: App version:      v0.9.4-256-g68f9e6b-dirty[0m
+[0;32mI (837) app_init: Compile time:     May 19 2026 10:32:34[0m
+[0;32mI (842) app_init: ELF file SHA256:  31b4c0d3c...[0m
+[0;32mI (846) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (850) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (854) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (858) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (862) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (868) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (873) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (878) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (885) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (896) spi_flash: detected chip: boya[0m
+[0;32mI (899) spi_flash: flash io: qio[0m
+[0;32mI (903) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (909) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (915) main_task: Started on CPU0[0m
+[0;32mI (928) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (928) main_task: Calling app_main()[0m
+[0;32mI (1929) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (1929) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (1929) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (1931) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (1936) MAIN: Score threshold    : 0.60[0m
+[0;32mI (1940) MAIN: Brightness thresh  : 100[0m
+[0;32mI (1944) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (1948) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (1954) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (1961) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1995) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1995) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1995) MAIN: SD not available - saving disabled[0m
+[0;32mI (2000) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (2006) MAIN: Loading model...[0m
+[0;33mW (2010) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (2017) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (2115) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (2118) MAIN: Model ready.[0m
+[0;32mI (2120) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2122) cam_hal: cam init ok[0m
+[1;31mE (2635) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (2635) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x0a, data:0x60, ret:259[0m
+[0;32mI (2637) ov7725: Mismatch PID=0x60[0m
+[1;31mE (2640) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (2647) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x0a, data:0x60, ret:259[0m
+[0;32mI (2654) ov7760: Mismatch PID=0x60[0m
+[1;31mE (2657) sccb-ng: SCCB_Read Failed addr:0x21, reg:0xf1, data:0x60, ret:259[0m
+[1;31mE (2663) sccb-ng: SCCB_Read Failed addr:0x21, reg:0xf0, data:0x60, ret:259[0m
+[0;32mI (2670) gc032a: Mismatch PID=0x6060[0m
+[1;31mE (2673) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xfe, data:0x00, ret:259[0m
+[1;31mE (2680) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x00, data:0x60, ret:259[0m
+[0;32mI (2686) gc0308: Mismatch PID=0x60[0m
+[0;32mI (2691) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (2695) camera: Detected OV3660 camera[0m
+[0;32mI (2699) camera: Detected camera at address=0x3c[0m
+[1;31mE (3884) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (3884) sccb-ng: W [5822]=10 fail[0m
+
+[1;31mE (3884) camera: Camera probe failed with error 0xffffffff(ESP_FAIL)[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x4200ca55
+file: "/IDF/esp-who/components/who_peripherals/who_cam/who_s3_cam/who_s3_cam.cpp" line 26
+func: who::cam::WhoS3Cam::WhoS3Cam(pixformat_t, framesize_t, uint8_t, bool, bool)
+expression: esp_camera_init(&camera_config)
+
+abort() was called at PC 0x4038109b on core 0
+
+
+Backtrace: 0x403810d9:0x3fca7ad0 0x403810a5:0x3fca7af0 0x4038852a:0x3fca7b10 0x4038109b:0x3fca7b80 0x4200ca55:0x3fca7bb0 0x4200bf94:0x3fca7c60 0x4200b8dd:0x3fca7c90 0x421417b3:0x3fca7d50
+
+
+
+
+ELF file SHA256: 31b4c0d3c
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40381268
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1668
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x317c
+entry 0x403c894c
+[0;32mI (29) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time May 18 2026 18:15:35[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.2[0m
+[0;32mI (32) boot: efuse block revision: v1.4[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c150020 size=89a10h (563728) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=00099a38 vaddr=3fc9ac00 size=05e98h ( 24216) load[0m
+[0;32mI (183) esp_image: segment 2: paddr=0009f8d8 vaddr=40378000 size=00740h (  1856) load[0m
+[0;32mI (184) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=1423f8h (1319928) map[0m
+[0;32mI (386) esp_image: segment 4: paddr=001e2420 vaddr=40378740 size=12448h ( 74824) load[0m
+[0;32mI (401) esp_image: segment 5: paddr=001f4870 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (409) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (409) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (419) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (419) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (421) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (425) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (430) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (434) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (439) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (444) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (448) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (453) octal_psram: DriveStrength: 0x00 (1/1)[0m
+I (458) MSPI Timing: Enter psram timing tuning
+[0;32mI (462) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (465) esp_psram: Speed: 80MHz[0m
+[0;32mI (502) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (594) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (594) cpu_start: Multicore app[0m
+[0;32mI (813) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (821) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (821) cpu_start: Pro cpu start user code[0m
+[0;32mI (821) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (823) app_init: Application information:[0m
+[0;32mI (827) app_init: Project name:     object_detect[0m
+[0;32mI (831) app_init: App version:      v0.9.4-256-g68f9e6b-dirty[0m
+[0;32mI (837) app_init: Compile time:     May 19 2026 10:32:34[0m
+[0;32mI (842) app_init: ELF file SHA256:  31b4c0d3c...[0m
+[0;32mI (846) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (850) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (854) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (858) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (862) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (868) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (873) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (878) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (885) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (896) spi_flash: detected chip: boya[0m
+[0;32mI (899) spi_flash: flash io: qio[0m
+[0;32mI (903) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (909) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (915) main_task: Started on CPU0[0m
+[0;32mI (928) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (928) main_task: Calling app_main()[0m
+[0;32mI (1929) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (1929) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (1929) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (1931) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (1936) MAIN: Score threshold    : 0.60[0m
+[0;32mI (1940) MAIN: Brightness thresh  : 100[0m
+[0;32mI (1944) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (1948) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (1954) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (1961) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1995) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1995) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1995) MAIN: SD not available - saving disabled[0m
+[0;32mI (2000) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (2006) MAIN: Loading model...[0m
+[0;33mW (2010) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (2017) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (2115) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (2118) MAIN: Model ready.[0m
+[0;32mI (2120) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2122) cam_hal: cam init ok[0m
+[1;31mE (2635) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (2635) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x0a, data:0x60, ret:259[0m
+[0;32mI (2637) ov7725: Mismatch PID=0x60[0m
+[1;31mE (2640) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (2647) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x0a, data:0x60, ret:259[0m
+[0;32mI (2654) ov7760: Mismatch PID=0x60[0m
+[1;31mE (2657) sccb-ng: SCCB_Read Failed addr:0x21, reg:0xf1, data:0x60, ret:259[0m
+[1;31mE (2663) sccb-ng: SCCB_Read Failed addr:0x21, reg:0xf0, data:0x60, ret:259[0m
+[0;32mI (2670) gc032a: Mismatch PID=0x6060[0m
+[1;31mE (2673) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xfe, data:0x00, ret:259[0m
+[1;31mE (2680) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x00, data:0x60, ret:259[0m
+[0;32mI (2686) gc0308: Mismatch PID=0x60[0m
+[0;32mI (2691) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (2695) camera: Detected OV3660 camera[0m
+[0;32mI (2699) camera: Detected camera at address=0x3c[0m
+[0;32mI (3008) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (3008) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (3008) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (3017) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (3027) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3033) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C0A0[0m
+[0;32mI (3038) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3044) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AFD0[0m
+[0;32mI (3049) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3054) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9F00[0m
+[0;32mI (3059) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3065) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8E30[0m
+[0;32mI (3070) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3075) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7D60[0m
+[0;32mI (3081) cam_hal: cam config ok[0m
+[0;32mI (3095) ov3660: Calculated VCO: 128000000 Hz, PLLCLK: 128000000 Hz, SYSCLK: 32000000 Hz, PCLK: 8000000 Hz[0m
+[0;32mI (3112) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (3112) cam_hal: cam init ok[0m
+[0;32mI (3623) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (3623) camera: Detected OV3660 camera[0m
+[0;32mI (3623) camera: Detected camera at address=0x3c[0m
+[0;32mI (3931) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (3931) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (3931) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (3940) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (3950) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3956) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C0A0[0m
+[0;32mI (3961) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3967) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AFD0[0m
+[0;32mI (3972) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3977) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9F00[0m
+[0;32mI (3982) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3988) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8E30[0m
+[0;32mI (3993) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3998) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7D60[0m
+[0;32mI (4004) cam_hal: cam config ok[0m
+[0;32mI (4018) ov3660: Calculated VCO: 128000000 Hz, PLLCLK: 128000000 Hz, SYSCLK: 32000000 Hz, PCLK: 8000000 Hz[0m
+[0;32mI (4034) WhoS3Cam: WhoS3Cam args: vertical_flip=0 horizontal_flip=1 -> sensor vflip=1 hmirror=0[0m
+[0;32mI (4037) MAIN: Running from 2026-05-17 10:00:03 | Every 7 frames | 2-frame confirm | Score >= 0.60[0m
+[0;32mI (4040) main_task: Returned from app_main()[0m
+[0;32mI (4336) LightController: Darkness detected -> Light ON | Brightness: 14[0m
+[0;32mI (4900) MAIN: [2026-05-17 10:00:04] No person confirmed (2/2) | f1=N f2=N | Brightness: 13 | Light: ON[0m
+[0;32mI (5448) MAIN: [2026-05-17 10:00:04] No person confirmed (2/2) | f1=N f2=N | Brightness: 13 | Light: ON[0m
+[0;32mI (5998) MAIN: [2026-05-17 10:00:05] No person confirmed (2/2) | f1=N f2=N | Brightness: 15 | Light: ON[0m
+[0;32mI (6548) MAIN: [2026-05-17 10:00:05] No person confirmed (2/2) | f1=N f2=N | Brightness: 16 | Light: ON[0m
+[0;32mI (7099) MAIN: [2026-05-17 10:00:06] No person confirmed (2/2) | f1=N f2=N | Brightness: 16 | Light: ON[0m
+[0;32mI (7186) LightController: Brightness normal -> starting OFF timer[0m
+[0;32mI (7286) LightController: Brightness normal -> starting OFF timer[0m
+[0;32mI (7649) MAIN: [2026-05-17 10:00:06] No person confirmed (2/2) | f1=Y f2=N | Brightness: 179 | Light: ON[0m
+[0;32mI (8199) MAIN: [2026-05-17 10:00:07] No person confirmed (2/2) | f1=N f2=N | Brightness: 127 | Light: ON[0m
+[0;32mI (8749) MAIN: [2026-05-17 10:00:07] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: ON[0m
+[0;32mI (9299) MAIN: [2026-05-17 10:00:08] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: ON[0m
+[0;32mI (9849) MAIN: [2026-05-17 10:00:08] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: ON[0m
+[0;32mI (10399) MAIN: [2026-05-17 10:00:09] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: ON[0m
+[0;32mI (10950) MAIN: [2026-05-17 10:00:10] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: ON[0m
+[0;32mI (11500) MAIN: [2026-05-17 10:00:10] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: ON[0m
+[0;32mI (12050) MAIN: [2026-05-17 10:00:11] No person confirmed (2/2) | f1=N f2=N | Brightness: 126 | Light: ON[0m
+[0;32mI (12288) LightController: 5 seconds completed -> Light OFF[0m
+[0;32mI (12600) MAIN: [2026-05-17 10:00:11] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (13150) MAIN: [2026-05-17 10:00:12] No person confirmed (2/2) | f1=N f2=N | Brightness: 133 | Light: OFF[0m
+[0;32mI (13700) MAIN: [2026-05-17 10:00:12] No person confirmed (2/2) | f1=N f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (14251) MAIN: [2026-05-17 10:00:13] No person confirmed (2/2) | f1=N f2=N | Brightness: 126 | Light: OFF[0m
+[0;32mI (14801) MAIN: [2026-05-17 10:00:13] No person confirmed (2/2) | f1=N f2=N | Brightness: 125 | Light: OFF[0m
+[0;32mI (15351) MAIN: [2026-05-17 10:00:14] No person confirmed (2/2) | f1=N f2=N | Brightness: 121 | Light: OFF[0m
+[0;32mI (15901) MAIN: [2026-05-17 10:00:15] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: OFF[0m
+[0;32mI (16451) MAIN: [2026-05-17 10:00:15] No person confirmed (2/2) | f1=N f2=N | Brightness: 121 | Light: OFF[0m
+[0;32mI (17001) MAIN: [2026-05-17 10:00:16] No person confirmed (2/2) | f1=N f2=N | Brightness: 122 | Light: OFF[0m
+[0;32mI (17552) MAIN: [2026-05-17 10:00:16] No person confirmed (2/2) | f1=N f2=N | Brightness: 123 | Light: OFF[0m
+[0;32mI (18102) MAIN: [2026-05-17 10:00:17] No person confirmed (2/2) | f1=N f2=N | Brightness: 123 | Light: OFF[0m
+[0;32mI (18652) MAIN: [2026-05-17 10:00:17] No person confirmed (2/2) | f1=N f2=N | Brightness: 127 | Light: OFF[0m
+[0;32mI (19202) MAIN: [2026-05-17 10:00:18] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (19752) MAIN: [2026-05-17 10:00:18] No person confirmed (2/2) | f1=N f2=N | Brightness: 122 | Light: OFF[0m
+[0;32mI (20302) MAIN: [2026-05-17 10:00:19] No person confirmed (2/2) | f1=N f2=N | Brightness: 119 | Light: OFF[0m
+[0;32mI (20852) MAIN: [2026-05-17 10:00:19] No person confirmed (2/2) | f1=N f2=N | Brightness: 122 | Light: OFF[0m
+[0;32mI (21403) MAIN: [2026-05-17 10:00:20] No person confirmed (2/2) | f1=N f2=N | Brightness: 126 | Light: OFF[0m
+[0;32mI (21953) MAIN: [2026-05-17 10:00:21] No person confirmed (2/2) | f1=N f2=N | Brightness: 122 | Light: OFF[0m
+[0;32mI (22503) MAIN: [2026-05-17 10:00:21] No person confirmed (2/2) | f1=N f2=N | Brightness: 120 | Light: OFF[0m
+[0;32mI (23053) MAIN: [2026-05-17 10:00:22] No person confirmed (2/2) | f1=N f2=N | Brightness: 123 | Light: OFF[0m
+[0;32mI (23603) MAIN: [2026-05-17 10:00:22] No person confirmed (2/2) | f1=N f2=N | Brightness: 121 | Light: OFF[0m
+[0;32mI (24153) MAIN: [2026-05-17 10:00:23] No person confirmed (2/2) | f1=N f2=N | Brightness: 122 | Light: OFF[0m
+[0;32mI (24704) MAIN: [2026-05-17 10:00:23] No person confirmed (2/2) | f1=N f2=N | Brightness: 120 | Light: OFF[0m
+[0;32mI (25254) MAIN: [2026-05-17 10:00:24] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: OFF[0m
+[0;32mI (25804) MAIN: [2026-05-17 10:00:24] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: OFF[0m
+[0;32mI (26354) MAIN: [2026-05-17 10:00:25] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: OFF[0m
+[0;32mI (26904) MAIN: [2026-05-17 10:00:26] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: OFF[0m
+[0;32mI (27454) MAIN: [2026-05-17 10:00:26] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: OFF[0m
+[0;32mI (28004) MAIN: [2026-05-17 10:00:27] No person confirmed (2/2) | f1=N f2=N | Brightness: 123 | Light: OFF[0m
+[0;32mI (28555) MAIN: [2026-05-17 10:00:27] No person confirmed (2/2) | f1=N f2=N | Brightness: 123 | Light: OFF[0m
+[0;32mI (29105) MAIN: [2026-05-17 10:00:28] No person confirmed (2/2) | f1=N f2=N | Brightness: 125 | Light: OFF[0m
+[0;32mI (29655) MAIN: [2026-05-17 10:00:28] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (30205) MAIN: [2026-05-17 10:00:29] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (30755) MAIN: [2026-05-17 10:00:29] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (31305) MAIN: [2026-05-17 10:00:30] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (31856) MAIN: [2026-05-17 10:00:30] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (32406) MAIN: [2026-05-17 10:00:31] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (32956) MAIN: [2026-05-17 10:00:32] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (33506) MAIN: [2026-05-17 10:00:32] No person confirmed (2/2) | f1=N f2=N | Brightness: 127 | Light: OFF[0m
+[0;32mI (34056) MAIN: [2026-05-17 10:00:33] No person confirmed (2/2) | f1=N f2=N | Brightness: 127 | Light: OFF[0m
+[0;32mI (34606) MAIN: [2026-05-17 10:00:33] No person confirmed (2/2) | f1=N f2=N | Brightness: 126 | Light: OFF[0m
+[0;32mI (35156) MAIN: [2026-05-17 10:00:34] No person confirmed (2/2) | f1=N f2=N | Brightness: 126 | Light: OFF[0m
+[0;32mI (35707) MAIN: [2026-05-17 10:00:34] No person confirmed (2/2) | f1=N f2=N | Brightness: 125 | Light: OFF[0m
+[0;32mI (36257) MAIN: [2026-05-17 10:00:35] No person confirmed (2/2) | f1=N f2=N | Brightness: 125 | Light: OFF[0m
+[0;32mI (36807) MAIN: [2026-05-17 10:00:35] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: OFF[0m
+[0;32mI (37357) MAIN: [2026-05-17 10:00:36] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: OFF[0m
+[0;32mI (37907) MAIN: [2026-05-17 10:00:37] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: OFF[0m
+[0;32mI (38457) MAIN: [2026-05-17 10:00:37] No person confirmed (2/2) | f1=N f2=N | Brightness: 123 | Light: OFF[0m
+[0;32mI (39008) MAIN: [2026-05-17 10:00:38] No person confirmed (2/2) | f1=N f2=N | Brightness: 126 | Light: OFF[0m
+[0;32mI (39558) MAIN: [2026-05-17 10:00:38] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (40108) MAIN: [2026-05-17 10:00:39] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (40658) MAIN: [2026-05-17 10:00:39] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (41208) MAIN: [2026-05-17 10:00:40] No person confirmed (2/2) | f1=N f2=N | Brightness: 125 | Light: OFF[0m
+[0;32mI (41758) MAIN: [2026-05-17 10:00:40] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: OFF[0m
+[0;32mI (42309) MAIN: [2026-05-17 10:00:41] No person confirmed (2/2) | f1=N f2=N | Brightness: 125 | Light: OFF[0m
+[0;32mI (42859) MAIN: [2026-05-17 10:00:41] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: OFF[0m
+[0;32mI (43409) MAIN: [2026-05-17 10:00:42] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (43959) MAIN: [2026-05-17 10:00:43] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (44509) MAIN: [2026-05-17 10:00:43] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (45059) MAIN: [2026-05-17 10:00:44] No person confirmed (2/2) | f1=N f2=N | Brightness: 127 | Light: OFF[0m
+[0;32mI (45609) MAIN: [2026-05-17 10:00:44] No person confirmed (2/2) | f1=N f2=N | Brightness: 125 | Light: OFF[0m
+[0;32mI (46160) MAIN: [2026-05-17 10:00:45] No person confirmed (2/2) | f1=N f2=N | Brightness: 125 | Light: OFF[0m
+[0;32mI (808) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (816) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (817) cpu_start: Pro cpu start user code[0m
+[0;32mI (817) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (819) app_init: Application information:[0m
+[0;32mI (823) app_init: Project name:     object_detect[0m
+[0;32mI (827) app_init: App version:      v0.9.4-256-g68f9e6b-dirty[0m
+[0;32mI (832) app_init: Compile time:     May 19 2026 10:32:34[0m
+[0;32mI (838) app_init: ELF file SHA256:  31b4c0d3c...[0m
+[0;32mI (842) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (846) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (850) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (853) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (857) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (864) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (869) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (874) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (880) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (892) spi_flash: detected chip: boya[0m
+[0;32mI (895) spi_flash: flash io: qio[0m
+[0;32mI (898) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (904) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (911) main_task: Started on CPU0[0m
+[0;32mI (924) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (924) main_task: Calling app_main()[0m
+[0;32mI (1925) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (1925) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (1925) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (1927) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (1932) MAIN: Score threshold    : 0.60[0m
+[0;32mI (1936) MAIN: Brightness thresh  : 100[0m
+[0;32mI (1940) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (1944) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (1950) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (1957) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1991) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1991) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1991) MAIN: SD not available - saving disabled[0m
+[0;32mI (1996) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (2002) MAIN: Loading model...[0m
+[0;33mW (2006) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (2013) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (2111) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (2114) MAIN: Model ready.[0m
+[0;32mI (2116) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2118) cam_hal: cam init ok[0m
+[0;32mI (2632) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (2632) camera: Detected OV3660 camera[0m
+[0;32mI (2632) camera: Detected camera at address=0x3c[0m
+[1;31mE (3834) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (3834) sccb-ng: W [568b]=11 fail[0m
+
+[1;31mE (3834) camera: Camera probe failed with error 0xffffffff(ESP_FAIL)[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x4200ca55
+file: "/IDF/esp-who/components/who_peripherals/who_cam/who_s3_cam/who_s3_cam.cpp" line 26
+func: who::cam::WhoS3Cam::WhoS3Cam(pixformat_t, framesize_t, uint8_t, bool, bool)
+expression: esp_camera_init(&camera_config)
+
+abort() was called at PC 0x4038109b on core 0
+
+
+Backtrace: 0x403810d9:0x3fca7ad0 0x403810a5:0x3fca7af0 0x4038852a:0x3fca7b10 0x4038109b:0x3fca7b80 0x4200ca55:0x3fca7bb0 0x4200bf94:0x3fca7c60 0x4200b8dd:0x3fca7c90 0x421417b3:0x3fca7d50
+
+
+
+
+ELF file SHA256: 31b4c0d3c
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40381268
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1668
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x317c
+entry 0x403c894c
+[0;32mI (29) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time May 18 2026 18:15:35[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.2[0m
+[0;32mI (32) boot: efuse block revision: v1.4[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c150020 size=89a10h (563728) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=00099a38 vaddr=3fc9ac00 size=05e98h ( 24216) load[0m
+[0;32mI (183) esp_image: segment 2: paddr=0009f8d8 vaddr=40378000 size=00740h (  1856) load[0m
+[0;32mI (184) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=1423f8h (1319928) map[0m
+[0;32mI (386) esp_image: segment 4: paddr=001e2420 vaddr=40378740 size=12448h ( 74824) load[0m
+[0;32mI (401) esp_image: segment 5: paddr=001f4870 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (409) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (409) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (419) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (419) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (421) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (425) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (430) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (434) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (439) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (444) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (448) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (453) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (458) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (462) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (465) esp_psram: Speed: 80MHz[0m
+[0;32mI (502) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (594) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (594) cpu_start: Multicore app[0m
+[0;32mI (813) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (821) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (821) cpu_start: Pro cpu start user code[0m
+[0;32mI (821) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (823) app_init: Application information:[0m
+[0;32mI (827) app_init: Project name:     object_detect[0m
+[0;32mI (831) app_init: App version:      v0.9.4-256-g68f9e6b-dirty[0m
+[0;32mI (837) app_init: Compile time:     May 19 2026 10:32:34[0m
+[0;32mI (842) app_init: ELF file SHA256:  31b4c0d3c...[0m
+[0;32mI (846) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (850) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (854) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (858) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (862) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (868) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (873) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (878) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (885) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (896) spi_flash: detected chip: boya[0m
+[0;32mI (899) spi_flash: flash io: qio[0m
+[0;32mI (903) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (909) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (915) main_task: Started on CPU0[0m
+[0;32mI (928) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (928) main_task: Calling app_main()[0m
+[0;32mI (1929) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (1929) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (1929) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (1931) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (1936) MAIN: Score threshold    : 0.60[0m
+[0;32mI (1940) MAIN: Brightness thresh  : 100[0m
+[0;32mI (1944) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (1948) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (1954) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (1961) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1995) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1995) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1995) MAIN: SD not available - saving disabled[0m
+[0;32mI (2000) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (2006) MAIN: Loading model...[0m
+[0;33mW (2010) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (2017) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (2115) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (2118) MAIN: Model ready.[0m
+[0;32mI (2120) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2122) cam_hal: cam init ok[0m
+[1;31mE (2635) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (2635) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x0a, data:0x60, ret:259[0m
+[0;32mI (2637) ov7725: Mismatch PID=0x60[0m
+[1;31mE (2640) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (2647) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x0a, data:0x60, ret:259[0m
+[0;32mI (2654) ov7760: Mismatch PID=0x60[0m
+[1;31mE (2657) sccb-ng: SCCB_Read Failed addr:0x21, reg:0xf1, data:0x60, ret:259[0m
+[1;31mE (2663) sccb-ng: SCCB_Read Failed addr:0x21, reg:0xf0, data:0x60, ret:259[0m
+[0;32mI (2670) gc032a: Mismatch PID=0x6060[0m
+[1;31mE (2673) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xfe, data:0x00, ret:259[0m
+[1;31mE (2680) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x00, data:0x60, ret:259[0m
+[0;32mI (2686) gc0308: Mismatch PID=0x60[0m
+[1;31mE (2697) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (2698) sccb-ng: W [300b]=36 fail[0m
+
+[0;32mI (2698) ov3660: Mismatch PID=0x3636[0m
+[0;32mI (2702) ov5640: Mismatch PID=0x3660[0m
+[0;32mI (2705) gc2145: Mismatch PID=0x0[0m
+[0;32mI (2708) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (2713) camera: Detected OV3660 camera[0m
+[0;32mI (2716) camera: Detected camera at address=0x3c[0m
+[0;32mI (3026) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (3026) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (3026) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (3035) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (3045) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3051) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C0A0[0m
+[0;32mI (3056) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3062) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AFD0[0m
+[0;32mI (3067) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3072) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9F00[0m
+[0;32mI (3077) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3083) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8E30[0m
+[0;32mI (3088) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3093) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7D60[0m
+[0;32mI (3099) cam_hal: cam config ok[0m
+[0;32mI (3113) ov3660: Calculated VCO: 128000000 Hz, PLLCLK: 128000000 Hz, SYSCLK: 32000000 Hz, PCLK: 8000000 Hz[0m
+[1;31mE (3120) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (3120) sccb-ng: W [303a]=00 fail[0m
+
+[1;31mE (3120) ov3660: set_sensor_pll FAILED![0m
+[1;31mE (3123) camera: Failed to set frame size[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x20002 (ERROR) at 0x4200ca55
+file: "/IDF/esp-who/components/who_peripherals/who_cam/who_s3_cam/who_s3_cam.cpp" line 26
+func: who::cam::WhoS3Cam::WhoS3Cam(pixformat_t, framesize_t, uint8_t, bool, bool)
+expression: esp_camera_init(&camera_config)
+
+abort() was called at PC 0x4038109b on core 0
+
+
+Backtrace: 0x403810d9:0x3fca7ad0 0x403810a5:0x3fca7af0 0x4038852a:0x3fca7b10 0x4038109b:0x3fca7b80 0x4200ca55:0x3fca7bb0 0x4200bf94:0x3fca7c60 0x4200b8dd:0x3fca7c90 0x421417b3:0x3fca7d50
+
+
+
+
+ELF file SHA256: 31b4c0d3c
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40381268
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1668
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x317c
+entry 0x403c894c
+[0;32mI (29) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time May 18 2026 18:15:35[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.2[0m
+[0;32mI (32) boot: efuse block revision: v1.4[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c150020 size=89a10h (563728) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=00099a38 vaddr=3fc9ac00 size=05e98h ( 24216) load[0m
+[0;32mI (183) esp_image: segment 2: paddr=0009f8d8 vaddr=40378000 size=00740h (  1856) load[0m
+[0;32mI (184) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=1423f8h (1319928) map[0m
+[0;32mI (386) esp_image: segment 4: paddr=001e2420 vaddr=40378740 size=12448h ( 74824) load[0m
+[0;32mI (401) esp_image: segment 5: paddr=001f4870 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (409) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (409) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (419) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (419) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (421) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (425) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (430) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (434) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (439) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (444) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (448) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (453) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (458) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (462) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (465) esp_psram: Speed: 80MHz[0m
+[0;32mI (502) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (594) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (594) cpu_start: Multicore app[0m
+[0;32mI (813) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (821) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (821) cpu_start: Pro cpu start user code[0m
+[0;32mI (821) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (823) app_init: Application information:[0m
+[0;32mI (827) app_init: Project name:     object_detect[0m
+[0;32mI (831) app_init: App version:      v0.9.4-256-g68f9e6b-dirty[0m
+[0;32mI (837) app_init: Compile time:     May 19 2026 10:32:34[0m
+[0;32mI (842) app_init: ELF file SHA256:  31b4c0d3c...[0m
+[0;32mI (846) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (850) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (854) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (858) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (862) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (868) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (873) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (878) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (885) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (896) spi_flash: detected chip: boya[0m
+[0;32mI (899) spi_flash: flash io: qio[0m
+[0;32mI (903) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (909) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (915) main_task: Started on CPU0[0m
+[0;32mI (928) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (928) main_task: Calling app_main()[0m
+[0;32mI (1929) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (1929) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (1929) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (1931) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (1936) MAIN: Score threshold    : 0.60[0m
+[0;32mI (1940) MAIN: Brightness thresh  : 100[0m
+[0;32mI (1944) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (1948) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (1954) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (1961) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1995) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1995) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1995) MAIN: SD not available - saving disabled[0m
+[0;32mI (2000) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (2006) MAIN: Loading model...[0m
+[0;33mW (2010) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (2017) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (2115) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (2118) MAIN: Model ready.[0m
+[0;32mI (2120) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2122) cam_hal: cam init ok[0m
+[1;31mE (2635) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (2635) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x0a, data:0x83, ret:259[0m
+[0;32mI (2637) ov7725: Mismatch PID=0x83[0m
+[1;31mE (2640) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (2647) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x0a, data:0x83, ret:259[0m
+[0;32mI (2654) ov7760: Mismatch PID=0x83[0m
+[1;31mE (2657) sccb-ng: SCCB_Read Failed addr:0x21, reg:0xf1, data:0x83, ret:259[0m
+[1;31mE (2663) sccb-ng: SCCB_Read Failed addr:0x21, reg:0xf0, data:0x83, ret:259[0m
+[0;32mI (2670) gc032a: Mismatch PID=0x8383[0m
+[1;31mE (2673) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xfe, data:0x00, ret:259[0m
+[1;31mE (2680) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x00, data:0x83, ret:259[0m
+[0;32mI (2686) gc0308: Mismatch PID=0x83[0m
+[0;32mI (2691) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (2695) camera: Detected OV3660 camera[0m
+[0;32mI (2699) camera: Detected camera at address=0x3c[0m
+[0;32mI (3008) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (3008) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (3008) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (3017) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (3027) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3033) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C0A0[0m
+[0;32mI (3038) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3044) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AFD0[0m
+[0;32mI (3049) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3054) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9F00[0m
+[0;32mI (3059) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3065) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8E30[0m
+[0;32mI (3070) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3075) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7D60[0m
+[0;32mI (3081) cam_hal: cam config ok[0m
+[1;31mE (4094) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (4094) sccb-ng: W [3821]=01 fail[0m
+
+[1;31mE (4094) ov3660: Setting Image Options Failed[0m
+[1;31mE (4096) sccb-ng: W [4520]=0b fail[0m
+
+[1;31mE (4100) ov3660: Setting framesize to: 240x240 failed[0m
+[1;31mE (4104) camera: Failed to set frame size[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x20002 (ERROR) at 0x4200ca55
+file: "/IDF/esp-who/components/who_peripherals/who_cam/who_s3_cam/who_s3_cam.cpp" line 26
+func: who::cam::WhoS3Cam::WhoS3Cam(pixformat_t, framesize_t, uint8_t, bool, bool)
+expression: esp_camera_init(&camera_config)
+
+abort() was called at PC 0x4038109b on core 0
+
+
+Backtrace: 0x403810d9:0x3fca7ad0 0x403810a5:0x3fca7af0 0x4038852a:0x3fca7b10 0x4038109b:0x3fca7b80 0x4200ca55:0x3fca7bb0 0x4200bf94:0x3fca7c60 0x4200b8dd:0x3fca7c90 0x421417b3:0x3fca7d50
+
+
+
+
+ELF file SHA256: 31b4c0d3c
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40381268
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1668
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x317c
+entry 0x403c894c
+[0;32mI (29) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time May 18 2026 18:15:35[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.2[0m
+[0;32mI (32) boot: efuse block revision: v1.4[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c150020 size=89a10h (563728) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=00099a38 vaddr=3fc9ac00 size=05e98h ( 24216) load[0m
+[0;32mI (183) esp_image: segment 2: paddr=0009f8d8 vaddr=40378000 size=00740h (  1856) load[0m
+[0;32mI (184) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=1423f8h (1319928) map[0m
+[0;32mI (386) esp_image: segment 4: paddr=001e2420 vaddr=40378740 size=12448h ( 74824) load[0m
+[0;32mI (401) esp_image: segment 5: paddr=001f4870 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (409) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (409) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (419) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (419) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (421) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (425) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (430) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (434) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (439) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (444) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (448) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (453) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (458) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (462) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (465) esp_psram: Speed: 80MHz[0m
+[0;32mI (502) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (594) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (594) cpu_start: Multicore app[0m
+[0;32mI (813) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (821) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (821) cpu_start: Pro cpu start user code[0m
+[0;32mI (821) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (823) app_init: Application information:[0m
+[0;32mI (827) app_init: Project name:     object_detect[0m
+[0;32mI (831) app_init: App version:      v0.9.4-256-g68f9e6b-dirty[0m
+[0;32mI (837) app_init: Compile time:     May 19 2026 10:32:34[0m
+[0;32mI (842) app_init: ELF file SHA256:  31b4c0d3c...[0m
+[0;32mI (846) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (850) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (854) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (858) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (862) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (868) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (873) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (878) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (885) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (896) spi_flash: detected chip: boya[0m
+[0;32mI (899) spi_flash: flash io: qio[0m
+[0;32mI (903) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (909) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (915) main_task: Started on CPU0[0m
+[0;32mI (928) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (928) main_task: Calling app_main()[0m
+[0;32mI (1929) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (1929) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (1929) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (1931) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (1936) MAIN: Score threshold    : 0.60[0m
+[0;32mI (1940) MAIN: Brightness thresh  : 100[0m
+[0;32mI (1944) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (1948) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (1954) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (1961) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1995) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1995) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1995) MAIN: SD not available - saving disabled[0m
+[0;32mI (2000) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (2006) MAIN: Loading model...[0m
+[0;33mW (2010) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (2017) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (2115) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (2118) MAIN: Model ready.[0m
+[0;32mI (2120) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2122) cam_hal: cam init ok[0m
+[0;32mI (2636) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (2636) camera: Detected OV3660 camera[0m
+[0;32mI (2636) camera: Detected camera at address=0x3c[0m
+[0;32mI (2944) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (2944) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (2944) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (2953) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (2963) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (2969) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C0A0[0m
+[0;32mI (2974) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (2980) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AFD0[0m
+[0;32mI (2985) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (2990) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9F00[0m
+[0;32mI (2995) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3001) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8E30[0m
+[0;32mI (3006) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3011) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7D60[0m
+[0;32mI (3017) cam_hal: cam config ok[0m
+[0;32mI (3031) ov3660: Calculated VCO: 128000000 Hz, PLLCLK: 128000000 Hz, SYSCLK: 32000000 Hz, PCLK: 8000000 Hz[0m
+[0;32mI (3048) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (3048) cam_hal: cam init ok[0m
+[0;32mI (3559) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (3559) camera: Detected OV3660 camera[0m
+[0;32mI (3559) camera: Detected camera at address=0x3c[0m
+[0;32mI (3866) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (3866) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (3866) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (3875) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (3885) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3891) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C0A0[0m
+[0;32mI (3896) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3902) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AFD0[0m
+[0;32mI (3907) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3912) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9F00[0m
+[0;32mI (3917) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3923) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8E30[0m
+[0;32mI (3928) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3933) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7D60[0m
+[0;32mI (3939) cam_hal: cam config ok[0m
+[0;32mI (3953) ov3660: Calculated VCO: 128000000 Hz, PLLCLK: 128000000 Hz, SYSCLK: 32000000 Hz, PCLK: 8000000 Hz[0m
+[0;32mI (3969) WhoS3Cam: WhoS3Cam args: vertical_flip=0 horizontal_flip=1 -> sensor vflip=1 hmirror=0[0m
+[0;32mI (3972) MAIN: Running from 2026-05-17 10:00:03 | Every 7 frames | 2-frame confirm | Score >= 0.60[0m
+[0;32mI (3975) main_task: Returned from app_main()[0m
+[0;32mI (4271) LightController: Darkness detected -> Light ON | Brightness: 11[0m
+[0;32mI (4835) MAIN: [2026-05-17 10:00:03] No person confirmed (2/2) | f1=N f2=N | Brightness: 9 | Light: ON[0m
+[0;32mI (5383) MAIN: [2026-05-17 10:00:04] No person confirmed (2/2) | f1=N f2=N | Brightness: 14 | Light: ON[0m
+[0;32mI (5933) MAIN: [2026-05-17 10:00:05] No person confirmed (2/2) | f1=N f2=N | Brightness: 16 | Light: ON[0m
+[0;32mI (6484) MAIN: [2026-05-17 10:00:05] No person confirmed (2/2) | f1=N f2=N | Brightness: 16 | Light: ON[0m
+[0;32mI (7034) MAIN: [2026-05-17 10:00:06] No person confirmed (2/2) | f1=N f2=N | Brightness: 15 | Light: ON[0m
+[0;32mI (7584) MAIN: [2026-05-17 10:00:06] No person confirmed (2/2) | f1=N f2=N | Brightness: 15 | Light: ON[0m
+[0;32mI (8004) LightController: Brightness normal -> starting OFF timer[0m
+[0;32mI (8134) MAIN: [2026-05-17 10:00:07] No person confirmed (2/2) | f1=N f2=N | Brightness: 106 | Light: ON[0m
+[0;32mI (8684) MAIN: [2026-05-17 10:00:07] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: ON[0m
+[0;32mI (9234) MAIN: [2026-05-17 10:00:08] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: ON[0m
+[0;32mI (9784) MAIN: [2026-05-17 10:00:08] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: ON[0m
+[0;32mI (10334) MAIN: [2026-05-17 10:00:09] No person confirmed (2/2) | f1=N f2=N | Brightness: 125 | Light: ON[0m
+[0;32mI (10885) MAIN: [2026-05-17 10:00:10] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: ON[0m
+[0;32mI (11435) MAIN: [2026-05-17 10:00:10] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: ON[0m
+[0;32mI (11985) MAIN: [2026-05-17 10:00:11] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: ON[0m
+[0;32mI (12535) MAIN: [2026-05-17 10:00:11] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: ON[0m
+[0;32mI (13086) MAIN: [2026-05-17 10:00:12] No person confirmed (2/2) | f1=N f2=Y | Brightness: 152 | Light: ON[0m
+[0;32mI (13088) LightController: 5 seconds completed -> Light OFF[0m
+[0;32mI (13635) MAIN: [2026-05-17 10:00:12] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (14186) MAIN: [2026-05-17 10:00:13] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: OFF[0m
+[0;32mI (14736) MAIN: [2026-05-17 10:00:13] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: OFF[0m
+[0;32mI (15286) MAIN: [2026-05-17 10:00:14] No person confirmed (2/2) | f1=N f2=N | Brightness: 125 | Light: OFF[0m
+[0;32mI (15836) MAIN: [2026-05-17 10:00:14] No person confirmed (2/2) | f1=N f2=N | Brightness: 125 | Light: OFF[0m
+[0;32mI (16386) MAIN: [2026-05-17 10:00:15] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: OFF[0m
+[0;32mI (16936) MAIN: [2026-05-17 10:00:16] No person confirmed (2/2) | f1=N f2=N | Brightness: 125 | Light: OFF[0m
+[0;32mI (17487) MAIN: [2026-05-17 10:00:16] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: OFF[0m
+[0;32mI (1925) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (1925) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (1925) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (1927) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (1932) MAIN: Score threshold    : 0.60[0m
+[0;32mI (1936) MAIN: Brightness thresh  : 100[0m
+[0;32mI (1940) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (1944) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (1950) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (1957) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1991) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1991) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1991) MAIN: SD not available - saving disabled[0m
+[0;32mI (1996) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (2002) MAIN: Loading model...[0m
+[0;33mW (2006) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (2013) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (2111) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (2114) MAIN: Model ready.[0m
+[0;32mI (2116) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2118) cam_hal: cam init ok[0m
+[0;32mI (2632) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (2632) camera: Detected OV3660 camera[0m
+[0;32mI (2632) camera: Detected camera at address=0x3c[0m
+[1;31mE (3839) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (3839) sccb-ng: W [3a0f]=3b fail[0m
+
+[1;31mE (3939) camera: Camera probe failed with error 0x1(ERROR)[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x1 (ERROR) at 0x4200ca55
+file: "/IDF/esp-who/components/who_peripherals/who_cam/who_s3_cam/who_s3_cam.cpp" line 26
+func: who::cam::WhoS3Cam::WhoS3Cam(pixformat_t, framesize_t, uint8_t, bool, bool)
+expression: esp_camera_init(&camera_config)
+
+abort() was called at PC 0x4038109b on core 0
+
+
+Backtrace: 0x403810d9:0x3fca7ad0 0x403810a5:0x3fca7af0 0x4038852a:0x3fca7b10 0x4038109b:0x3fca7b80 0x4200ca55:0x3fca7bb0 0x4200bf94:0x3fca7c60 0x4200b8dd:0x3fca7c90 0x421417b3:0x3fca7d50
+
+
+
+
+ELF file SHA256: 31b4c0d3c
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40381268
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1668
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x317c
+entry 0x403c894c
+[0;32mI (29) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time May 18 2026 18:15:35[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.2[0m
+[0;32mI (32) boot: efuse block revision: v1.4[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c150020 size=89a10h (563728) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=00099a38 vaddr=3fc9ac00 size=05e98h ( 24216) load[0m
+[0;32mI (183) esp_image: segment 2: paddr=0009f8d8 vaddr=40378000 size=00740h (  1856) load[0m
+[0;32mI (184) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=1423f8h (1319928) map[0m
+[0;32mI (386) esp_image: segment 4: paddr=001e2420 vaddr=40378740 size=12448h ( 74824) load[0m
+[0;32mI (401) esp_image: segment 5: paddr=001f4870 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (409) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (409) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (419) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (419) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (421) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (425) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (430) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (434) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (439) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (444) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (448) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (453) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (458) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (462) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (465) esp_psram: Speed: 80MHz[0m
+[0;32mI (502) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (594) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (594) cpu_start: Multicore app[0m
+[0;32mI (813) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (821) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (821) cpu_start: Pro cpu start user code[0m
+[0;32mI (821) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (823) app_init: Application information:[0m
+[0;32mI (827) app_init: Project name:     object_detect[0m
+[0;32mI (831) app_init: App version:      v0.9.4-256-g68f9e6b-dirty[0m
+[0;32mI (837) app_init: Compile time:     May 19 2026 10:32:34[0m
+[0;32mI (842) app_init: ELF file SHA256:  31b4c0d3c...[0m
+[0;32mI (846) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (850) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (854) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (858) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (862) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (868) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (873) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (878) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (885) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (896) spi_flash: detected chip: boya[0m
+[0;32mI (899) spi_flash: flash io: qio[0m
+[0;32mI (903) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (909) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (915) main_task: Started on CPU0[0m
+[0;32mI (928) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (928) main_task: Calling app_main()[0m
+[0;32mI (1929) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (1929) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (1929) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (1931) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (1936) MAIN: Score threshold    : 0.60[0m
+[0;32mI (1940) MAIN: Brightness thresh  : 100[0m
+[0;32mI (1944) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (1948) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (1954) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (1961) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1995) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1995) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1995) MAIN: SD not available - saving disabled[0m
+[0;32mI (2000) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (2006) MAIN: Loading model...[0m
+[0;33mW (2010) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (2017) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (2115) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (2118) MAIN: Model ready.[0m
+[0;32mI (2120) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2122) cam_hal: cam init ok[0m
+[1;31mE (2635) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (2635) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x0a, data:0x60, ret:259[0m
+[0;32mI (2637) ov7725: Mismatch PID=0x60[0m
+[1;31mE (2640) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (2647) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x0a, data:0x60, ret:259[0m
+[0;32mI (2654) ov7760: Mismatch PID=0x60[0m
+[1;31mE (2657) sccb-ng: SCCB_Read Failed addr:0x21, reg:0xf1, data:0x60, ret:259[0m
+[1;31mE (2663) sccb-ng: SCCB_Read Failed addr:0x21, reg:0xf0, data:0x60, ret:259[0m
+[0;32mI (2670) gc032a: Mismatch PID=0x6060[0m
+[1;31mE (2673) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xfe, data:0x00, ret:259[0m
+[1;31mE (2680) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x00, data:0x60, ret:259[0m
+[0;32mI (2686) gc0308: Mismatch PID=0x60[0m
+[0;32mI (2691) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (2695) camera: Detected OV3660 camera[0m
+[0;32mI (2699) camera: Detected camera at address=0x3c[0m
+[0;32mI (3008) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (3008) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (3008) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (3017) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (3027) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3033) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C0A0[0m
+[0;32mI (3038) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3044) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AFD0[0m
+[0;32mI (3049) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3054) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9F00[0m
+[0;32mI (3059) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3065) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8E30[0m
+[0;32mI (3070) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3075) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7D60[0m
+[0;32mI (3081) cam_hal: cam config ok[0m
+[1;31mE (4096) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (4096) sccb-ng: W [3815]=31 fail[0m
+
+[1;31mE (4096) ov3660: Setting framesize to: 240x240 failed[0m
+[1;31mE (4099) camera: Failed to set frame size[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x20002 (ERROR) at 0x4200ca55
+file: "/IDF/esp-who/components/who_peripherals/who_cam/who_s3_cam/who_s3_cam.cpp" line 26
+func: who::cam::WhoS3Cam::WhoS3Cam(pixformat_t, framesize_t, uint8_t, bool, bool)
+expression: esp_camera_init(&camera_config)
+
+abort() was called at PC 0x4038109b on core 0
+
+
+Backtrace: 0x403810d9:0x3fca7ad0 0x403810a5:0x3fca7af0 0x4038852a:0x3fca7b10 0x4038109b:0x3fca7b80 0x4200ca55:0x3fca7bb0 0x4200bf94:0x3fca7c60 0x4200b8dd:0x3fca7c90 0x421417b3:0x3fca7d50
+
+
+
+
+ELF file SHA256: 31b4c0d3c
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40381268
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1668
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x317c
+entry 0x403c894c
+[0;32mI (29) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time May 18 2026 18:15:35[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.2[0m
+[0;32mI (32) boot: efuse block revision: v1.4[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c150020 size=89a10h (563728) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=00099a38 vaddr=3fc9ac00 size=05e98h ( 24216) load[0m
+[0;32mI (183) esp_image: segment 2: paddr=0009f8d8 vaddr=40378000 size=00740h (  1856) load[0m
+[0;32mI (184) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=1423f8h (1319928) map[0m
+[0;32mI (386) esp_image: segment 4: paddr=001e2420 vaddr=40378740 size=12448h ( 74824) load[0m
+[0;32mI (401) esp_image: segment 5: paddr=001f4870 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (409) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (409) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (419) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (419) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (421) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (425) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (430) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (434) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (439) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (444) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (448) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (453) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (458) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (462) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (465) esp_psram: Speed: 80MHz[0m
+[0;32mI (502) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (594) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (594) cpu_start: Multicore app[0m
+[0;32mI (813) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (821) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (821) cpu_start: Pro cpu start user code[0m
+[0;32mI (821) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (823) app_init: Application information:[0m
+[0;32mI (827) app_init: Project name:     object_detect[0m
+[0;32mI (831) app_init: App version:      v0.9.4-256-g68f9e6b-dirty[0m
+[0;32mI (837) app_init: Compile time:     May 19 2026 10:32:34[0m
+[0;32mI (842) app_init: ELF file SHA256:  31b4c0d3c...[0m
+[0;32mI (846) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (850) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (854) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (858) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (862) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (868) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (873) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (878) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (885) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (896) spi_flash: detected chip: boya[0m
+[0;32mI (899) spi_flash: flash io: qio[0m
+[0;32mI (903) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (909) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (915) main_task: Started on CPU0[0m
+[0;32mI (928) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (928) main_task: Calling app_main()[0m
+[0;32mI (1929) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (1929) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (1929) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (1931) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (1936) MAIN: Score threshold    : 0.60[0m
+[0;32mI (1940) MAIN: Brightness thresh  : 100[0m
+[0;32mI (1944) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (1948) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (1954) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (1961) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1995) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1995) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1995) MAIN: SD not available - saving disabled[0m
+[0;32mI (2000) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (2006) MAIN: Loading model...[0m
+[0;33mW (2010) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (2017) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (2115) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (2118) MAIN: Model ready.[0m
+[0;32mI (2120) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2122) cam_hal: cam init ok[0m
+[1;31mE (2635) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (2635) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x0a, data:0x83, ret:259[0m
+[0;32mI (2637) ov7725: Mismatch PID=0x83[0m
+[1;31mE (2640) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (2647) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x0a, data:0x83, ret:259[0m
+[0;32mI (2654) ov7760: Mismatch PID=0x83[0m
+[1;31mE (2657) sccb-ng: SCCB_Read Failed addr:0x21, reg:0xf1, data:0x83, ret:259[0m
+[1;31mE (2663) sccb-ng: SCCB_Read Failed addr:0x21, reg:0xf0, data:0x83, ret:259[0m
+[0;32mI (2670) gc032a: Mismatch PID=0x8383[0m
+[1;31mE (2673) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xfe, data:0x00, ret:259[0m
+[1;31mE (2680) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x00, data:0x83, ret:259[0m
+[0;32mI (2686) gc0308: Mismatch PID=0x83[0m
+[0;32mI (2691) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (2695) camera: Detected OV3660 camera[0m
+[0;32mI (2699) camera: Detected camera at address=0x3c[0m
+[1;31mE (3901) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (3901) sccb-ng: W [5688]=11 fail[0m
+
+[1;31mE (3901) camera: Camera probe failed with error 0xffffffff(ESP_FAIL)[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x4200ca55
+file: "/IDF/esp-who/components/who_peripherals/who_cam/who_s3_cam/who_s3_cam.cpp" line 26
+func: who::cam::WhoS3Cam::WhoS3Cam(pixformat_t, framesize_t, uint8_t, bool, bool)
+expression: esp_camera_init(&camera_config)
+
+abort() was called at PC 0x4038109b on core 0
+
+
+Backtrace: 0x403810d9:0x3fca7ad0 0x403810a5:0x3fca7af0 0x4038852a:0x3fca7b10 0x4038109b:0x3fca7b80 0x4200ca55:0x3fca7bb0 0x4200bf94:0x3fca7c60 0x4200b8dd:0x3fca7c90 0x421417b3:0x3fca7d50
+
+
+
+
+ELF file SHA256: 31b4c0d3c
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40381268
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1668
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x317c
+entry 0x403c894c
+[0;32mI (29) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time May 18 2026 18:15:35[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.2[0m
+[0;32mI (32) boot: efuse block revision: v1.4[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c150020 size=89a10h (563728) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=00099a38 vaddr=3fc9ac00 size=05e98h ( 24216) load[0m
+[0;32mI (183) esp_image: segment 2: paddr=0009f8d8 vaddr=40378000 size=00740h (  1856) load[0m
+[0;32mI (184) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=1423f8h (1319928) map[0m
+[0;32mI (386) esp_image: segment 4: paddr=001e2420 vaddr=40378740 size=12448h ( 74824) load[0m
+[0;32mI (401) esp_image: segment 5: paddr=001f4870 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (409) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (409) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (419) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (419) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (421) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (425) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (430) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (434) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (439) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (444) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (448) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (453) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (458) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (462) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (465) esp_psram: Speed: 80MHz[0m
+[0;32mI (502) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (594) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (594) cpu_start: Multicore app[0m
+[0;32mI (813) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (821) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (821) cpu_start: Pro cpu start user code[0m
+[0;32mI (821) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (823) app_init: Application information:[0m
+[0;32mI (827) app_init: Project name:     object_detect[0m
+[0;32mI (831) app_init: App version:      v0.9.4-256-g68f9e6b-dirty[0m
+[0;32mI (837) app_init: Compile time:     May 19 2026 10:32:34[0m
+[0;32mI (842) app_init: ELF file SHA256:  31b4c0d3c...[0m
+[0;32mI (846) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (850) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (854) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (858) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (862) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (868) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (873) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (878) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (885) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (896) spi_flash: detected chip: boya[0m
+[0;32mI (899) spi_flash: flash io: qio[0m
+[0;32mI (903) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (909) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (915) main_task: Started on CPU0[0m
+[0;32mI (928) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (928) main_task: Calling app_main()[0m
+[0;32mI (1929) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (1929) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (1929) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (1931) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (1936) MAIN: Score threshold    : 0.60[0m
+[0;32mI (1940) MAIN: Brightness thresh  : 100[0m
+[0;32mI (1944) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (1948) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (1954) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (1961) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1995) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1995) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1995) MAIN: SD not available - saving disabled[0m
+[0;32mI (2000) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (2006) MAIN: Loading model...[0m
+[0;33mW (2010) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (2017) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (2115) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (2118) MAIN: Model ready.[0m
+[0;32mI (2120) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2122) cam_hal: cam init ok[0m
+[1;31mE (2635) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (2635) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x0a, data:0x60, ret:259[0m
+[0;32mI (2637) ov7725: Mismatch PID=0x60[0m
+[1;31mE (2640) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (2647) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x0a, data:0x60, ret:259[0m
+[0;32mI (2654) ov7760: Mismatch PID=0x60[0m
+[1;31mE (2657) sccb-ng: SCCB_Read Failed addr:0x21, reg:0xf1, data:0x60, ret:259[0m
+[1;31mE (2663) sccb-ng: SCCB_Read Failed addr:0x21, reg:0xf0, data:0x60, ret:259[0m
+[0;32mI (2670) gc032a: Mismatch PID=0x6060[0m
+[1;31mE (2673) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xfe, data:0x00, ret:259[0m
+[1;31mE (2680) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x00, data:0x60, ret:259[0m
+[0;32mI (2686) gc0308: Mismatch PID=0x60[0m
+[0;32mI (2691) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (2695) camera: Detected OV3660 camera[0m
+[0;32mI (2699) camera: Detected camera at address=0x3c[0m
+[0;32mI (3008) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (3008) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (3008) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (3017) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (3027) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3033) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C0A0[0m
+[0;32mI (3038) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3044) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AFD0[0m
+[0;32mI (3049) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3054) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9F00[0m
+[0;32mI (3059) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3065) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8E30[0m
+[0;32mI (3070) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3075) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7D60[0m
+[0;32mI (3081) cam_hal: cam config ok[0m
+[1;31mE (3094) i2c.master: I2C transaction timeout detected[0m
+[1;31mE (3094) sccb-ng: W [3808]=00 fail[0m
+
+[1;31mE (3094) ov3660: Setting framesize to: 240x240 failed[0m
+[1;31mE (3096) camera: Failed to set frame size[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x20002 (ERROR) at 0x4200ca55
+file: "/IDF/esp-who/components/who_peripherals/who_cam/who_s3_cam/who_s3_cam.cpp" line 26
+func: who::cam::WhoS3Cam::WhoS3Cam(pixformat_t, framesize_t, uint8_t, bool, bool)
+expression: esp_camera_init(&camera_config)
+
+abort() was called at PC 0x4038109b on core 0
+
+
+Backtrace: 0x403810d9:0x3fca7ad0 0x403810a5:0x3fca7af0 0x4038852a:0x3fca7b10 0x4038109b:0x3fca7b80 0x4200ca55:0x3fca7bb0 0x4200bf94:0x3fca7c60 0x4200b8dd:0x3fca7c90 0x421417b3:0x3fca7d50
+
+
+
+
+ELF file SHA256: 31b4c0d3c
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40381268
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1668
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x317c
+entry 0x403c894c
+[0;32mI (29) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time May 18 2026 18:15:35[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.2[0m
+[0;32mI (32) boot: efuse block revision: v1.4[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c150020 size=89a10h (563728) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=00099a38 vaddr=3fc9ac00 size=05e98h ( 24216) load[0m
+[0;32mI (183) esp_image: segment 2: paddr=0009f8d8 vaddr=40378000 size=00740h (  1856) load[0m
+[0;32mI (184) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=1423f8h (1319928) map[0m
+[0;32mI (386) esp_image: segment 4: paddr=001e2420 vaddr=40378740 size=12448h ( 74824) load[0m
+[0;32mI (401) esp_image: segment 5: paddr=001f4870 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (409) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (409) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (419) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (419) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (421) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (425) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (430) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (434) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (439) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (444) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (448) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (453) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (458) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (462) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (465) esp_psram: Speed: 80MHz[0m
+[0;32mI (502) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (594) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (594) cpu_start: Multicore app[0m
+[0;32mI (813) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (821) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (821) cpu_start: Pro cpu start user code[0m
+[0;32mI (821) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (823) app_init: Application information:[0m
+[0;32mI (827) app_init: Project name:     object_detect[0m
+[0;32mI (831) app_init: App version:      v0.9.4-256-g68f9e6b-dirty[0m
+[0;32mI (837) app_init: Compile time:     May 19 2026 10:32:34[0m
+[0;32mI (842) app_init: ELF file SHA256:  31b4c0d3c...[0m
+[0;32mI (846) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (850) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (854) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (858) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (862) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (868) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (873) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (878) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (885) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (896) spi_flash: detected chip: boya[0m
+[0;32mI (899) spi_flash: flash io: qio[0m
+[0;32mI (903) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (909) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (915) main_task: Started on CPU0[0m
+[0;32mI (928) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (928) main_task: Calling app_main()[0m
+[0;32mI (1929) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (1929) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (1929) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (1931) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (1936) MAIN: Score threshold    : 0.60[0m
+[0;32mI (1940) MAIN: Brightness thresh  : 100[0m
+[0;32mI (1944) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (1948) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (1954) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (1961) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1995) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1995) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1995) MAIN: SD not available - saving disabled[0m
+[0;32mI (2000) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (2006) MAIN: Loading model...[0m
+[0;33mW (2010) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (2017) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (2115) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (2118) MAIN: Model ready.[0m
+[0;32mI (2120) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2122) cam_hal: cam init ok[0m
+[1;31mE (2635) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (2635) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x0a, data:0x60, ret:259[0m
+[0;32mI (2637) ov7725: Mismatch PID=0x60[0m
+[1;31mE (2640) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (2647) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x0a, data:0x60, ret:259[0m
+[0;32mI (2654) ov7760: Mismatch PID=0x60[0m
+[1;31mE (2657) sccb-ng: SCCB_Read Failed addr:0x21, reg:0xf1, data:0x60, ret:259[0m
+[1;31mE (2663) sccb-ng: SCCB_Read Failed addr:0x21, reg:0xf0, data:0x60, ret:259[0m
+[0;32mI (2670) gc032a: Mismatch PID=0x6060[0m
+[1;31mE (2673) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xfe, data:0x00, ret:259[0m
+[1;31mE (2680) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x00, data:0x60, ret:259[0m
+[0;32mI (2686) gc0308: Mismatch PID=0x60[0m
+[0;32mI (2691) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (2695) camera: Detected OV3660 camera[0m
+[0;32mI (2699) camera: Detected camera at address=0x3c[0m
+[1;31mE (3888) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (3888) sccb-ng: W [582c]=34 fail[0m
+
+[1;31mE (3888) camera: Camera probe failed with error 0xffffffff(ESP_FAIL)[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x4200ca55
+file: "/IDF/esp-who/components/who_peripherals/who_cam/who_s3_cam/who_s3_cam.cpp" line 26
+func: who::cam::WhoS3Cam::WhoS3Cam(pixformat_t, framesize_t, uint8_t, bool, bool)
+expression: esp_camera_init(&camera_config)
+
+abort() was called at PC 0x4038109b on core 0
+
+
+Backtrace: 0x403810d9:0x3fca7ad0 0x403810a5:0x3fca7af0 0x4038852a:0x3fca7b10 0x4038109b:0x3fca7b80 0x4200ca55:0x3fca7bb0 0x4200bf94:0x3fca7c60 0x4200b8dd:0x3fca7c90 0x421417b3:0x3fca7d50
+
+
+
+
+ELF file SHA256: 31b4c0d3c
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40381268
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1668
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x317c
+entry 0x403c894c
+[0;32mI (29) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time May 18 2026 18:15:35[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.2[0m
+[0;32mI (32) boot: efuse block revision: v1.4[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c150020 size=89a10h (563728) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=00099a38 vaddr=3fc9ac00 size=05e98h ( 24216) load[0m
+[0;32mI (183) esp_image: segment 2: paddr=0009f8d8 vaddr=40378000 size=00740h (  1856) load[0m
+[0;32mI (184) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=1423f8h (1319928) map[0m
+[0;32mI (386) esp_image: segment 4: paddr=001e2420 vaddr=40378740 size=12448h ( 74824) load[0m
+[0;32mI (401) esp_image: segment 5: paddr=001f4870 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (409) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (409) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (419) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (419) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (421) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (425) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (430) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (434) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (439) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (444) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (448) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (453) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (458) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (462) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (465) esp_psram: Speed: 80MHz[0m
+[0;32mI (502) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (594) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (594) cpu_start: Multicore app[0m
+[0;32mI (813) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (821) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (821) cpu_start: Pro cpu start user code[0m
+[0;32mI (821) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (823) app_init: Application information:[0m
+[0;32mI (827) app_init: Project name:     object_detect[0m
+[0;32mI (831) app_init: App version:      v0.9.4-256-g68f9e6b-dirty[0m
+[0;32mI (837) app_init: Compile time:     May 19 2026 10:32:34[0m
+[0;32mI (842) app_init: ELF file SHA256:  31b4c0d3c...[0m
+[0;32mI (846) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (850) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (854) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (858) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (862) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (868) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (873) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (878) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (885) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (896) spi_flash: detected chip: boya[0m
+[0;32mI (899) spi_flash: flash io: qio[0m
+[0;32mI (903) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (909) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (915) main_task: Started on CPU0[0m
+[0;32mI (928) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (928) main_task: Calling app_main()[0m
+[0;32mI (1929) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (1929) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (1929) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (1931) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (1936) MAIN: Score threshold    : 0.60[0m
+[0;32mI (1940) MAIN: Brightness thresh  : 100[0m
+[0;32mI (1944) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (1948) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (1954) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (1961) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1995) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1995) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1995) MAIN: SD not available - saving disabled[0m
+[0;32mI (2000) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (2006) MAIN: Loading model...[0m
+[0;33mW (2010) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (2017) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (2115) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (2118) MAIN: Model ready.[0m
+[0;32mI (2120) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2122) cam_hal: cam init ok[0m
+[1;31mE (2635) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (2635) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x0a, data:0x60, ret:259[0m
+[0;32mI (2637) ov7725: Mismatch PID=0x60[0m
+[1;31mE (2640) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (2647) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x0a, data:0x60, ret:259[0m
+[0;32mI (2654) ov7760: Mismatch PID=0x60[0m
+[1;31mE (2657) sccb-ng: SCCB_Read Failed addr:0x21, reg:0xf1, data:0x60, ret:259[0m
+[1;31mE (2663) sccb-ng: SCCB_Read Failed addr:0x21, reg:0xf0, data:0x60, ret:259[0m
+[0;32mI (2670) gc032a: Mismatch PID=0x6060[0m
+[1;31mE (2673) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xfe, data:0x00, ret:259[0m
+[1;31mE (2680) sccb-ng: SCCB_Read Failed addr:0x21, reg:0x00, data:0x60, ret:259[0m
+[0;32mI (2686) gc0308: Mismatch PID=0x60[0m
+[0;32mI (2691) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (2695) camera: Detected OV3660 camera[0m
+[0;32mI (2699) camera: Detected camera at address=0x3c[0m
+[0;32mI (3008) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (3008) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (3008) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (3017) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (3027) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3033) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C0A0[0m
+[0;32mI (3038) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3044) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AFD0[0m
+[0;32mI (3049) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3054) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9F00[0m
+[0;32mI (3059) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3065) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8E30[0m
+[0;32mI (3070) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3075) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7D60[0m
+[0;32mI (3081) cam_hal: cam config ok[0m
+[1;31mE (3091) sccb-ng: W [3811]=08 fail[0m
+
+[1;31mE (3091) ov3660: Setting framesize to: 240x240 failed[0m
+[1;31mE (3091) camera: Failed to set frame size[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x20002 (ERROR) at 0x4200ca55
+file: "/IDF/esp-who/components/who_peripherals/who_cam/who_s3_cam/who_s3_cam.cpp" line 26
+func: who::cam::WhoS3Cam::WhoS3Cam(pixformat_t, framesize_t, uint8_t, bool, bool)
+expression: esp_camera_init(&camera_config)
+
+abort() was called at PC 0x4038109b on core 0
+
+
+Backtrace: 0x403810d9:0x3fca7ad0 0x403810a5:0x3fca7af0 0x4038852a:0x3fca7b10 0x4038109b:0x3fca7b80 0x4200ca55:0x3fca7bb0 0x4200bf94:0x3fca7c60 0x4200b8dd:0x3fca7c90 0x421417b3:0x3fca7d50
+
+
+
+
+ELF file SHA256: 31b4c0d3c
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40381268
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1668
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x317c
+entry 0x403c894c
+[0;32mI (29) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time May 18 2026 18:15:35[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.2[0m
+[0;32mI (32) boot: efuse block revision: v1.4[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c150020 size=89a10h (563728) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=00099a38 vaddr=3fc9ac00 size=05e98h ( 24216) load[0m
+[0;32mI (183) esp_image: segment 2: paddr=0009f8d8 vaddr=40378000 size=00740h (  1856) load[0m
+[0;32mI (184) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=1423f8h (1319928) map[0m
+[0;32mI (386) esp_image: segment 4: paddr=001e2420 vaddr=40378740 size=12448h ( 74824) load[0m
+[0;32mI (401) esp_image: segment 5: paddr=001f4870 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (409) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (409) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (419) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (419) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (421) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (425) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (430) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (434) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (439) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (444) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (448) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (453) octal_psram: DriveStrength: 0x00 (1/1)[0m
+I (458) MSPI Timing: Enter psram timing tuning
+[0;32mI (462) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (465) esp_psram: Speed: 80MHz[0m
+[0;32mI (502) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (594) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (594) cpu_start: Multicore app[0m
+[0;32mI (813) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (821) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (821) cpu_start: Pro cpu start user code[0m
+[0;32mI (821) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (823) app_init: Application information:[0m
+[0;32mI (827) app_init: Project name:     object_detect[0m
+[0;32mI (831) app_init: App version:      v0.9.4-256-g68f9e6b-dirty[0m
+[0;32mI (837) app_init: Compile time:     May 19 2026 10:32:34[0m
+[0;32mI (842) app_init: ELF file SHA256:  31b4c0d3c...[0m
+[0;32mI (846) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (850) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (854) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (858) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (862) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (868) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (873) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (878) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (885) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (896) spi_flash: detected chip: boya[0m
+[0;32mI (899) spi_flash: flash io: qio[0m
+[0;32mI (903) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (909) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (915) main_task: Started on CPU0[0m
+[0;32mI (928) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (928) main_task: Calling app_main()[0m
+[0;32mI (1929) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (1929) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (1929) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (1931) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (1936) MAIN: Score threshold    : 0.60[0m
+[0;32mI (1940) MAIN: Brightness thresh  : 100[0m
+[0;32mI (1944) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (1948) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (1954) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (1961) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1995) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1995) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1995) MAIN: SD not available - saving disabled[0m
+[0;32mI (2000) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (2006) MAIN: Loading model...[0m
+[0;33mW (2010) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (2017) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (2115) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (2118) MAIN: Model ready.[0m
+[0;32mI (2120) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2122) cam_hal: cam init ok[0m
+[0;32mI (2636) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (2636) camera: Detected OV3660 camera[0m
+[0;32mI (2636) camera: Detected camera at address=0x3c[0m
+[0;32mI (2944) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (2944) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (2944) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (2953) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (2963) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (2969) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C0A0[0m
+[0;32mI (2974) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (2980) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AFD0[0m
+[0;32mI (2985) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (2990) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9F00[0m
+[0;32mI (2995) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3001) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8E30[0m
+[0;32mI (3006) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3011) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7D60[0m
+[0;32mI (3017) cam_hal: cam config ok[0m
+[0;32mI (3031) ov3660: Calculated VCO: 128000000 Hz, PLLCLK: 128000000 Hz, SYSCLK: 32000000 Hz, PCLK: 8000000 Hz[0m
+[0;32mI (3048) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (3048) cam_hal: cam init ok[0m
+[0;32mI (3559) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (3559) camera: Detected OV3660 camera[0m
+[0;32mI (3559) camera: Detected camera at address=0x3c[0m
+[1;31mE (3736) sccb-ng: W [5816]=05 fail[0m
+
+[1;31mE (3736) camera: Camera probe failed with error 0xffffffff(ESP_FAIL)[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x4200ca70
+file: "/IDF/esp-who/components/who_peripherals/who_cam/who_s3_cam/who_s3_cam.cpp" line 27
+func: who::cam::WhoS3Cam::WhoS3Cam(pixformat_t, framesize_t, uint8_t, bool, bool)
+expression: esp_camera_set_psram_mode(true)
+
+abort() was called at PC 0x4038109b on core 0
+
+
+Backtrace: 0x403810d9:0x3fca7ad0 0x403810a5:0x3fca7af0 0x4038852a:0x3fca7b10 0x4038109b:0x3fca7b80 0x4200ca70:0x3fca7bb0 0x4200bf94:0x3fca7c60 0x4200b8dd:0x3fca7c90 0x421417b3:0x3fca7d50
+
+
+
+
+ELF file SHA256: 31b4c0d3c
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40381268
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1668
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x317c
+entry 0x403c894c
+[0;32mI (29) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time May 18 2026 18:15:35[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.2[0m
+[0;32mI (32) boot: efuse block revision: v1.4[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c150020 size=89a10h (563728) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=00099a38 vaddr=3fc9ac00 size=05e98h ( 24216) load[0m
+[0;32mI (183) esp_image: segment 2: paddr=0009f8d8 vaddr=40378000 size=00740h (  1856) load[0m
+[0;32mI (184) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=1423f8h (1319928) map[0m
+[0;32mI (386) esp_image: segment 4: paddr=001e2420 vaddr=40378740 size=12448h ( 74824) load[0m
+[0;32mI (401) esp_image: segment 5: paddr=001f4870 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (409) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (409) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (419) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (419) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (421) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (425) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (430) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (434) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (439) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (444) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (448) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (453) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (458) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (462) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (465) esp_psram: Speed: 80MHz[0m
+[0;32mI (502) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (594) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (594) cpu_start: Multicore app[0m
+[0;32mI (813) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (821) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (821) cpu_start: Pro cpu start user code[0m
+[0;32mI (821) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (823) app_init: Application information:[0m
+[0;32mI (827) app_init: Project name:     object_detect[0m
+[0;32mI (831) app_init: App version:      v0.9.4-256-g68f9e6b-dirty[0m
+[0;32mI (837) app_init: Compile time:     May 19 2026 10:32:34[0m
+[0;32mI (842) app_init: ELF file SHA256:  31b4c0d3c...[0m
+[0;32mI (846) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (850) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (854) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (858) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (862) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (868) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (873) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (878) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (885) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (896) spi_flash: detected chip: boya[0m
+[0;32mI (899) spi_flash: flash io: qio[0m
+[0;32mI (903) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (909) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (915) main_task: Started on CPU0[0m
+[0;32mI (928) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (928) main_task: Calling app_main()[0m
+[0;32mI (1929) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (1929) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (1929) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (1931) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (1936) MAIN: Score threshold    : 0.60[0m
+[0;32mI (1940) MAIN: Brightness thresh  : 100[0m
+[0;32mI (1944) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (1948) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (1954) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (1961) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1995) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1995) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1995) MAIN: SD not available - saving disabled[0m
+[0;32mI (2000) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (2006) MAIN: Loading model...[0m
+[0;33mW (2010) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (2017) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (2115) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (2118) MAIN: Model ready.[0m
+[0;32mI (2120) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2122) cam_hal: cam init ok[0m
+[0;32mI (2636) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (2636) camera: Detected OV3660 camera[0m
+[0;32mI (2636) camera: Detected camera at address=0x3c[0m
+[0;32mI (2944) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (2944) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (2944) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (2953) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (2963) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (2969) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C0A0[0m
+[0;32mI (2974) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (2980) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AFD0[0m
+[0;32mI (2985) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (2990) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9F00[0m
+[0;32mI (2995) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3001) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8E30[0m
+[0;32mI (3006) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3011) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7D60[0m
+[0;32mI (3017) cam_hal: cam config ok[0m
+[0;32mI (3031) ov3660: Calculated VCO: 128000000 Hz, PLLCLK: 128000000 Hz, SYSCLK: 32000000 Hz, PCLK: 8000000 Hz[0m
+[0;32mI (3048) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (3048) cam_hal: cam init ok[0m
+[0;32mI (3559) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (3559) camera: Detected OV3660 camera[0m
+[0;32mI (3559) camera: Detected camera at address=0x3c[0m
+[1;31mE (4745) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (4745) sccb-ng: W [582a]=33 fail[0m
+
+[1;31mE (4745) camera: Camera probe failed with error 0xffffffff(ESP_FAIL)[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x4200ca70
+file: "/IDF/esp-who/components/who_peripherals/who_cam/who_s3_cam/who_s3_cam.cpp" line 27
+func: who::cam::WhoS3Cam::WhoS3Cam(pixformat_t, framesize_t, uint8_t, bool, bool)
+expression: esp_camera_set_psram_mode(true)
+
+abort() was called at PC 0x4038109b on core 0
+
+
+Backtrace: 0x403810d9:0x3fca7ad0 0x403810a5:0x3fca7af0 0x4038852a:0x3fca7b10 0x4038109b:0x3fca7b80 0x4200ca70:0x3fca7bb0 0x4200bf94:0x3fca7c60 0x4200b8dd:0x3fca7c90 0x421417b3:0x3fca7d50
+
+
+
+
+ELF file SHA256: 31b4c0d3c
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40381268
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1668
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x317c
+entry 0x403c894c
+[0;32mI (29) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time May 18 2026 18:15:35[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.2[0m
+[0;32mI (32) boot: efuse block revision: v1.4[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c150020 size=89a10h (563728) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=00099a38 vaddr=3fc9ac00 size=05e98h ( 24216) load[0m
+[0;32mI (183) esp_image: segment 2: paddr=0009f8d8 vaddr=40378000 size=00740h (  1856) load[0m
+[0;32mI (184) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=1423f8h (1319928) map[0m
+[0;32mI (386) esp_image: segment 4: paddr=001e2420 vaddr=40378740 size=12448h ( 74824) load[0m
+[0;32mI (401) esp_image: segment 5: paddr=001f4870 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (409) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (409) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (419) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (419) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (421) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (425) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (430) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (434) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (439) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (444) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (448) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (453) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (458) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (462) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (465) esp_psram: Speed: 80MHz[0m
+[0;32mI (502) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (594) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (594) cpu_start: Multicore app[0m
+[0;32mI (813) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (821) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (821) cpu_start: Pro cpu start user code[0m
+[0;32mI (821) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (823) app_init: Application information:[0m
+[0;32mI (827) app_init: Project name:     object_detect[0m
+[0;32mI (831) app_init: App version:      v0.9.4-256-g68f9e6b-dirty[0m
+[0;32mI (837) app_init: Compile time:     May 19 2026 10:32:34[0m
+[0;32mI (842) app_init: ELF file SHA256:  31b4c0d3c...[0m
+[0;32mI (846) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (850) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (854) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (858) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (862) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (868) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (873) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (878) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (885) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (896) spi_flash: detected chip: boya[0m
+[0;32mI (899) spi_flash: flash io: qio[0m
+[0;32mI (903) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (909) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (915) main_task: Started on CPU0[0m
+[0;32mI (928) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (928) main_task: Calling app_main()[0m
+[0;32mI (1929) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (1929) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (1929) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (1931) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (1936) MAIN: Score threshold    : 0.60[0m
+[0;32mI (1940) MAIN: Brightness thresh  : 100[0m
+[0;32mI (1944) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (1948) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (1954) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (1961) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1995) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1995) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1995) MAIN: SD not available - saving disabled[0m
+[0;32mI (2000) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (2006) MAIN: Loading model...[0m
+[0;33mW (2010) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (2017) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (2115) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (2118) MAIN: Model ready.[0m
+[0;32mI (2120) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2122) cam_hal: cam init ok[0m
+[0;32mI (2636) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (2636) camera: Detected OV3660 camera[0m
+[0;32mI (2636) camera: Detected camera at address=0x3c[0m
+[1;31mE (3823) i2c.master: I2C bus is still busy but software timeout detected[0m
+[1;31mE (3823) sccb-ng: W [5829]=25 fail[0m
+
+[1;31mE (3823) camera: Camera probe failed with error 0xffffffff(ESP_FAIL)[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x4200ca55
+file: "/IDF/esp-who/components/who_peripherals/who_cam/who_s3_cam/who_s3_cam.cpp" line 26
+func: who::cam::WhoS3Cam::WhoS3Cam(pixformat_t, framesize_t, uint8_t, bool, bool)
+expression: esp_camera_init(&camera_config)
+
+abort() was called at PC 0x4038109b on core 0
+
+
+Backtrace: 0x403810d9:0x3fca7ad0 0x403810a5:0x3fca7af0 0x4038852a:0x3fca7b10 0x4038109b:0x3fca7b80 0x4200ca55:0x3fca7bb0 0x4200bf94:0x3fca7c60 0x4200b8dd:0x3fca7c90 0x421417b3:0x3fca7d50
+
+
+
+
+ELF file SHA256: 31b4c0d3c
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40381268
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1668
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x317c
+entry 0x403c894c
+[0;32mI (29) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time May 18 2026 18:15:35[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.2[0m
+[0;32mI (32) boot: efuse block revision: v1.4[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c150020 size=89a10h (563728) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=00099a38 vaddr=3fc9ac00 size=05e98h ( 24216) load[0m
+[0;32mI (183) esp_image: segment 2: paddr=0009f8d8 vaddr=40378000 size=00740h (  1856) load[0m
+[0;32mI (184) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=1423f8h (1319928) map[0m
+[0;32mI (386) esp_image: segment 4: paddr=001e2420 vaddr=40378740 size=12448h ( 74824) load[0m
+[0;32mI (401) esp_image: segment 5: paddr=001f4870 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (409) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (409) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (419) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (419) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (421) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (425) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (430) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (434) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (439) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (444) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (448) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (453) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (458) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (462) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (465) esp_psram: Speed: 80MHz[0m
+[0;32mI (502) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (594) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (594) cpu_start: Multicore app[0m
+[0;32mI (813) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (821) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (821) cpu_start: Pro cpu start user code[0m
+[0;32mI (821) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (823) app_init: Application information:[0m
+[0;32mI (827) app_init: Project name:     object_detect[0m
+[0;32mI (831) app_init: App version:      v0.9.4-256-g68f9e6b-dirty[0m
+[0;32mI (837) app_init: Compile time:     May 19 2026 10:32:34[0m
+[0;32mI (842) app_init: ELF file SHA256:  31b4c0d3c...[0m
+[0;32mI (846) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (850) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (854) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (858) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (862) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (868) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (873) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (878) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (885) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (896) spi_flash: detected chip: boya[0m
+[0;32mI (899) spi_flash: flash io: qio[0m
+[0;32mI (903) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (909) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (915) main_task: Started on CPU0[0m
+[0;32mI (928) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (928) main_task: Calling app_main()[0m
+[0;32mI (1929) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (1929) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (1929) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (1931) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (1936) MAIN: Score threshold    : 0.60[0m
+[0;32mI (1940) MAIN: Brightness thresh  : 100[0m
+[0;32mI (1944) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (1948) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (1954) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (1961) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1995) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1995) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1995) MAIN: SD not available - saving disabled[0m
+[0;32mI (2000) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (2006) MAIN: Loading model...[0m
+[0;33mW (2010) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (2017) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (2115) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (2118) MAIN: Model ready.[0m
+[0;32mI (2120) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2122) cam_hal: cam init ok[0m
+[0;32mI (2636) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (2636) camera: Detected OV3660 camera[0m
+[0;32mI (2636) camera: Detected camera at address=0x3c[0m
+[0;32mI (2944) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (2944) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (2944) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (2953) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (2963) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (2969) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C0A0[0m
+[0;32mI (2974) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (2980) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AFD0[0m
+[0;32mI (2985) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (2990) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9F00[0m
+[0;32mI (2995) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3001) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8E30[0m
+[0;32mI (3006) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3011) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7D60[0m
+[0;32mI (3017) cam_hal: cam config ok[0m
+[0;32mI (3031) ov3660: Calculated VCO: 128000000 Hz, PLLCLK: 128000000 Hz, SYSCLK: 32000000 Hz, PCLK: 8000000 Hz[0m
+[0;32mI (3048) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (3048) cam_hal: cam init ok[0m
+[0;32mI (3559) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (3559) camera: Detected OV3660 camera[0m
+[0;32mI (3559) camera: Detected camera at address=0x3c[0m
+[0;32mI (3866) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (3866) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (3866) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (3875) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (3885) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3891) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C0A0[0m
+[0;32mI (3896) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3902) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AFD0[0m
+[0;32mI (3907) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3912) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9F00[0m
+[0;32mI (3917) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3923) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8E30[0m
+[0;32mI (3928) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (3933) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7D60[0m
+[0;32mI (3939) cam_hal: cam config ok[0m
+[0;32mI (3953) ov3660: Calculated VCO: 128000000 Hz, PLLCLK: 128000000 Hz, SYSCLK: 32000000 Hz, PCLK: 8000000 Hz[0m
+[0;32mI (3969) WhoS3Cam: WhoS3Cam args: vertical_flip=0 horizontal_flip=1 -> sensor vflip=1 hmirror=0[0m
+[0;32mI (3972) MAIN: Running from 2026-05-17 10:00:03 | Every 7 frames | 2-frame confirm | Score >= 0.60[0m
+[0;32mI (3975) main_task: Returned from app_main()[0m
+[0;32mI (4271) LightController: Darkness detected -> Light ON | Brightness: 17[0m
+[0;32mI (4835) MAIN: [2026-05-17 10:00:03] No person confirmed (2/2) | f1=N f2=N | Brightness: 14 | Light: ON[0m
+[0;32mI (5383) MAIN: [2026-05-17 10:00:04] No person confirmed (2/2) | f1=N f2=N | Brightness: 16 | Light: ON[0m
+[0;32mI (5934) MAIN: [2026-05-17 10:00:05] No person confirmed (2/2) | f1=N f2=N | Brightness: 20 | Light: ON[0m
+[0;32mI (6483) MAIN: [2026-05-17 10:00:05] No person confirmed (2/2) | f1=N f2=N | Brightness: 17 | Light: ON[0m
+[0;32mI (7034) MAIN: [2026-05-17 10:00:06] No person confirmed (2/2) | f1=N f2=N | Brightness: 19 | Light: ON[0m
+[0;32mI (7271) LightController: Brightness normal -> starting OFF timer[0m
+[0;32mI (7584) MAIN: [2026-05-17 10:00:06] No person confirmed (2/2) | f1=N f2=N | Brightness: 142 | Light: ON[0m
+[0;32mI (8134) MAIN: [2026-05-17 10:00:07] No person confirmed (2/2) | f1=N f2=N | Brightness: 123 | Light: ON[0m
+[0;32mI (8684) MAIN: [2026-05-17 10:00:07] No person confirmed (2/2) | f1=N f2=N | Brightness: 123 | Light: ON[0m
+[0;32mI (9234) MAIN: [2026-05-17 10:00:08] No person confirmed (2/2) | f1=N f2=N | Brightness: 125 | Light: ON[0m
+[0;32mI (9784) MAIN: [2026-05-17 10:00:08] No person confirmed (2/2) | f1=N f2=N | Brightness: 127 | Light: ON[0m
+[0;32mI (10334) MAIN: [2026-05-17 10:00:09] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: ON[0m
+[0;32mI (10885) MAIN: [2026-05-17 10:00:10] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: ON[0m
+[0;32mI (11435) MAIN: [2026-05-17 10:00:10] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: ON[0m
+[0;32mI (11985) MAIN: [2026-05-17 10:00:11] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: ON[0m
+[0;32mI (12273) LightController: 5 seconds completed -> Light OFF[0m
+[0;32mI (12535) MAIN: [2026-05-17 10:00:11] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (13085) MAIN: [2026-05-17 10:00:12] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (13635) MAIN: [2026-05-17 10:00:12] No person confirmed (2/2) | f1=N f2=N | Brightness: 126 | Light: OFF[0m
+[0;32mI (14186) MAIN: [2026-05-17 10:00:13] No person confirmed (2/2) | f1=N f2=N | Brightness: 122 | Light: OFF[0m
+[0;32mI (14736) MAIN: [2026-05-17 10:00:13] No person confirmed (2/2) | f1=N f2=N | Brightness: 121 | Light: OFF[0m
+[0;32mI (15286) MAIN: [2026-05-17 10:00:14] No person confirmed (2/2) | f1=N f2=N | Brightness: 122 | Light: OFF[0m
+[0;32mI (15836) MAIN: [2026-05-17 10:00:14] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (16386) MAIN: [2026-05-17 10:00:15] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (16936) MAIN: [2026-05-17 10:00:16] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (17486) MAIN: [2026-05-17 10:00:16] No person confirmed (2/2) | f1=N f2=N | Brightness: 125 | Light: OFF[0m
+[0;32mI (18037) MAIN: [2026-05-17 10:00:17] No person confirmed (2/2) | f1=N f2=N | Brightness: 126 | Light: OFF[0m

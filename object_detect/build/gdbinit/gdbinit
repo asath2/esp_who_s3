@@ -1,0 +1,2 @@
+source C:/Espressif/frameworks/esp-idf-v5.5.4/esp-who/examples/object_detect/build/gdbinit/symbols
+source C:/Espressif/frameworks/esp-idf-v5.5.4/esp-who/examples/object_detect/build/gdbinit/connect

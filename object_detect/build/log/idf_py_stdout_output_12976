@@ -1,0 +1,177 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.4\tools/idf_monitor.py -p COM13 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Espressif\frameworks\esp-idf-v5.5.4\esp-who\examples\object_detect\build\object_detect.elf C:\Espressif\frameworks\esp-idf-v5.5.4\esp-who\examples\object_detect\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.4\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1668
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x317c
+entry 0x403c894c
+[0;32mI (24) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time May 18 2026 18:15:35[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3c150020 size=89a10h (563728) map[0m
+[0;32mI (174) esp_image: segment 1: paddr=00099a38 vaddr=3fc9ac00 size=05e98h ( 24216) load[0m
+[0;32mI (179) esp_image: segment 2: paddr=0009f8d8 vaddr=40378000 size=00740h (  1856) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=1423fch (1319932) map[0m
+[0;32mI (382) esp_image: segment 4: paddr=001e2424 vaddr=40378740 size=12448h ( 74824) load[0m
+[0;32mI (396) esp_image: segment 5: paddr=001f4874 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (404) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (405) boot: Disabling RNG early entropy source...[0m
+[0;32mI (415) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (415) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (415) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (417) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (421) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (426) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (430) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (435) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (439) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (444) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (449) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (453) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (458) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (461) esp_psram: Speed: 80MHz[0m
+[0;32mI (498) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (589) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (590) cpu_start: Multicore app[0m
+[0;32mI (808) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (816) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (817) cpu_start: Pro cpu start user code[0m
+[0;32mI (817) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (819) app_init: Application information:[0m
+[0;32mI (823) app_init: Project name:     object_detect[0m
+[0;32mI (827) app_init: App version:      v0.9.4-256-g68f9e6b-dirty[0m
+[0;32mI (832) app_init: Compile time:     May 19 2026 10:32:34[0m
+[0;32mI (838) app_init: ELF file SHA256:  bc965b5a2...[0m
+[0;32mI (842) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (846) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (849) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (853) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (857) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (864) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (869) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (874) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (880) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (892) spi_flash: detected chip: boya[0m
+[0;32mI (895) spi_flash: flash io: qio[0m
+[0;32mI (898) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (904) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (911) main_task: Started on CPU0[0m
+[0;32mI (924) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (924) main_task: Calling app_main()[0m
+[0;32mI (1925) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (1925) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (1925) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (1927) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (1932) MAIN: Score threshold    : 0.60[0m
+[0;32mI (1936) MAIN: Brightness thresh  : 100[0m
+[0;32mI (1940) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (1944) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (1950) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (1957) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1991) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1991) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1991) MAIN: SD not available - saving disabled[0m
+[0;32mI (1996) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (2002) MAIN: Loading model...[0m
+[0;33mW (2006) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (2013) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (2111) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (2114) MAIN: Model ready.[0m
+[0;32mI (2116) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2118) cam_hal: cam init ok[0m
+[0;32mI (5133) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (5133) camera: Detected OV2640 camera[0m
+[0;32mI (5133) camera: Detected camera at address=0x30[0m
+[0;32mI (5207) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (5207) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (5207) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (5217) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (5227) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (5232) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C0A0[0m
+[0;32mI (5237) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (5243) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AFD0[0m
+[0;32mI (5248) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (5254) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9F00[0m
+[0;32mI (5259) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (5264) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8E30[0m
+[0;32mI (5269) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (5275) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7D60[0m
+[0;32mI (5280) cam_hal: cam config ok[0m
+[0;32mI (5283) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (5355) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (5355) cam_hal: cam init ok[0m
+[0;32mI (8367) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (8367) camera: Detected OV2640 camera[0m
+[0;32mI (8367) camera: Detected camera at address=0x30[0m
+[0;32mI (8441) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (8441) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (8441) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (8451) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (8461) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (8466) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C0A0[0m
+[0;32mI (8471) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (8477) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AFD0[0m
+[0;32mI (8482) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (8488) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9F00[0m
+[0;32mI (8493) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (8498) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8E30[0m
+[0;32mI (8503) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (8509) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7D60[0m
+[0;32mI (8514) cam_hal: cam config ok[0m
+[0;32mI (8517) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (8589) WhoS3Cam: WhoS3Cam args: vertical_flip=0 horizontal_flip=1 -> sensor vflip=1 hmirror=0[0m
+[0;32mI (8591) MAIN: Running from 2026-05-17 10:00:07 | Every 7 frames | 2-frame confirm | Score >= 0.60[0m
+[0;32mI (8595) main_task: Returned from app_main()[0m
+[0;32mI (9326) MAIN: [2026-05-17 10:00:08] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (9875) MAIN: [2026-05-17 10:00:09] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (10424) MAIN: [2026-05-17 10:00:09] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (10974) MAIN: [2026-05-17 10:00:10] No person confirmed (2/2) | f1=Y f2=N | Brightness: 138 | Light: OFF[0m
+[0;32mI (11524) MAIN: [2026-05-17 10:00:10] No person confirmed (2/2) | f1=Y f2=N | Brightness: 139 | Light: OFF[0m
+[0;32mI (12074) MAIN: [2026-05-17 10:00:11] No person confirmed (2/2) | f1=N f2=Y | Brightness: 138 | Light: OFF[0m
+[0;32mI (12623) MAIN: [2026-05-17 10:00:11] No person confirmed (2/2) | f1=N f2=N | Brightness: 138 | Light: OFF[0m
+[0;32mI (13174) MAIN: [2026-05-17 10:00:12] No person confirmed (2/2) | f1=Y f2=N | Brightness: 141 | Light: OFF[0m
+[0;32mI (13724) MAIN: [2026-05-17 10:00:12] PERSON confirmed (2/2) | score=0.820 | box=[58,121,208,239] | Brightness: 140 | Light: OFF[0m
+[0;32mI (14273) MAIN: [2026-05-17 10:00:13] No person confirmed (2/2) | f1=Y f2=N | Brightness: 138 | Light: OFF[0m
+[0;32mI (14823) MAIN: [2026-05-17 10:00:13] PERSON confirmed (2/2) | score=0.612 | box=[52,121,212,239] | Brightness: 138 | Light: OFF[0m
+[0;32mI (15373) MAIN: [2026-05-17 10:00:14] No person confirmed (2/2) | f1=N f2=Y | Brightness: 138 | Light: OFF[0m
+[0;32mI (15922) MAIN: [2026-05-17 10:00:15] No person confirmed (2/2) | f1=Y f2=N | Brightness: 138 | Light: OFF[0m
+[0;32mI (16472) MAIN: [2026-05-17 10:00:15] PERSON confirmed (2/2) | score=0.661 | box=[56,120,210,239] | Brightness: 138 | Light: OFF[0m
+[0;32mI (17022) MAIN: [2026-05-17 10:00:16] PERSON confirmed (2/2) | score=0.631 | box=[24,118,213,239] | Brightness: 137 | Light: OFF[0m
+[0;32mI (17572) MAIN: [2026-05-17 10:00:16] PERSON confirmed (2/2) | score=0.734 | box=[13,118,213,239] | Brightness: 136 | Light: OFF[0m
+[0;32mI (18122) MAIN: [2026-05-17 10:00:17] PERSON confirmed (2/2) | score=0.713 | box=[62,120,212,239] | Brightness: 137 | Light: OFF[0m
+[0;32mI (18672) MAIN: [2026-05-17 10:00:17] PERSON confirmed (2/2) | score=0.750 | box=[0,115,147,239] | Brightness: 130 | Light: OFF[0m
+[0;32mI (19221) MAIN: [2026-05-17 10:00:18] PERSON confirmed (2/2) | score=0.679 | box=[0,112,148,239] | Brightness: 130 | Light: OFF[0m
+[0;32mI (19771) MAIN: [2026-05-17 10:00:18] No person confirmed (2/2) | f1=N f2=Y | Brightness: 130 | Light: OFF[0m
+[0;32mI (20321) MAIN: [2026-05-17 10:00:19] PERSON confirmed (2/2) | score=0.612 | box=[0,112,150,239] | Brightness: 129 | Light: OFF[0m
+[0;32mI (20870) MAIN: [2026-05-17 10:00:19] PERSON confirmed (2/2) | score=0.625 | box=[54,128,235,239] | Brightness: 139 | Light: OFF[0m
+[0;32mI (21420) MAIN: [2026-05-17 10:00:20] No person confirmed (2/2) | f1=N f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (21970) MAIN: [2026-05-17 10:00:21] No person confirmed (2/2) | f1=N f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (22520) MAIN: [2026-05-17 10:00:21] PERSON confirmed (2/2) | score=0.702 | box=[18,120,220,239] | Brightness: 143 | Light: OFF[0m
+[0;32mI (23070) MAIN: [2026-05-17 10:00:22] PERSON confirmed (2/2) | score=0.810 | box=[10,115,223,239] | Brightness: 137 | Light: OFF[0m
+[0;32mI (23619) MAIN: [2026-05-17 10:00:22] No person confirmed (2/2) | f1=Y f2=N | Brightness: 131 | Light: OFF[0m
+[0;32mI (24169) MAIN: [2026-05-17 10:00:23] No person confirmed (2/2) | f1=N f2=N | Brightness: 116 | Light: OFF[0m
+[0;32mI (24719) MAIN: [2026-05-17 10:00:23] No person confirmed (2/2) | f1=Y f2=N | Brightness: 164 | Light: OFF[0m
+[0;32mI (25268) MAIN: [2026-05-17 10:00:24] No person confirmed (2/2) | f1=N f2=N | Brightness: 155 | Light: OFF[0m
+[0;32mI (25819) MAIN: [2026-05-17 10:00:24] No person confirmed (2/2) | f1=Y f2=N | Brightness: 146 | Light: OFF[0m
+[0;32mI (26369) MAIN: [2026-05-17 10:00:25] PERSON confirmed (2/2) | score=0.750 | box=[59,106,183,239] | Brightness: 144 | Light: OFF[0m
+[0;32mI (26918) MAIN: [2026-05-17 10:00:26] No person confirmed (2/2) | f1=Y f2=N | Brightness: 140 | Light: OFF[0m
+[0;32mI (27468) MAIN: [2026-05-17 10:00:26] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (28017) MAIN: [2026-05-17 10:00:27] No person confirmed (2/2) | f1=N f2=N | Brightness: 162 | Light: OFF[0m
+[0;32mI (28567) MAIN: [2026-05-17 10:00:27] No person confirmed (2/2) | f1=N f2=N | Brightness: 151 | Light: OFF[0m
+[0;32mI (29117) MAIN: [2026-05-17 10:00:28] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m

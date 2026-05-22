@@ -1,0 +1,120 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.4\tools/idf_monitor.py -p COM13 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Espressif\frameworks\esp-idf-v5.5.4\esp-who\examples\object_detect\build\object_detect.elf C:\Espressif\frameworks\esp-idf-v5.5.4\esp-who\examples\object_detect\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.4\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1668
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x317c
+entry 0x403c894c
+[0;32mI (24) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time May 18 2026 18:15:35[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3c150020 size=89940h (563520) map[0m
+[0;32mI (174) esp_image: segment 1: paddr=00099968 vaddr=3fc9ac00 size=05e98h ( 24216) load[0m
+[0;32mI (179) esp_image: segment 2: paddr=0009f808 vaddr=40378000 size=00810h (  2064) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=142414h (1319956) map[0m
+[0;32mI (382) esp_image: segment 4: paddr=001e243c vaddr=40378810 size=12378h ( 74616) load[0m
+[0;32mI (396) esp_image: segment 5: paddr=001f47bc vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (404) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (404) boot: Disabling RNG early entropy source...[0m
+[0;32mI (415) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (415) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (415) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (417) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (421) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (425) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (430) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (434) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (439) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (444) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (449) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (453) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (458) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (461) esp_psram: Speed: 80MHz[0m
+[0;32mI (498) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (589) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (590) cpu_start: Multicore app[0m
+[0;32mI (808) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (816) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (817) cpu_start: Pro cpu start user code[0m
+[0;32mI (817) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (819) app_init: Application information:[0m
+[0;32mI (822) app_init: Project name:     object_detect[0m
+[0;32mI (827) app_init: App version:      v0.9.4-256-g68f9e6b-dirty[0m
+[0;32mI (832) app_init: Compile time:     May 19 2026 10:32:34[0m
+[0;32mI (837) app_init: ELF file SHA256:  97aa2eba3...[0m
+[0;32mI (842) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (846) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (849) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (853) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (857) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (864) heap_init: At 3FCA4270 len 000454A0 (277 KiB): RAM[0m
+[0;32mI (869) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (874) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (880) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (892) spi_flash: detected chip: boya[0m
+[0;32mI (895) spi_flash: flash io: qio[0m
+[0;32mI (898) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (904) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (911) main_task: Started on CPU0[0m
+[0;32mI (924) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (924) main_task: Calling app_main()[0m
+[0;32mI (925) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (929) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (934) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (939) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (944) MAIN: Score threshold    : 0.60[0m
+[0;32mI (947) MAIN: Brightness thresh  : 100[0m
+[0;32mI (951) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (955) MAIN: Person trigger GPIO: GPIO 2 | direct HIGH/LOW (no timer)[0m
+[0;32mI (961) MAIN: Person trigger GPIO enabled: GPIO 2 (direct HIGH/LOW, no timer)[0m
+[0;33mW (968) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1002) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1002) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1002) MAIN: SD not available - saving disabled[0m
+[0;32mI (1007) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (1013) MAIN: Loading model...[0m
+[0;33mW (1017) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (1024) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (1122) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (1125) MAIN: Model ready.[0m
+[0;32mI (1126) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (1129) cam_hal: cam init ok[0m
+[0;32mI (4132) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (4132) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (4144) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (4144) camera: Detected OV2640 camera[0m
+[0;32mI (4144) camera: Detected camera at address=0x30[0m
+[0;32mI (4218) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (4218) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (4218) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (4228) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (4238) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (4243) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C020[0m
+[0;32mI (4248) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (4254) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AF50[0m
+[0;32mI (4259) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (4265) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9E80[0m
+[0;32mI (4270) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (4275) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8DB0[0m
+[0;32mI (4280) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (4286) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7CE0[0m
+[0;32mI (4291) cam_hal: cam config ok[0m
+[0;32mI (4294) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (4366) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (4366) cam_hal: cam init ok[0m

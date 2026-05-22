@@ -1,0 +1,13 @@
+Command: ninja all
+CMake Warning (dev) at C:/Espressif/frameworks/esp-idf-v5.5.4/tools/cmake/component.cmake:494 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    C:/Espressif/frameworks/esp-idf-v5.5.4/esp-who/examples/object_detect/main/app_main_with_light_control_1.cpp
+Call Stack (most recent call first):
+  main/CMakeLists.txt:24 (idf_component_register)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+

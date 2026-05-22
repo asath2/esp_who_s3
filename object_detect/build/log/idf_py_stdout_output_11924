@@ -1,0 +1,860 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.4\tools/idf_monitor.py -p COM10 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Espressif\frameworks\esp-idf-v5.5.4\esp-who\examples\object_detect\build\object_detect.elf C:\Espressif\frameworks\esp-idf-v5.5.4\esp-who\examples\object_detect\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.4\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1668
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x317c
+entry 0x403c894c
+[0;32mI (25) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time May 16 2026 14:25:14[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3c150020 size=89a00h (563712) map[0m
+[0;32mI (174) esp_image: segment 1: paddr=00099a28 vaddr=3fc9ac00 size=05e98h ( 24216) load[0m
+[0;32mI (179) esp_image: segment 2: paddr=0009f8c8 vaddr=40378000 size=00750h (  1872) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=1423d4h (1319892) map[0m
+[0;32mI (382) esp_image: segment 4: paddr=001e23fc vaddr=40378750 size=12438h ( 74808) load[0m
+[0;32mI (396) esp_image: segment 5: paddr=001f483c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (404) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (404) boot: Disabling RNG early entropy source...[0m
+[0;32mI (415) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (415) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (415) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (417) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (421) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (425) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (429) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (434) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (439) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (444) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (449) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (453) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (458) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (461) esp_psram: Speed: 80MHz[0m
+[0;32mI (498) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (589) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (590) cpu_start: Multicore app[0m
+[0;32mI (808) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (816) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (817) cpu_start: Pro cpu start user code[0m
+[0;32mI (817) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (819) app_init: Application information:[0m
+[0;32mI (822) app_init: Project name:     object_detect[0m
+[0;32mI (827) app_init: App version:      v0.9.4-255-g1681a1c-dirty[0m
+[0;32mI (832) app_init: Compile time:     May 17 2026 12:05:09[0m
+[0;32mI (837) app_init: ELF file SHA256:  940ab98e6...[0m
+[0;32mI (842) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (846) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (849) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (853) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (857) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (863) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (869) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (874) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (880) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (892) spi_flash: detected chip: boya[0m
+[0;32mI (895) spi_flash: flash io: qio[0m
+[0;33mW (898) spi_flash: Detected size(16384k) larger than the size in the binary image header(8192k). Using the size in the binary image header.[0m
+[0;32mI (910) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (916) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (923) main_task: Started on CPU0[0m
+[0;32mI (926) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (934) main_task: Calling app_main()[0m
+[0;32mI (937) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (941) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (946) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (951) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (956) MAIN: Score threshold    : 0.60[0m
+[0;32mI (959) MAIN: Brightness thresh  : 100[0m
+[0;32mI (963) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (967) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (973) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (980) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[0;32mI (1131) MAIN: Loaded state: 20260508_100000 | 33[0m
+[0;32mI (1131) MAIN: Restored image counter: 33[0m
+[0;32mI (1141) MAIN: SD ready: /sdcard/detections | Used: 0 MB / 12000 MB max[0m
+[0;32mI (1141) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (1143) MAIN: Loading model...[0m
+[0;33mW (1147) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (1154) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (1252) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (1255) MAIN: Model ready.[0m
+[0;32mI (1257) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (1259) cam_hal: cam init ok[0m
+[0;32mI (1274) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1274) camera: Detected OV2640 camera[0m
+[0;32mI (1274) camera: Detected camera at address=0x30[0m
+[0;32mI (1348) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (1348) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (1348) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (1358) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (1368) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (1373) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C273560[0m
+[0;32mI (1378) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (1384) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C292490[0m
+[0;32mI (1389) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (1395) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2B13C0[0m
+[0;32mI (1400) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (1405) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2D02F0[0m
+[0;32mI (1410) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (1416) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2EF220[0m
+[0;32mI (1421) cam_hal: cam config ok[0m
+[0;32mI (1424) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1496) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (1496) cam_hal: cam init ok[0m
+[0;32mI (1508) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1508) camera: Detected OV2640 camera[0m
+[0;32mI (1508) camera: Detected camera at address=0x30[0m
+[0;32mI (1582) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (1582) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (1582) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (1592) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (1602) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (1607) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C273560[0m
+[0;32mI (1612) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (1618) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C292490[0m
+[0;32mI (1623) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (1629) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2B13C0[0m
+[0;32mI (1634) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (1639) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2D02F0[0m
+[0;32mI (1644) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (1650) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2EF220[0m
+[0;32mI (1655) cam_hal: cam config ok[0m
+[0;32mI (1658) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1730) WhoS3Cam: WhoS3Cam args: vertical_flip=0 horizontal_flip=1 -> sensor vflip=1 hmirror=0[0m
+[0;32mI (1732) MAIN: Running from 2026-05-17 10:00:00 | Every 7 frames | 2-frame confirm | Score >= 0.60[0m
+[0;32mI (1736) main_task: Returned from app_main()[0m
+[0;32mI (2467) MAIN: [2026-05-17 10:00:01] No person confirmed (2/2) | f1=N f2=N | Brightness: 141 | Light: OFF[0m
+[0;32mI (3015) MAIN: [2026-05-17 10:00:02] No person confirmed (2/2) | f1=N f2=N | Brightness: 138 | Light: OFF[0m
+[0;32mI (3565) MAIN: [2026-05-17 10:00:02] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (4115) MAIN: [2026-05-17 10:00:03] No person confirmed (2/2) | f1=N f2=N | Brightness: 140 | Light: OFF[0m
+[0;32mI (4664) MAIN: [2026-05-17 10:00:03] No person confirmed (2/2) | f1=N f2=N | Brightness: 140 | Light: OFF[0m
+[0;32mI (5214) MAIN: [2026-05-17 10:00:04] No person confirmed (2/2) | f1=N f2=N | Brightness: 144 | Light: OFF[0m
+[0;32mI (5764) MAIN: [2026-05-17 10:00:04] No person confirmed (2/2) | f1=N f2=N | Brightness: 141 | Light: OFF[0m
+[0;32mI (6314) MAIN: [2026-05-17 10:00:05] No person confirmed (2/2) | f1=Y f2=N | Brightness: 138 | Light: OFF[0m
+[0;32mI (6864) MAIN: [2026-05-17 10:00:05] No person confirmed (2/2) | f1=N f2=N | Brightness: 153 | Light: OFF[0m
+[0;32mI (7413) MAIN: [2026-05-17 10:00:06] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (7963) MAIN: [2026-05-17 10:00:07] No person confirmed (2/2) | f1=N f2=N | Brightness: 176 | Light: OFF[0m
+[0;32mI (8513) MAIN: [2026-05-17 10:00:07] PERSON confirmed (2/2) | score=0.931 | box=[1,43,239,239] | Brightness: 126 | Light: OFF[0m
+[0;32mI (8699) MAIN: Saved: det_20260508_100000_0033.jpg | score=0.931 | 2026-05-17 10:00:07[0m
+[0;32mI (9264) MAIN: [2026-05-17 10:00:08] PERSON confirmed (2/2) | score=0.906 | box=[13,72,239,239] | Brightness: 127 | Light: OFF[0m
+[0;32mI (9813) MAIN: [2026-05-17 10:00:08] PERSON confirmed (2/2) | score=0.755 | box=[38,71,239,239] | Brightness: 136 | Light: OFF[0m
+[0;32mI (10363) MAIN: [2026-05-17 10:00:09] PERSON confirmed (2/2) | score=0.829 | box=[62,68,239,239] | Brightness: 133 | Light: OFF[0m
+[0;32mI (10913) MAIN: [2026-05-17 10:00:10] PERSON confirmed (2/2) | score=0.843 | box=[49,73,239,239] | Brightness: 130 | Light: OFF[0m
+[0;32mI (11463) MAIN: [2026-05-17 10:00:10] PERSON confirmed (2/2) | score=0.805 | box=[5,73,239,239] | Brightness: 130 | Light: OFF[0m
+[0;32mI (12013) MAIN: [2026-05-17 10:00:11] PERSON confirmed (2/2) | score=0.871 | box=[54,75,239,239] | Brightness: 130 | Light: OFF[0m
+[0;32mI (12179) MAIN: Saved: det_20260508_100000_0034.jpg | score=0.871 | 2026-05-17 10:00:11[0m
+[0;32mI (12762) MAIN: [2026-05-17 10:00:11] PERSON confirmed (2/2) | score=0.857 | box=[19,77,239,239] | Brightness: 136 | Light: OFF[0m
+[0;32mI (13312) MAIN: [2026-05-17 10:00:12] PERSON confirmed (2/2) | score=0.765 | box=[39,78,239,239] | Brightness: 137 | Light: OFF[0m
+[0;32mI (13861) MAIN: [2026-05-17 10:00:12] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (14411) MAIN: [2026-05-17 10:00:13] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: OFF[0m
+[0;32mI (14961) MAIN: [2026-05-17 10:00:14] PERSON confirmed (2/2) | score=0.696 | box=[85,95,238,239] | Brightness: 120 | Light: OFF[0m
+[0;32mI (15511) MAIN: [2026-05-17 10:00:14] No person confirmed (2/2) | f1=Y f2=N | Brightness: 122 | Light: OFF[0m
+[0;32mI (16060) MAIN: [2026-05-17 10:00:15] No person confirmed (2/2) | f1=N f2=N | Brightness: 117 | Light: OFF[0m
+[0;32mI (16610) MAIN: [2026-05-17 10:00:15] PERSON confirmed (2/2) | score=0.643 | box=[91,98,235,239] | Brightness: 117 | Light: OFF[0m
+[0;32mI (16758) MAIN: Saved: det_20260508_100000_0035.jpg | score=0.643 | 2026-05-17 10:00:15[0m
+[0;32mI (17360) MAIN: [2026-05-17 10:00:16] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (17909) MAIN: [2026-05-17 10:00:17] No person confirmed (2/2) | f1=N f2=N | Brightness: 125 | Light: OFF[0m
+[0;32mI (18459) MAIN: [2026-05-17 10:00:17] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (19009) MAIN: [2026-05-17 10:00:18] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (19559) MAIN: [2026-05-17 10:00:18] No person confirmed (2/2) | f1=Y f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (20109) MAIN: [2026-05-17 10:00:19] PERSON confirmed (2/2) | score=0.810 | box=[0,128,117,239] | Brightness: 133 | Light: OFF[0m
+[0;32mI (20245) MAIN: Saved: det_20260508_100000_0036.jpg | score=0.810 | 2026-05-17 10:00:19[0m
+[0;32mI (20809) MAIN: [2026-05-17 10:00:19] PERSON confirmed (2/2) | score=0.871 | box=[43,79,239,239] | Brightness: 132 | Light: OFF[0m
+[0;32mI (21358) MAIN: [2026-05-17 10:00:20] PERSON confirmed (2/2) | score=0.795 | box=[80,43,239,239] | Brightness: 124 | Light: OFF[0m
+[0;32mI (21908) MAIN: [2026-05-17 10:00:21] PERSON confirmed (2/2) | score=0.765 | box=[82,47,239,239] | Brightness: 121 | Light: OFF[0m
+[0;32mI (22458) MAIN: [2026-05-17 10:00:21] No person confirmed (2/2) | f1=N f2=N | Brightness: 126 | Light: OFF[0m
+[0;32mI (23007) MAIN: [2026-05-17 10:00:22] No person confirmed (2/2) | f1=N f2=N | Brightness: 121 | Light: OFF[0m
+[0;32mI (23557) MAIN: [2026-05-17 10:00:22] No person confirmed (2/2) | f1=N f2=Y | Brightness: 127 | Light: OFF[0m
+[0;32mI (24107) MAIN: [2026-05-17 10:00:23] PERSON confirmed (2/2) | score=0.820 | box=[0,75,168,239] | Brightness: 129 | Light: OFF[0m
+[0;32mI (24250) MAIN: Saved: det_20260508_100000_0037.jpg | score=0.820 | 2026-05-17 10:00:23[0m
+[0;32mI (24807) MAIN: [2026-05-17 10:00:23] PERSON confirmed (2/2) | score=0.702 | box=[9,92,192,239] | Brightness: 137 | Light: OFF[0m
+[0;32mI (25357) MAIN: [2026-05-17 10:00:24] PERSON confirmed (2/2) | score=0.740 | box=[8,88,197,239] | Brightness: 135 | Light: OFF[0m
+[0;32mI (25907) MAIN: [2026-05-17 10:00:25] PERSON confirmed (2/2) | score=0.713 | box=[10,88,195,239] | Brightness: 135 | Light: OFF[0m
+[0;32mI (26457) MAIN: [2026-05-17 10:00:25] PERSON confirmed (2/2) | score=0.745 | box=[14,88,200,239] | Brightness: 134 | Light: OFF[0m
+[0;32mI (27006) MAIN: [2026-05-17 10:00:26] No person confirmed (2/2) | f1=N f2=N | Brightness: 138 | Light: OFF[0m
+[0;32mI (27556) MAIN: [2026-05-17 10:00:26] No person confirmed (2/2) | f1=N f2=N | Brightness: 140 | Light: OFF[0m
+[0;32mI (28105) MAIN: [2026-05-17 10:00:27] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (28655) MAIN: [2026-05-17 10:00:27] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (29205) MAIN: [2026-05-17 10:00:28] No person confirmed (2/2) | f1=N f2=N | Brightness: 109 | Light: OFF[0m
+[0;32mI (29755) MAIN: [2026-05-17 10:00:28] No person confirmed (2/2) | f1=N f2=N | Brightness: 125 | Light: OFF[0m
+[0;32mI (30304) MAIN: [2026-05-17 10:00:29] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: OFF[0m
+[0;32mI (30855) MAIN: [2026-05-17 10:00:29] PERSON confirmed (2/2) | score=0.713 | box=[0,0,135,239] | Brightness: 125 | Light: OFF[0m
+[0;32mI (31002) MAIN: Saved: det_20260508_100000_0038.jpg | score=0.713 | 2026-05-17 10:00:29[0m
+[0;32mI (31554) MAIN: [2026-05-17 10:00:30] PERSON confirmed (2/2) | score=0.650 | box=[0,0,135,239] | Brightness: 126 | Light: OFF[0m
+[0;32mI (32104) MAIN: [2026-05-17 10:00:31] No person confirmed (2/2) | f1=Y f2=N | Brightness: 127 | Light: OFF[0m
+[0;32mI (32653) MAIN: [2026-05-17 10:00:31] No person confirmed (2/2) | f1=N f2=N | Brightness: 126 | Light: OFF[0m
+[0;32mI (33073) LightController: Darkness detected -> Light ON | Brightness: 99[0m
+[0;32mI (33204) MAIN: [2026-05-17 10:00:32] No person confirmed (2/2) | f1=N f2=N | Brightness: 99 | Light: ON[0m
+[0;32mI (33241) LightController: Brightness normal -> starting OFF timer[0m
+[0;32mI (33753) MAIN: [2026-05-17 10:00:32] No person confirmed (2/2) | f1=N f2=N | Brightness: 99 | Light: ON[0m
+[0;32mI (33756) LightController: Brightness normal -> starting OFF timer[0m
+[0;32mI (34303) MAIN: [2026-05-17 10:00:33] No person confirmed (2/2) | f1=N f2=N | Brightness: 106 | Light: ON[0m
+[0;32mI (34853) MAIN: [2026-05-17 10:00:33] No person confirmed (2/2) | f1=N f2=N | Brightness: 103 | Light: ON[0m
+[0;32mI (35403) MAIN: [2026-05-17 10:00:34] No person confirmed (2/2) | f1=N f2=N | Brightness: 98 | Light: ON[0m
+[0;32mI (35405) LightController: Brightness normal -> starting OFF timer[0m
+[0;32mI (35590) LightController: Brightness normal -> starting OFF timer[0m
+[0;32mI (35952) MAIN: [2026-05-17 10:00:35] No person confirmed (2/2) | f1=N f2=N | Brightness: 189 | Light: ON[0m
+[0;32mI (36502) MAIN: [2026-05-17 10:00:35] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: ON[0m
+[0;32mI (37052) MAIN: [2026-05-17 10:00:36] No person confirmed (2/2) | f1=N f2=N | Brightness: 140 | Light: ON[0m
+[0;32mI (37602) MAIN: [2026-05-17 10:00:36] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: ON[0m
+[0;32mI (38151) MAIN: [2026-05-17 10:00:37] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: ON[0m
+[0;32mI (38701) MAIN: [2026-05-17 10:00:37] No person confirmed (2/2) | f1=N f2=N | Brightness: 159 | Light: ON[0m
+[0;32mI (39251) MAIN: [2026-05-17 10:00:38] PERSON confirmed (2/2) | score=0.667 | box=[0,47,239,239] | Brightness: 132 | Light: ON[0m
+[0;32mI (39399) MAIN: Saved: det_20260508_100000_0039.jpg | score=0.667 | 2026-05-17 10:00:38[0m
+[0;32mI (39951) MAIN: [2026-05-17 10:00:39] PERSON confirmed (2/2) | score=0.852 | box=[0,36,239,239] | Brightness: 128 | Light: ON[0m
+[0;32mI (40501) MAIN: [2026-05-17 10:00:39] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: ON[0m
+[0;32mI (40638) LightController: 5 seconds completed -> Light OFF[0m
+[0;32mI (41051) MAIN: [2026-05-17 10:00:40] PERSON confirmed (2/2) | score=0.960 | box=[1,0,239,239] | Brightness: 128 | Light: OFF[0m
+[0;32mI (41601) MAIN: [2026-05-17 10:00:40] PERSON confirmed (2/2) | score=0.888 | box=[8,18,239,239] | Brightness: 132 | Light: OFF[0m
+[0;32mI (42151) MAIN: [2026-05-17 10:00:41] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (42700) MAIN: [2026-05-17 10:00:41] PERSON confirmed (2/2) | score=0.960 | box=[4,0,239,239] | Brightness: 129 | Light: OFF[0m
+[0;32mI (42855) MAIN: Saved: det_20260508_100000_0040.jpg | score=0.960 | 2026-05-17 10:00:41[0m
+[0;32mI (43450) MAIN: [2026-05-17 10:00:42] PERSON confirmed (2/2) | score=0.952 | box=[4,0,239,239] | Brightness: 128 | Light: OFF[0m
+[0;32mI (44000) MAIN: [2026-05-17 10:00:43] PERSON confirmed (2/2) | score=0.960 | box=[2,0,239,239] | Brightness: 129 | Light: OFF[0m
+[0;32mI (44550) MAIN: [2026-05-17 10:00:43] PERSON confirmed (2/2) | score=0.960 | box=[4,3,239,239] | Brightness: 130 | Light: OFF[0m
+[0;32mI (45099) MAIN: [2026-05-17 10:00:44] PERSON confirmed (2/2) | score=0.919 | box=[15,19,239,239] | Brightness: 127 | Light: OFF[0m
+[0;32mI (45649) MAIN: [2026-05-17 10:00:44] PERSON confirmed (2/2) | score=0.968 | box=[0,16,239,239] | Brightness: 126 | Light: OFF[0m
+[0;32mI (46199) MAIN: [2026-05-17 10:00:45] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (46748) MAIN: [2026-05-17 10:00:45] PERSON confirmed (2/2) | score=0.875 | box=[25,52,239,239] | Brightness: 133 | Light: OFF[0m
+[0;32mI (46892) MAIN: Saved: det_20260508_100000_0041.jpg | score=0.875 | 2026-05-17 10:00:45[0m
+[0;32mI (47448) MAIN: [2026-05-17 10:00:46] PERSON confirmed (2/2) | score=0.935 | box=[28,41,239,239] | Brightness: 128 | Light: OFF[0m
+[0;32mI (47998) MAIN: [2026-05-17 10:00:47] No person confirmed (2/2) | f1=Y f2=N | Brightness: 144 | Light: OFF[0m
+[0;32mI (48548) MAIN: [2026-05-17 10:00:47] PERSON confirmed (2/2) | score=0.956 | box=[0,42,239,239] | Brightness: 126 | Light: OFF[0m
+[0;32mI (49098) MAIN: [2026-05-17 10:00:48] PERSON confirmed (2/2) | score=0.935 | box=[0,35,239,239] | Brightness: 128 | Light: OFF[0m
+[0;32mI (49647) MAIN: [2026-05-17 10:00:48] PERSON confirmed (2/2) | score=0.960 | box=[0,28,239,239] | Brightness: 132 | Light: OFF[0m
+[0;32mI (50197) MAIN: [2026-05-17 10:00:49] No person confirmed (2/2) | f1=N f2=N | Brightness: 138 | Light: OFF[0m
+[0;32mI (50747) MAIN: [2026-05-17 10:00:49] PERSON confirmed (2/2) | score=0.791 | box=[48,0,239,239] | Brightness: 137 | Light: OFF[0m
+[0;32mI (50916) MAIN: Saved: det_20260508_100000_0042.jpg | score=0.791 | 2026-05-17 10:00:49[0m
+[0;32mI (51497) MAIN: [2026-05-17 10:00:50] PERSON confirmed (2/2) | score=0.944 | box=[0,2,239,239] | Brightness: 139 | Light: OFF[0m
+[0;32mI (52046) MAIN: [2026-05-17 10:00:51] No person confirmed (2/2) | f1=Y f2=N | Brightness: 141 | Light: OFF[0m
+[0;32mI (52596) MAIN: [2026-05-17 10:00:51] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (53146) MAIN: [2026-05-17 10:00:52] No person confirmed (2/2) | f1=Y f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (53695) MAIN: [2026-05-17 10:00:52] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (54245) MAIN: [2026-05-17 10:00:53] No person confirmed (2/2) | f1=N f2=N | Brightness: 133 | Light: OFF[0m
+[0;32mI (54795) MAIN: [2026-05-17 10:00:53] No person confirmed (2/2) | f1=N f2=Y | Brightness: 134 | Light: OFF[0m
+[0;32mI (55345) MAIN: [2026-05-17 10:00:54] PERSON confirmed (2/2) | score=0.944 | box=[0,0,233,239] | Brightness: 137 | Light: OFF[0m
+[0;32mI (55510) MAIN: Saved: det_20260508_100000_0043.jpg | score=0.944 | 2026-05-17 10:00:54[0m
+[0;32mI (56095) MAIN: [2026-05-17 10:00:55] PERSON confirmed (2/2) | score=0.667 | box=[0,5,239,239] | Brightness: 135 | Light: OFF[0m
+[0;32mI (56644) MAIN: [2026-05-17 10:00:55] PERSON confirmed (2/2) | score=0.702 | box=[52,0,228,239] | Brightness: 135 | Light: OFF[0m
+[0;32mI (57194) MAIN: [2026-05-17 10:00:56] PERSON confirmed (2/2) | score=0.740 | box=[56,0,235,239] | Brightness: 135 | Light: OFF[0m
+[0;32mI (57744) MAIN: [2026-05-17 10:00:56] PERSON confirmed (2/2) | score=0.776 | box=[0,8,235,239] | Brightness: 137 | Light: OFF[0m
+[0;32mI (58293) MAIN: [2026-05-17 10:00:57] No person confirmed (2/2) | f1=Y f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (58844) MAIN: [2026-05-17 10:00:57] PERSON confirmed (2/2) | score=0.875 | box=[54,0,239,239] | Brightness: 138 | Light: OFF[0m
+[0;32mI (59020) MAIN: Saved: det_20260508_100000_0044.jpg | score=0.875 | 2026-05-17 10:00:57[0m
+[0;32mI (59593) MAIN: [2026-05-17 10:00:58] No person confirmed (2/2) | f1=N f2=Y | Brightness: 136 | Light: OFF[0m
+[0;32mI (60143) MAIN: [2026-05-17 10:00:59] PERSON confirmed (2/2) | score=0.612 | box=[62,1,233,239] | Brightness: 135 | Light: OFF[0m
+[0;32mI (60693) MAIN: [2026-05-17 10:00:59] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (61243) MAIN: [2026-05-17 10:01:00] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (61793) MAIN: [2026-05-17 10:01:00] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (62342) MAIN: [2026-05-17 10:01:01] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (62892) MAIN: [2026-05-17 10:01:02] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (63442) MAIN: [2026-05-17 10:01:02] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (63992) MAIN: [2026-05-17 10:01:03] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (64541) MAIN: [2026-05-17 10:01:03] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (65091) MAIN: [2026-05-17 10:01:04] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (65641) MAIN: [2026-05-17 10:01:04] PERSON confirmed (2/2) | score=0.906 | box=[0,0,225,239] | Brightness: 153 | Light: OFF[0m
+[0;32mI (65818) MAIN: Saved: det_20260508_100000_0045.jpg | score=0.906 | 2026-05-17 10:01:04[0m
+[0;32mI (66390) MAIN: [2026-05-17 10:01:05] No person confirmed (2/2) | f1=Y f2=N | Brightness: 147 | Light: OFF[0m
+[0;32mI (66940) MAIN: [2026-05-17 10:01:06] PERSON confirmed (2/2) | score=0.805 | box=[0,0,217,239] | Brightness: 142 | Light: OFF[0m
+[0;32mI (67490) MAIN: [2026-05-17 10:01:06] No person confirmed (2/2) | f1=N f2=Y | Brightness: 141 | Light: OFF[0m
+[0;32mI (68040) MAIN: [2026-05-17 10:01:07] PERSON confirmed (2/2) | score=0.718 | box=[0,0,221,239] | Brightness: 143 | Light: OFF[0m
+[0;32mI (68589) MAIN: [2026-05-17 10:01:07] No person confirmed (2/2) | f1=N f2=N | Brightness: 150 | Light: OFF[0m
+[0;32mI (69139) MAIN: [2026-05-17 10:01:08] No person confirmed (2/2) | f1=N f2=N | Brightness: 145 | Light: OFF[0m
+[0;32mI (69689) MAIN: [2026-05-17 10:01:08] No person confirmed (2/2) | f1=N f2=N | Brightness: 138 | Light: OFF[0m
+[0;32mI (70238) MAIN: [2026-05-17 10:01:09] No person confirmed (2/2) | f1=N f2=N | Brightness: 139 | Light: OFF[0m
+[0;32mI (70788) MAIN: [2026-05-17 10:01:09] No person confirmed (2/2) | f1=N f2=N | Brightness: 139 | Light: OFF[0m
+[0;32mI (71338) MAIN: [2026-05-17 10:01:10] No person confirmed (2/2) | f1=N f2=N | Brightness: 141 | Light: OFF[0m
+[0;32mI (71888) MAIN: [2026-05-17 10:01:11] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (72438) MAIN: [2026-05-17 10:01:11] No person confirmed (2/2) | f1=N f2=N | Brightness: 140 | Light: OFF[0m
+[0;32mI (72988) MAIN: [2026-05-17 10:01:12] No person confirmed (2/2) | f1=N f2=N | Brightness: 119 | Light: OFF[0m
+[0;32mI (73538) MAIN: [2026-05-17 10:01:12] No person confirmed (2/2) | f1=Y f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (74088) MAIN: [2026-05-17 10:01:13] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (74638) MAIN: [2026-05-17 10:01:13] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (75187) MAIN: [2026-05-17 10:01:14] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (75737) MAIN: [2026-05-17 10:01:14] No person confirmed (2/2) | f1=N f2=N | Brightness: 144 | Light: OFF[0m
+[0;32mI (76287) MAIN: [2026-05-17 10:01:15] No person confirmed (2/2) | f1=N f2=Y | Brightness: 140 | Light: OFF[0m
+[0;32mI (76837) MAIN: [2026-05-17 10:01:15] PERSON confirmed (2/2) | score=0.964 | box=[0,0,235,239] | Brightness: 139 | Light: OFF[0m
+[0;32mI (76999) MAIN: Saved: det_20260508_100000_0046.jpg | score=0.964 | 2026-05-17 10:01:15[0m
+[0;32mI (77587) MAIN: [2026-05-17 10:01:16] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (78136) MAIN: [2026-05-17 10:01:17] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (78686) MAIN: [2026-05-17 10:01:17] No person confirmed (2/2) | f1=N f2=N | Brightness: 140 | Light: OFF[0m
+[0;32mI (79236) MAIN: [2026-05-17 10:01:18] No person confirmed (2/2) | f1=N f2=N | Brightness: 133 | Light: OFF[0m
+[0;32mI (79786) MAIN: [2026-05-17 10:01:18] No person confirmed (2/2) | f1=N f2=N | Brightness: 140 | Light: OFF[0m
+[0;32mI (80335) MAIN: [2026-05-17 10:01:19] No person confirmed (2/2) | f1=N f2=Y | Brightness: 141 | Light: OFF[0m
+[0;32mI (80884) MAIN: [2026-05-17 10:01:20] No person confirmed (2/2) | f1=N f2=N | Brightness: 141 | Light: OFF[0m
+[0;32mI (81434) MAIN: [2026-05-17 10:01:20] No person confirmed (2/2) | f1=N f2=N | Brightness: 127 | Light: OFF[0m
+[0;32mI (81984) MAIN: [2026-05-17 10:01:21] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (82534) MAIN: [2026-05-17 10:01:21] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (83084) MAIN: [2026-05-17 10:01:22] PERSON confirmed (2/2) | score=0.927 | box=[0,0,218,239] | Brightness: 155 | Light: OFF[0m
+[0;32mI (83240) MAIN: Saved: det_20260508_100000_0047.jpg | score=0.927 | 2026-05-17 10:01:22[0m
+[0;32mI (83784) MAIN: [2026-05-17 10:01:22] No person confirmed (2/2) | f1=N f2=Y | Brightness: 157 | Light: OFF[0m
+[0;32mI (84334) MAIN: [2026-05-17 10:01:23] PERSON confirmed (2/2) | score=0.952 | box=[0,5,239,239] | Brightness: 148 | Light: OFF[0m
+[0;32mI (84884) MAIN: [2026-05-17 10:01:24] PERSON confirmed (2/2) | score=0.944 | box=[0,3,239,239] | Brightness: 145 | Light: OFF[0m
+[0;32mI (85433) MAIN: [2026-05-17 10:01:24] No person confirmed (2/2) | f1=N f2=Y | Brightness: 141 | Light: OFF[0m
+[0;32mI (85983) MAIN: [2026-05-17 10:01:25] No person confirmed (2/2) | f1=N f2=Y | Brightness: 137 | Light: OFF[0m
+[0;32mI (86533) MAIN: [2026-05-17 10:01:25] No person confirmed (2/2) | f1=N f2=Y | Brightness: 135 | Light: OFF[0m
+[0;32mI (87082) MAIN: [2026-05-17 10:01:26] PERSON confirmed (2/2) | score=0.893 | box=[0,39,239,239] | Brightness: 133 | Light: OFF[0m
+[0;32mI (87248) MAIN: Saved: det_20260508_100000_0048.jpg | score=0.893 | 2026-05-17 10:01:26[0m
+[0;32mI (87832) MAIN: [2026-05-17 10:01:26] No person confirmed (2/2) | f1=Y f2=N | Brightness: 199 | Light: OFF[0m
+[0;32mI (88382) MAIN: [2026-05-17 10:01:27] No person confirmed (2/2) | f1=N f2=N | Brightness: 106 | Light: OFF[0m
+[0;32mI (88931) MAIN: [2026-05-17 10:01:28] PERSON confirmed (2/2) | score=0.625 | box=[0,135,199,239] | Brightness: 149 | Light: OFF[0m
+[0;32mI (89481) MAIN: [2026-05-17 10:01:28] No person confirmed (2/2) | f1=N f2=N | Brightness: 120 | Light: OFF[0m
+[0;32mI (90032) MAIN: [2026-05-17 10:01:29] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (90581) MAIN: [2026-05-17 10:01:29] No person confirmed (2/2) | f1=Y f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (91131) MAIN: [2026-05-17 10:01:30] No person confirmed (2/2) | f1=N f2=N | Brightness: 131 | Light: OFF[0m
+[0;32mI (91681) MAIN: [2026-05-17 10:01:30] No person confirmed (2/2) | f1=N f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (92231) MAIN: [2026-05-17 10:01:31] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (92781) MAIN: [2026-05-17 10:01:31] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (93330) MAIN: [2026-05-17 10:01:32] No person confirmed (2/2) | f1=N f2=Y | Brightness: 132 | Light: OFF[0m
+[0;32mI (93880) MAIN: [2026-05-17 10:01:33] PERSON confirmed (2/2) | score=0.862 | box=[18,6,239,239] | Brightness: 132 | Light: OFF[0m
+[0;32mI (94053) MAIN: Saved: det_20260508_100000_0049.jpg | score=0.862 | 2026-05-17 10:01:33[0m
+[0;32mI (94630) MAIN: [2026-05-17 10:01:33] PERSON confirmed (2/2) | score=0.923 | box=[14,8,239,239] | Brightness: 131 | Light: OFF[0m
+[0;32mI (95179) MAIN: [2026-05-17 10:01:34] PERSON confirmed (2/2) | score=0.871 | box=[1,7,239,239] | Brightness: 133 | Light: OFF[0m
+[0;32mI (95729) MAIN: [2026-05-17 10:01:34] PERSON confirmed (2/2) | score=0.875 | box=[1,1,239,239] | Brightness: 131 | Light: OFF[0m
+[0;32mI (96279) MAIN: [2026-05-17 10:01:35] No person confirmed (2/2) | f1=N f2=Y | Brightness: 132 | Light: OFF[0m
+[0;32mI (96829) MAIN: [2026-05-17 10:01:35] PERSON confirmed (2/2) | score=0.834 | box=[6,4,239,239] | Brightness: 132 | Light: OFF[0m
+[0;32mI (97379) MAIN: [2026-05-17 10:01:36] PERSON confirmed (2/2) | score=0.897 | box=[9,0,239,239] | Brightness: 132 | Light: OFF[0m
+[0;32mI (97548) MAIN: Saved: det_20260508_100000_0050.jpg | score=0.897 | 2026-05-17 10:01:36[0m
+[0;32mI (98128) MAIN: [2026-05-17 10:01:37] PERSON confirmed (2/2) | score=0.919 | box=[11,1,239,239] | Brightness: 131 | Light: OFF[0m
+[0;32mI (98678) MAIN: [2026-05-17 10:01:37] PERSON confirmed (2/2) | score=0.906 | box=[14,0,239,239] | Brightness: 132 | Light: OFF[0m
+[0;32mI (99228) MAIN: [2026-05-17 10:01:38] PERSON confirmed (2/2) | score=0.897 | box=[7,0,239,239] | Brightness: 138 | Light: OFF[0m
+[0;32mI (99778) MAIN: [2026-05-17 10:01:38] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (100328) MAIN: [2026-05-17 10:01:39] PERSON confirmed (2/2) | score=0.935 | box=[7,0,239,239] | Brightness: 137 | Light: OFF[0m
+[0;32mI (100877) MAIN: [2026-05-17 10:01:40] PERSON confirmed (2/2) | score=0.952 | box=[5,0,239,239] | Brightness: 135 | Light: OFF[0m
+[0;32mI (101049) MAIN: Saved: det_20260508_100000_0051.jpg | score=0.952 | 2026-05-17 10:01:40[0m
+[0;32mI (101627) MAIN: [2026-05-17 10:01:40] PERSON confirmed (2/2) | score=0.948 | box=[7,0,239,239] | Brightness: 135 | Light: OFF[0m
+[0;32mI (102177) MAIN: [2026-05-17 10:01:41] PERSON confirmed (2/2) | score=0.931 | box=[4,0,239,239] | Brightness: 136 | Light: OFF[0m
+[0;32mI (102727) MAIN: [2026-05-17 10:01:41] PERSON confirmed (2/2) | score=0.931 | box=[4,0,239,239] | Brightness: 136 | Light: OFF[0m
+[0;32mI (103276) MAIN: [2026-05-17 10:01:42] PERSON confirmed (2/2) | score=0.948 | box=[7,0,239,239] | Brightness: 135 | Light: OFF[0m
+[0;32mI (103826) MAIN: [2026-05-17 10:01:42] No person confirmed (2/2) | f1=Y f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (104376) MAIN: [2026-05-17 10:01:43] No person confirmed (2/2) | f1=Y f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (104926) MAIN: [2026-05-17 10:01:44] PERSON confirmed (2/2) | score=0.931 | box=[1,0,239,239] | Brightness: 136 | Light: OFF[0m
+[0;32mI (105097) MAIN: Saved: det_20260508_100000_0052.jpg | score=0.931 | 2026-05-17 10:01:44[0m
+[0;32mI (105675) MAIN: [2026-05-17 10:01:44] PERSON confirmed (2/2) | score=0.940 | box=[1,0,239,239] | Brightness: 136 | Light: OFF[0m
+[0;32mI (106225) MAIN: [2026-05-17 10:01:45] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (106775) MAIN: [2026-05-17 10:01:45] No person confirmed (2/2) | f1=Y f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (107325) MAIN: [2026-05-17 10:01:46] No person confirmed (2/2) | f1=Y f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (107875) MAIN: [2026-05-17 10:01:47] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (108424) MAIN: [2026-05-17 10:01:47] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (108974) MAIN: [2026-05-17 10:01:48] No person confirmed (2/2) | f1=Y f2=N | Brightness: 127 | Light: OFF[0m
+[0;32mI (109523) MAIN: [2026-05-17 10:01:48] No person confirmed (2/2) | f1=N f2=N | Brightness: 133 | Light: OFF[0m
+[0;32mI (110073) MAIN: [2026-05-17 10:01:49] PERSON confirmed (2/2) | score=0.944 | box=[0,41,239,239] | Brightness: 135 | Light: OFF[0m
+[0;32mI (110238) MAIN: Saved: det_20260508_100000_0053.jpg | score=0.944 | 2026-05-17 10:01:49[0m
+[0;32mI (110823) MAIN: [2026-05-17 10:01:49] No person confirmed (2/2) | f1=Y f2=N | Brightness: 140 | Light: OFF[0m
+[0;32mI (111373) MAIN: [2026-05-17 10:01:50] No person confirmed (2/2) | f1=N f2=N | Brightness: 141 | Light: OFF[0m
+[0;32mI (111923) MAIN: [2026-05-17 10:01:51] No person confirmed (2/2) | f1=N f2=Y | Brightness: 139 | Light: OFF[0m
+[0;32mI (112472) MAIN: [2026-05-17 10:01:51] PERSON confirmed (2/2) | score=0.893 | box=[10,2,239,239] | Brightness: 132 | Light: OFF[0m
+[0;32mI (113023) MAIN: [2026-05-17 10:01:52] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (113572) MAIN: [2026-05-17 10:01:52] No person confirmed (2/2) | f1=N f2=N | Brightness: 133 | Light: OFF[0m
+[0;32mI (114122) MAIN: [2026-05-17 10:01:53] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (114671) MAIN: [2026-05-17 10:01:53] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (115221) MAIN: [2026-05-17 10:01:54] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: OFF[0m
+[0;32mI (115771) MAIN: [2026-05-17 10:01:54] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (116321) MAIN: [2026-05-17 10:01:55] No person confirmed (2/2) | f1=N f2=N | Brightness: 122 | Light: OFF[0m
+[0;32mI (116870) MAIN: [2026-05-17 10:01:55] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (117420) MAIN: [2026-05-17 10:01:56] No person confirmed (2/2) | f1=N f2=N | Brightness: 198 | Light: OFF[0m
+[0;32mI (117970) MAIN: [2026-05-17 10:01:57] No person confirmed (2/2) | f1=N f2=Y | Brightness: 132 | Light: OFF[0m
+[0;32mI (118519) MAIN: [2026-05-17 10:01:57] No person confirmed (2/2) | f1=N f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (119069) MAIN: [2026-05-17 10:01:58] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (119619) MAIN: [2026-05-17 10:01:58] No person confirmed (2/2) | f1=N f2=N | Brightness: 133 | Light: OFF[0m
+[0;32mI (120169) MAIN: [2026-05-17 10:01:59] No person confirmed (2/2) | f1=N f2=N | Brightness: 140 | Light: OFF[0m
+[0;32mI (120719) MAIN: [2026-05-17 10:01:59] No person confirmed (2/2) | f1=N f2=N | Brightness: 148 | Light: OFF[0m
+[0;32mI (121268) MAIN: [2026-05-17 10:02:00] No person confirmed (2/2) | f1=N f2=N | Brightness: 161 | Light: OFF[0m
+[0;32mI (121818) MAIN: [2026-05-17 10:02:00] No person confirmed (2/2) | f1=N f2=N | Brightness: 157 | Light: OFF[0m
+[0;32mI (122368) MAIN: [2026-05-17 10:02:01] No person confirmed (2/2) | f1=N f2=N | Brightness: 140 | Light: OFF[0m
+[0;32mI (122917) MAIN: [2026-05-17 10:02:02] No person confirmed (2/2) | f1=N f2=N | Brightness: 121 | Light: OFF[0m
+[0;32mI (123467) MAIN: [2026-05-17 10:02:02] No person confirmed (2/2) | f1=N f2=N | Brightness: 122 | Light: OFF[0m
+[0;32mI (124017) MAIN: [2026-05-17 10:02:03] No person confirmed (2/2) | f1=N f2=N | Brightness: 121 | Light: OFF[0m
+[0;32mI (124567) MAIN: [2026-05-17 10:02:03] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (125117) MAIN: [2026-05-17 10:02:04] No person confirmed (2/2) | f1=N f2=N | Brightness: 120 | Light: OFF[0m
+[0;32mI (125666) MAIN: [2026-05-17 10:02:04] No person confirmed (2/2) | f1=N f2=N | Brightness: 140 | Light: OFF[0m
+[0;32mI (126216) MAIN: [2026-05-17 10:02:05] No person confirmed (2/2) | f1=N f2=N | Brightness: 146 | Light: OFF[0m
+[0;32mI (126766) MAIN: [2026-05-17 10:02:05] No person confirmed (2/2) | f1=N f2=N | Brightness: 150 | Light: OFF[0m
+[0;32mI (127316) MAIN: [2026-05-17 10:02:06] No person confirmed (2/2) | f1=N f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (127866) MAIN: [2026-05-17 10:02:06] No person confirmed (2/2) | f1=N f2=N | Brightness: 165 | Light: OFF[0m
+[0;32mI (128415) MAIN: [2026-05-17 10:02:07] No person confirmed (2/2) | f1=N f2=N | Brightness: 173 | Light: OFF[0m
+[0;32mI (128965) MAIN: [2026-05-17 10:02:08] No person confirmed (2/2) | f1=Y f2=N | Brightness: 148 | Light: OFF[0m
+[0;32mI (129515) MAIN: [2026-05-17 10:02:08] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (130065) MAIN: [2026-05-17 10:02:09] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: OFF[0m
+[0;32mI (130614) MAIN: [2026-05-17 10:02:09] No person confirmed (2/2) | f1=N f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (131164) MAIN: [2026-05-17 10:02:10] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (131714) MAIN: [2026-05-17 10:02:10] No person confirmed (2/2) | f1=N f2=N | Brightness: 140 | Light: OFF[0m
+[0;32mI (132264) MAIN: [2026-05-17 10:02:11] No person confirmed (2/2) | f1=N f2=N | Brightness: 141 | Light: OFF[0m
+[0;32mI (132813) MAIN: [2026-05-17 10:02:11] No person confirmed (2/2) | f1=N f2=N | Brightness: 138 | Light: OFF[0m
+[0;32mI (133363) MAIN: [2026-05-17 10:02:12] No person confirmed (2/2) | f1=N f2=N | Brightness: 138 | Light: OFF[0m
+[0;32mI (133913) MAIN: [2026-05-17 10:02:13] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (134463) MAIN: [2026-05-17 10:02:13] No person confirmed (2/2) | f1=N f2=N | Brightness: 133 | Light: OFF[0m
+[0;32mI (135013) MAIN: [2026-05-17 10:02:14] No person confirmed (2/2) | f1=N f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (135562) MAIN: [2026-05-17 10:02:14] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (136112) MAIN: [2026-05-17 10:02:15] No person confirmed (2/2) | f1=N f2=N | Brightness: 127 | Light: OFF[0m
+[0;32mI (136662) MAIN: [2026-05-17 10:02:15] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (137212) MAIN: [2026-05-17 10:02:16] No person confirmed (2/2) | f1=N f2=N | Brightness: 161 | Light: OFF[0m
+[0;32mI (137762) MAIN: [2026-05-17 10:02:16] No person confirmed (2/2) | f1=Y f2=N | Brightness: 171 | Light: OFF[0m
+[0;32mI (138311) MAIN: [2026-05-17 10:02:17] No person confirmed (2/2) | f1=N f2=N | Brightness: 127 | Light: OFF[0m
+[0;32mI (138861) MAIN: [2026-05-17 10:02:17] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (139411) MAIN: [2026-05-17 10:02:18] No person confirmed (2/2) | f1=N f2=N | Brightness: 140 | Light: OFF[0m
+[0;32mI (139961) MAIN: [2026-05-17 10:02:19] No person confirmed (2/2) | f1=N f2=N | Brightness: 139 | Light: OFF[0m
+[0;32mI (140510) MAIN: [2026-05-17 10:02:19] No person confirmed (2/2) | f1=N f2=N | Brightness: 141 | Light: OFF[0m
+[0;32mI (141061) MAIN: [2026-05-17 10:02:20] No person confirmed (2/2) | f1=Y f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (141610) MAIN: [2026-05-17 10:02:20] No person confirmed (2/2) | f1=N f2=N | Brightness: 144 | Light: OFF[0m
+[0;32mI (142161) MAIN: [2026-05-17 10:02:21] No person confirmed (2/2) | f1=N f2=N | Brightness: 156 | Light: OFF[0m
+[0;32mI (142710) MAIN: [2026-05-17 10:02:21] No person confirmed (2/2) | f1=N f2=Y | Brightness: 152 | Light: OFF[0m
+[0;32mI (143260) MAIN: [2026-05-17 10:02:22] No person confirmed (2/2) | f1=N f2=Y | Brightness: 130 | Light: OFF[0m
+[0;32mI (143810) MAIN: [2026-05-17 10:02:22] No person confirmed (2/2) | f1=N f2=Y | Brightness: 136 | Light: OFF[0m
+[0;32mI (144359) MAIN: [2026-05-17 10:02:23] PERSON confirmed (2/2) | score=0.776 | box=[0,0,238,239] | Brightness: 130 | Light: OFF[0m
+[0;32mI (144512) MAIN: Saved: det_20260508_100000_0054.jpg | score=0.776 | 2026-05-17 10:02:23[0m
+[0;32mI (145109) MAIN: [2026-05-17 10:02:24] PERSON confirmed (2/2) | score=0.906 | box=[21,0,239,239] | Brightness: 140 | Light: OFF[0m
+[0;32mI (145659) MAIN: [2026-05-17 10:02:24] PERSON confirmed (2/2) | score=0.906 | box=[24,0,239,239] | Brightness: 137 | Light: OFF[0m
+[0;32mI (146209) MAIN: [2026-05-17 10:02:25] PERSON confirmed (2/2) | score=0.843 | box=[3,0,239,239] | Brightness: 138 | Light: OFF[0m
+[0;32mI (146758) MAIN: [2026-05-17 10:02:25] PERSON confirmed (2/2) | score=0.760 | box=[37,0,239,239] | Brightness: 139 | Light: OFF[0m
+[0;32mI (147308) MAIN: [2026-05-17 10:02:26] PERSON confirmed (2/2) | score=0.862 | box=[39,0,239,239] | Brightness: 141 | Light: OFF[0m
+[0;32mI (147858) MAIN: [2026-05-17 10:02:26] No person confirmed (2/2) | f1=N f2=Y | Brightness: 140 | Light: OFF[0m
+[0;32mI (148408) MAIN: [2026-05-17 10:02:27] PERSON confirmed (2/2) | score=0.696 | box=[6,0,239,239] | Brightness: 138 | Light: OFF[0m
+[0;32mI (148579) MAIN: Saved: det_20260508_100000_0055.jpg | score=0.696 | 2026-05-17 10:02:27[0m
+[0;32mI (149158) MAIN: [2026-05-17 10:02:28] PERSON confirmed (2/2) | score=0.791 | box=[32,0,239,239] | Brightness: 139 | Light: OFF[0m
+[0;32mI (149707) MAIN: [2026-05-17 10:02:28] PERSON confirmed (2/2) | score=0.862 | box=[4,0,239,239] | Brightness: 139 | Light: OFF[0m
+[0;32mI (150257) MAIN: [2026-05-17 10:02:29] No person confirmed (2/2) | f1=N f2=N | Brightness: 139 | Light: OFF[0m
+[0;32mI (150807) MAIN: [2026-05-17 10:02:29] PERSON confirmed (2/2) | score=0.795 | box=[1,0,239,239] | Brightness: 137 | Light: OFF[0m
+[0;32mI (151357) MAIN: [2026-05-17 10:02:30] No person confirmed (2/2) | f1=N f2=Y | Brightness: 140 | Light: OFF[0m
+[0;32mI (151906) MAIN: [2026-05-17 10:02:31] PERSON confirmed (2/2) | score=0.771 | box=[28,0,239,239] | Brightness: 142 | Light: OFF[0m
+[0;32mI (152075) MAIN: Saved: det_20260508_100000_0056.jpg | score=0.771 | 2026-05-17 10:02:31[0m
+[0;32mI (152656) MAIN: [2026-05-17 10:02:31] No person confirmed (2/2) | f1=N f2=Y | Brightness: 135 | Light: OFF[0m
+[0;32mI (153206) MAIN: [2026-05-17 10:02:32] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (153756) MAIN: [2026-05-17 10:02:32] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (154305) MAIN: [2026-05-17 10:02:33] No person confirmed (2/2) | f1=N f2=Y | Brightness: 136 | Light: OFF[0m
+[0;32mI (154855) MAIN: [2026-05-17 10:02:33] PERSON confirmed (2/2) | score=0.862 | box=[1,0,239,239] | Brightness: 135 | Light: OFF[0m
+[0;32mI (155405) MAIN: [2026-05-17 10:02:34] No person confirmed (2/2) | f1=N f2=N | Brightness: 131 | Light: OFF[0m
+[0;32mI (155955) MAIN: [2026-05-17 10:02:35] No person confirmed (2/2) | f1=N f2=N | Brightness: 131 | Light: OFF[0m
+[0;32mI (156505) MAIN: [2026-05-17 10:02:35] PERSON confirmed (2/2) | score=0.829 | box=[8,0,239,239] | Brightness: 131 | Light: OFF[0m
+[0;32mI (156677) MAIN: Saved: det_20260508_100000_0057.jpg | score=0.829 | 2026-05-17 10:02:35[0m
+[0;32mI (157254) MAIN: [2026-05-17 10:02:36] PERSON confirmed (2/2) | score=0.661 | box=[37,0,239,239] | Brightness: 135 | Light: OFF[0m
+[0;32mI (157804) MAIN: [2026-05-17 10:02:36] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (158353) MAIN: [2026-05-17 10:02:37] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (158903) MAIN: [2026-05-17 10:02:38] No person confirmed (2/2) | f1=N f2=N | Brightness: 173 | Light: OFF[0m
+[0;32mI (159453) MAIN: [2026-05-17 10:02:38] No person confirmed (2/2) | f1=N f2=N | Brightness: 184 | Light: OFF[0m
+[0;32mI (160003) MAIN: [2026-05-17 10:02:39] No person confirmed (2/2) | f1=N f2=N | Brightness: 144 | Light: OFF[0m
+[0;32mI (160552) MAIN: [2026-05-17 10:02:39] No person confirmed (2/2) | f1=N f2=N | Brightness: 164 | Light: OFF[0m
+[0;32mI (161102) MAIN: [2026-05-17 10:02:40] No person confirmed (2/2) | f1=N f2=N | Brightness: 154 | Light: OFF[0m
+[0;32mI (161652) MAIN: [2026-05-17 10:02:40] No person confirmed (2/2) | f1=N f2=N | Brightness: 143 | Light: OFF[0m
+[0;32mI (162202) MAIN: [2026-05-17 10:02:41] No person confirmed (2/2) | f1=N f2=N | Brightness: 131 | Light: OFF[0m
+[0;32mI (808) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (816) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (817) cpu_start: Pro cpu start user code[0m
+[0;32mI (817) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (819) app_init: Application information:[0m
+[0;32mI (822) app_init: Project name:     object_detect[0m
+[0;32mI (827) app_init: App version:      v0.9.4-255-g1681a1c-dirty[0m
+[0;32mI (832) app_init: Compile time:     May 17 2026 12:05:09[0m
+[0;32mI (837) app_init: ELF file SHA256:  940ab98e6...[0m
+[0;32mI (842) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (846) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (849) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (853) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (857) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (863) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (869) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (874) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (880) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (892) spi_flash: detected chip: boya[0m
+[0;32mI (895) spi_flash: flash io: qio[0m
+[0;33mW (898) spi_flash: Detected size(16384k) larger than the size in the binary image header(8192k). Using the size in the binary image header.[0m
+[0;32mI (910) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (916) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (923) main_task: Started on CPU0[0m
+[0;32mI (926) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (934) main_task: Calling app_main()[0m
+[0;32mI (937) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (941) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (946) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (951) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (956) MAIN: Score threshold    : 0.60[0m
+[0;32mI (959) MAIN: Brightness thresh  : 100[0m
+[0;32mI (963) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (967) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (973) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (980) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[0;33mW (1454) MAIN: No state file, starting fresh[0m
+[0;32mI (1454) MAIN: Restored image counter: 0[0m
+[0;32mI (1478) MAIN: SD ready: /sdcard/detections | Used: 0 MB / 12000 MB max[0m
+[0;32mI (1478) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (1480) MAIN: Loading model...[0m
+[0;33mW (1483) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (1491) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (1589) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (1592) MAIN: Model ready.[0m
+[0;32mI (1593) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (1596) cam_hal: cam init ok[0m
+[0;32mI (1611) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1611) camera: Detected OV2640 camera[0m
+[0;32mI (1611) camera: Detected camera at address=0x30[0m
+[0;32mI (1685) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (1685) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (1685) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (1695) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (1705) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (1710) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C273560[0m
+[0;32mI (1715) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (1721) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C292490[0m
+[0;32mI (1726) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (1732) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2B13C0[0m
+[0;32mI (1737) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (1742) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2D02F0[0m
+[0;32mI (1747) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (1753) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2EF220[0m
+[0;32mI (1758) cam_hal: cam config ok[0m
+[0;32mI (1761) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1833) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (1833) cam_hal: cam init ok[0m
+[0;32mI (1845) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1845) camera: Detected OV2640 camera[0m
+[0;32mI (1845) camera: Detected camera at address=0x30[0m
+[0;32mI (1919) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (1919) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (1919) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (1929) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (1939) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (1944) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C273560[0m
+[0;32mI (1949) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (1955) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C292490[0m
+[0;32mI (1960) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (1966) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2B13C0[0m
+[0;32mI (1971) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (1976) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2D02F0[0m
+[0;32mI (1981) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (1987) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2EF220[0m
+[0;32mI (1992) cam_hal: cam config ok[0m
+[0;32mI (1995) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (2067) WhoS3Cam: WhoS3Cam args: vertical_flip=0 horizontal_flip=1 -> sensor vflip=1 hmirror=0[0m
+[0;32mI (2069) MAIN: Running from 2026-05-17 10:00:01 | Every 7 frames | 2-frame confirm | Score >= 0.60[0m
+[0;32mI (2073) main_task: Returned from app_main()[0m
+[0;32mI (2804) MAIN: [2026-05-17 10:00:01] No person confirmed (2/2) | f1=N f2=N | Brightness: 147 | Light: OFF[0m
+[0;32mI (3352) MAIN: [2026-05-17 10:00:02] No person confirmed (2/2) | f1=N f2=Y | Brightness: 145 | Light: OFF[0m
+[0;32mI (3902) MAIN: [2026-05-17 10:00:03] No person confirmed (2/2) | f1=N f2=N | Brightness: 146 | Light: OFF[0m
+[0;32mI (4451) MAIN: [2026-05-17 10:00:03] No person confirmed (2/2) | f1=N f2=N | Brightness: 131 | Light: OFF[0m
+[0;32mI (5001) MAIN: [2026-05-17 10:00:04] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (5551) MAIN: [2026-05-17 10:00:04] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (6101) MAIN: [2026-05-17 10:00:05] No person confirmed (2/2) | f1=N f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (6651) MAIN: [2026-05-17 10:00:05] No person confirmed (2/2) | f1=N f2=N | Brightness: 138 | Light: OFF[0m
+[0;32mI (7201) MAIN: [2026-05-17 10:00:06] No person confirmed (2/2) | f1=N f2=N | Brightness: 133 | Light: OFF[0m
+[0;32mI (7750) MAIN: [2026-05-17 10:00:06] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (8300) MAIN: [2026-05-17 10:00:07] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (8850) MAIN: [2026-05-17 10:00:07] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (9400) MAIN: [2026-05-17 10:00:08] No person confirmed (2/2) | f1=N f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (9949) MAIN: [2026-05-17 10:00:09] No person confirmed (2/2) | f1=N f2=N | Brightness: 139 | Light: OFF[0m
+[0;32mI (10499) MAIN: [2026-05-17 10:00:09] No person confirmed (2/2) | f1=N f2=N | Brightness: 138 | Light: OFF[0m
+[0;32mI (11049) MAIN: [2026-05-17 10:00:10] No person confirmed (2/2) | f1=N f2=N | Brightness: 145 | Light: OFF[0m
+[0;32mI (11599) MAIN: [2026-05-17 10:00:10] No person confirmed (2/2) | f1=N f2=N | Brightness: 139 | Light: OFF[0m
+[0;32mI (12149) MAIN: [2026-05-17 10:00:11] No person confirmed (2/2) | f1=N f2=N | Brightness: 133 | Light: OFF[0m
+[0;32mI (12699) MAIN: [2026-05-17 10:00:11] No person confirmed (2/2) | f1=N f2=N | Brightness: 147 | Light: OFF[0m
+[0;32mI (13248) MAIN: [2026-05-17 10:00:12] No person confirmed (2/2) | f1=N f2=N | Brightness: 158 | Light: OFF[0m
+[0;32mI (13798) MAIN: [2026-05-17 10:00:12] No person confirmed (2/2) | f1=N f2=N | Brightness: 162 | Light: OFF[0m
+[0;32mI (14348) MAIN: [2026-05-17 10:00:13] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (14898) MAIN: [2026-05-17 10:00:14] No person confirmed (2/2) | f1=N f2=N | Brightness: 125 | Light: OFF[0m
+[0;32mI (15447) MAIN: [2026-05-17 10:00:14] No person confirmed (2/2) | f1=N f2=N | Brightness: 149 | Light: OFF[0m
+[0;32mI (15997) MAIN: [2026-05-17 10:00:15] No person confirmed (2/2) | f1=N f2=Y | Brightness: 173 | Light: OFF[0m
+[0;32mI (16547) MAIN: [2026-05-17 10:00:15] No person confirmed (2/2) | f1=N f2=Y | Brightness: 125 | Light: OFF[0m
+[0;32mI (17097) MAIN: [2026-05-17 10:00:16] PERSON confirmed (2/2) | score=0.843 | box=[57,88,239,239] | Brightness: 137 | Light: OFF[0m
+[0;32mI (17211) MAIN: Saved: det_20260517_100000_0000.jpg | score=0.843 | 2026-05-17 10:00:16[0m
+[0;32mI (17747) MAIN: [2026-05-17 10:00:16] PERSON confirmed (2/2) | score=0.914 | box=[7,44,239,239] | Brightness: 132 | Light: OFF[0m
+[0;32mI (18297) MAIN: [2026-05-17 10:00:17] No person confirmed (2/2) | f1=Y f2=N | Brightness: 143 | Light: OFF[0m
+[0;32mI (18846) MAIN: [2026-05-17 10:00:17] No person confirmed (2/2) | f1=N f2=N | Brightness: 151 | Light: OFF[0m
+[0;32mI (19396) MAIN: [2026-05-17 10:00:18] No person confirmed (2/2) | f1=N f2=N | Brightness: 169 | Light: OFF[0m
+[0;32mI (19946) MAIN: [2026-05-17 10:00:19] No person confirmed (2/2) | f1=N f2=N | Brightness: 131 | Light: OFF[0m
+[0;32mI (20496) MAIN: [2026-05-17 10:00:19] PERSON confirmed (2/2) | score=0.914 | box=[0,32,239,239] | Brightness: 129 | Light: OFF[0m
+[0;32mI (20623) MAIN: Saved: det_20260517_100000_0001.jpg | score=0.914 | 2026-05-17 10:00:19[0m
+[0;32mI (21196) MAIN: [2026-05-17 10:00:20] PERSON confirmed (2/2) | score=0.650 | box=[37,60,239,239] | Brightness: 136 | Light: OFF[0m
+[0;32mI (21745) MAIN: [2026-05-17 10:00:20] PERSON confirmed (2/2) | score=0.791 | box=[5,63,237,239] | Brightness: 138 | Light: OFF[0m
+[0;32mI (22295) MAIN: [2026-05-17 10:00:21] PERSON confirmed (2/2) | score=0.910 | box=[22,58,239,239] | Brightness: 137 | Light: OFF[0m
+[0;32mI (22845) MAIN: [2026-05-17 10:00:21] PERSON confirmed (2/2) | score=0.829 | box=[9,40,232,239] | Brightness: 136 | Light: OFF[0m
+[0;32mI (23395) MAIN: [2026-05-17 10:00:22] PERSON confirmed (2/2) | score=0.866 | box=[18,46,237,239] | Brightness: 134 | Light: OFF[0m
+[0;32mI (23945) MAIN: [2026-05-17 10:00:23] PERSON confirmed (2/2) | score=0.901 | box=[25,45,239,239] | Brightness: 133 | Light: OFF[0m
+[0;32mI (24078) MAIN: Saved: det_20260517_100000_0002.jpg | score=0.901 | 2026-05-17 10:00:23[0m
+[0;32mI (24644) MAIN: [2026-05-17 10:00:23] No person confirmed (2/2) | f1=N f2=N | Brightness: 168 | Light: OFF[0m
+[0;32mI (25194) MAIN: [2026-05-17 10:00:24] PERSON confirmed (2/2) | score=0.771 | box=[0,32,172,239] | Brightness: 145 | Light: OFF[0m
+[0;32mI (25743) MAIN: [2026-05-17 10:00:24] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (26293) MAIN: [2026-05-17 10:00:25] No person confirmed (2/2) | f1=N f2=N | Brightness: 142 | Light: OFF[0m
+[0;32mI (26843) MAIN: [2026-05-17 10:00:25] No person confirmed (2/2) | f1=N f2=Y | Brightness: 141 | Light: OFF[0m
+[0;32mI (27393) MAIN: [2026-05-17 10:00:26] No person confirmed (2/2) | f1=N f2=N | Brightness: 145 | Light: OFF[0m
+[0;32mI (27943) MAIN: [2026-05-17 10:00:27] No person confirmed (2/2) | f1=N f2=N | Brightness: 139 | Light: OFF[0m
+[0;32mI (28492) MAIN: [2026-05-17 10:00:27] No person confirmed (2/2) | f1=N f2=N | Brightness: 131 | Light: OFF[0m
+[0;32mI (29042) MAIN: [2026-05-17 10:00:28] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (29592) MAIN: [2026-05-17 10:00:28] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (30142) MAIN: [2026-05-17 10:00:29] No person confirmed (2/2) | f1=N f2=N | Brightness: 138 | Light: OFF[0m
+[0;32mI (30691) MAIN: [2026-05-17 10:00:29] No person confirmed (2/2) | f1=N f2=N | Brightness: 144 | Light: OFF[0m
+[0;32mI (31241) MAIN: [2026-05-17 10:00:30] No person confirmed (2/2) | f1=N f2=N | Brightness: 148 | Light: OFF[0m
+[0;32mI (31792) MAIN: [2026-05-17 10:00:30] No person confirmed (2/2) | f1=Y f2=N | Brightness: 156 | Light: OFF[0m
+[0;32mI (32341) MAIN: [2026-05-17 10:00:31] No person confirmed (2/2) | f1=N f2=N | Brightness: 142 | Light: OFF[0m
+[0;32mI (32891) MAIN: [2026-05-17 10:00:32] No person confirmed (2/2) | f1=Y f2=N | Brightness: 139 | Light: OFF[0m
+[0;32mI (33440) MAIN: [2026-05-17 10:00:32] No person confirmed (2/2) | f1=N f2=N | Brightness: 141 | Light: OFF[0m
+[0;32mI (33990) MAIN: [2026-05-17 10:00:33] No person confirmed (2/2) | f1=N f2=N | Brightness: 140 | Light: OFF[0m
+[0;32mI (34540) MAIN: [2026-05-17 10:00:33] No person confirmed (2/2) | f1=N f2=Y | Brightness: 144 | Light: OFF[0m
+[0;32mI (35090) MAIN: [2026-05-17 10:00:34] No person confirmed (2/2) | f1=N f2=N | Brightness: 149 | Light: OFF[0m
+[0;32mI (35639) MAIN: [2026-05-17 10:00:34] No person confirmed (2/2) | f1=N f2=N | Brightness: 144 | Light: OFF[0m
+[0;32mI (36190) MAIN: [2026-05-17 10:00:35] No person confirmed (2/2) | f1=N f2=N | Brightness: 153 | Light: OFF[0m
+[0;32mI (36739) MAIN: [2026-05-17 10:00:35] No person confirmed (2/2) | f1=N f2=N | Brightness: 152 | Light: OFF[0m
+[0;32mI (37289) MAIN: [2026-05-17 10:00:36] No person confirmed (2/2) | f1=N f2=N | Brightness: 153 | Light: OFF[0m
+[0;32mI (37839) MAIN: [2026-05-17 10:00:36] No person confirmed (2/2) | f1=N f2=Y | Brightness: 150 | Light: OFF[0m
+[0;32mI (38389) MAIN: [2026-05-17 10:00:37] No person confirmed (2/2) | f1=Y f2=N | Brightness: 139 | Light: OFF[0m
+[0;32mI (38938) MAIN: [2026-05-17 10:00:38] No person confirmed (2/2) | f1=N f2=Y | Brightness: 140 | Light: OFF[0m
+[0;32mI (39488) MAIN: [2026-05-17 10:00:38] No person confirmed (2/2) | f1=N f2=N | Brightness: 123 | Light: OFF[0m
+[0;32mI (40038) MAIN: [2026-05-17 10:00:39] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (40587) MAIN: [2026-05-17 10:00:39] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (41137) MAIN: [2026-05-17 10:00:40] No person confirmed (2/2) | f1=Y f2=N | Brightness: 179 | Light: OFF[0m
+[0;32mI (41687) MAIN: [2026-05-17 10:00:40] No person confirmed (2/2) | f1=Y f2=N | Brightness: 160 | Light: OFF[0m
+[0;32mI (42237) MAIN: [2026-05-17 10:00:41] No person confirmed (2/2) | f1=N f2=N | Brightness: 147 | Light: OFF[0m
+[0;32mI (42787) MAIN: [2026-05-17 10:00:41] No person confirmed (2/2) | f1=N f2=N | Brightness: 147 | Light: OFF[0m
+[0;32mI (43337) MAIN: [2026-05-17 10:00:42] No person confirmed (2/2) | f1=N f2=N | Brightness: 139 | Light: OFF[0m
+[0;32mI (43886) MAIN: [2026-05-17 10:00:43] No person confirmed (2/2) | f1=Y f2=N | Brightness: 145 | Light: OFF[0m
+[0;32mI (44437) MAIN: [2026-05-17 10:00:43] PERSON confirmed (2/2) | score=0.755 | box=[8,97,238,239] | Brightness: 137 | Light: OFF[0m
+[0;32mI (44558) MAIN: Saved: det_20260517_100000_0003.jpg | score=0.755 | 2026-05-17 10:00:43[0m
+[0;32mI (45136) MAIN: [2026-05-17 10:00:44] No person confirmed (2/2) | f1=Y f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (45686) MAIN: [2026-05-17 10:00:44] PERSON confirmed (2/2) | score=0.771 | box=[39,78,239,239] | Brightness: 137 | Light: OFF[0m
+[0;32mI (46236) MAIN: [2026-05-17 10:00:45] PERSON confirmed (2/2) | score=0.848 | box=[12,98,239,239] | Brightness: 131 | Light: OFF[0m
+[0;32mI (46785) MAIN: [2026-05-17 10:00:45] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (47335) MAIN: [2026-05-17 10:00:46] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (47885) MAIN: [2026-05-17 10:00:47] PERSON confirmed (2/2) | score=0.862 | box=[36,48,239,239] | Brightness: 148 | Light: OFF[0m
+[0;32mI (48028) MAIN: Saved: det_20260517_100000_0004.jpg | score=0.862 | 2026-05-17 10:00:47[0m
+[0;32mI (48585) MAIN: [2026-05-17 10:00:47] PERSON confirmed (2/2) | score=0.906 | box=[34,59,239,239] | Brightness: 143 | Light: OFF[0m
+[0;32mI (49135) MAIN: [2026-05-17 10:00:48] PERSON confirmed (2/2) | score=0.931 | box=[29,59,239,239] | Brightness: 138 | Light: OFF[0m
+[0;32mI (49684) MAIN: [2026-05-17 10:00:48] PERSON confirmed (2/2) | score=0.696 | box=[39,64,238,239] | Brightness: 135 | Light: OFF[0m
+[0;32mI (50234) MAIN: [2026-05-17 10:00:49] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (50783) MAIN: [2026-05-17 10:00:49] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (51333) MAIN: [2026-05-17 10:00:50] No person confirmed (2/2) | f1=N f2=N | Brightness: 138 | Light: OFF[0m
+[0;32mI (51883) MAIN: [2026-05-17 10:00:51] No person confirmed (2/2) | f1=N f2=Y | Brightness: 138 | Light: OFF[0m
+[0;32mI (52433) MAIN: [2026-05-17 10:00:51] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (52982) MAIN: [2026-05-17 10:00:52] No person confirmed (2/2) | f1=N f2=N | Brightness: 138 | Light: OFF[0m
+[0;32mI (53532) MAIN: [2026-05-17 10:00:52] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (54082) MAIN: [2026-05-17 10:00:53] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (54632) MAIN: [2026-05-17 10:00:53] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (55182) MAIN: [2026-05-17 10:00:54] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (55731) MAIN: [2026-05-17 10:00:54] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (56281) MAIN: [2026-05-17 10:00:55] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (56831) MAIN: [2026-05-17 10:00:55] No person confirmed (2/2) | f1=N f2=Y | Brightness: 136 | Light: OFF[0m
+[0;32mI (57381) MAIN: [2026-05-17 10:00:56] PERSON confirmed (2/2) | score=0.755 | box=[58,32,239,239] | Brightness: 137 | Light: OFF[0m
+[0;32mI (57524) MAIN: Saved: det_20260517_100000_0005.jpg | score=0.755 | 2026-05-17 10:00:56[0m
+[0;32mI (58081) MAIN: [2026-05-17 10:00:57] PERSON confirmed (2/2) | score=0.866 | box=[49,23,239,239] | Brightness: 132 | Light: OFF[0m
+[0;32mI (58630) MAIN: [2026-05-17 10:00:57] No person confirmed (2/2) | f1=N f2=N | Brightness: 131 | Light: OFF[0m
+[0;32mI (59180) MAIN: [2026-05-17 10:00:58] No person confirmed (2/2) | f1=N f2=Y | Brightness: 130 | Light: OFF[0m
+[0;32mI (59730) MAIN: [2026-05-17 10:00:58] PERSON confirmed (2/2) | score=0.667 | box=[84,20,239,239] | Brightness: 134 | Light: OFF[0m
+[0;32mI (60280) MAIN: [2026-05-17 10:00:59] No person confirmed (2/2) | f1=N f2=Y | Brightness: 134 | Light: OFF[0m
+[0;32mI (60830) MAIN: [2026-05-17 10:00:59] No person confirmed (2/2) | f1=Y f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (61379) MAIN: [2026-05-17 10:01:00] No person confirmed (2/2) | f1=N f2=Y | Brightness: 135 | Light: OFF[0m
+[0;32mI (61929) MAIN: [2026-05-17 10:01:01] PERSON confirmed (2/2) | score=0.650 | box=[70,25,239,239] | Brightness: 135 | Light: OFF[0m
+[0;32mI (62071) MAIN: Saved: det_20260517_100000_0006.jpg | score=0.650 | 2026-05-17 10:01:01[0m
+[0;32mI (62630) MAIN: [2026-05-17 10:01:01] PERSON confirmed (2/2) | score=0.857 | box=[60,10,239,239] | Brightness: 131 | Light: OFF[0m
+[0;32mI (63179) MAIN: [2026-05-17 10:01:02] PERSON confirmed (2/2) | score=0.805 | box=[60,14,239,239] | Brightness: 132 | Light: OFF[0m
+[0;32mI (63728) MAIN: [2026-05-17 10:01:02] No person confirmed (2/2) | f1=Y f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (64278) MAIN: [2026-05-17 10:01:03] PERSON confirmed (2/2) | score=0.723 | box=[64,12,219,236] | Brightness: 130 | Light: OFF[0m
+[0;32mI (64828) MAIN: [2026-05-17 10:01:03] No person confirmed (2/2) | f1=N f2=N | Brightness: 131 | Light: OFF[0m
+[0;32mI (65378) MAIN: [2026-05-17 10:01:04] No person confirmed (2/2) | f1=N f2=Y | Brightness: 131 | Light: OFF[0m
+[0;32mI (65927) MAIN: [2026-05-17 10:01:05] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (66478) MAIN: [2026-05-17 10:01:05] PERSON confirmed (2/2) | score=0.661 | box=[1,18,239,239] | Brightness: 137 | Light: OFF[0m
+[0;32mI (66616) MAIN: Saved: det_20260517_100000_0007.jpg | score=0.661 | 2026-05-17 10:01:05[0m
+[0;32mI (67178) MAIN: [2026-05-17 10:01:06] PERSON confirmed (2/2) | score=0.927 | box=[50,28,239,239] | Brightness: 133 | Light: OFF[0m
+[0;32mI (67727) MAIN: [2026-05-17 10:01:06] PERSON confirmed (2/2) | score=0.852 | box=[41,25,239,239] | Brightness: 136 | Light: OFF[0m
+[0;32mI (68277) MAIN: [2026-05-17 10:01:07] No person confirmed (2/2) | f1=N f2=Y | Brightness: 135 | Light: OFF[0m
+[0;32mI (68827) MAIN: [2026-05-17 10:01:07] PERSON confirmed (2/2) | score=0.931 | box=[45,25,239,239] | Brightness: 135 | Light: OFF[0m
+[0;32mI (69377) MAIN: [2026-05-17 10:01:08] PERSON confirmed (2/2) | score=0.879 | box=[41,22,239,239] | Brightness: 138 | Light: OFF[0m
+[0;32mI (69927) MAIN: [2026-05-17 10:01:09] PERSON confirmed (2/2) | score=0.931 | box=[59,0,239,239] | Brightness: 130 | Light: OFF[0m
+[0;32mI (70068) MAIN: Saved: det_20260517_100000_0008.jpg | score=0.931 | 2026-05-17 10:01:09[0m
+[0;32mI (70626) MAIN: [2026-05-17 10:01:09] No person confirmed (2/2) | f1=Y f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (71176) MAIN: [2026-05-17 10:01:10] PERSON confirmed (2/2) | score=0.857 | box=[34,40,239,239] | Brightness: 137 | Light: OFF[0m
+[0;32mI (71726) MAIN: [2026-05-17 10:01:10] PERSON confirmed (2/2) | score=0.625 | box=[41,3,239,239] | Brightness: 126 | Light: OFF[0m
+[0;32mI (72276) MAIN: [2026-05-17 10:01:11] PERSON confirmed (2/2) | score=0.810 | box=[42,8,239,239] | Brightness: 126 | Light: OFF[0m
+[0;32mI (72825) MAIN: [2026-05-17 10:01:11] PERSON confirmed (2/2) | score=0.879 | box=[50,5,239,239] | Brightness: 132 | Light: OFF[0m
+[0;32mI (73375) MAIN: [2026-05-17 10:01:12] PERSON confirmed (2/2) | score=0.935 | box=[55,4,239,239] | Brightness: 139 | Light: OFF[0m
+[0;32mI (73522) MAIN: Saved: det_20260517_100000_0009.jpg | score=0.935 | 2026-05-17 10:01:12[0m
+[0;32mI (74075) MAIN: [2026-05-17 10:01:13] PERSON confirmed (2/2) | score=0.923 | box=[34,1,239,239] | Brightness: 140 | Light: OFF[0m
+[0;32mI (74625) MAIN: [2026-05-17 10:01:13] PERSON confirmed (2/2) | score=0.879 | box=[39,0,239,236] | Brightness: 139 | Light: OFF[0m
+[0;32mI (75174) MAIN: [2026-05-17 10:01:14] PERSON confirmed (2/2) | score=0.667 | box=[87,0,239,238] | Brightness: 138 | Light: OFF[0m
+[0;32mI (75724) MAIN: [2026-05-17 10:01:14] PERSON confirmed (2/2) | score=0.791 | box=[30,0,239,237] | Brightness: 139 | Light: OFF[0m
+[0;32mI (76274) MAIN: [2026-05-17 10:01:15] PERSON confirmed (2/2) | score=0.718 | box=[43,0,239,235] | Brightness: 139 | Light: OFF[0m
+[0;32mI (76823) MAIN: [2026-05-17 10:01:15] No person confirmed (2/2) | f1=N f2=N | Brightness: 139 | Light: OFF[0m
+[0;32mI (77373) MAIN: [2026-05-17 10:01:16] No person confirmed (2/2) | f1=N f2=N | Brightness: 142 | Light: OFF[0m
+[0;32mI (77923) MAIN: [2026-05-17 10:01:17] PERSON confirmed (2/2) | score=0.884 | box=[27,0,239,235] | Brightness: 142 | Light: OFF[0m
+[0;32mI (78075) MAIN: Saved: det_20260517_100000_0010.jpg | score=0.884 | 2026-05-17 10:01:17[0m
+[0;32mI (78673) MAIN: [2026-05-17 10:01:17] PERSON confirmed (2/2) | score=0.862 | box=[34,0,239,235] | Brightness: 139 | Light: OFF[0m
+[0;32mI (79223) MAIN: [2026-05-17 10:01:18] PERSON confirmed (2/2) | score=0.923 | box=[40,0,239,237] | Brightness: 138 | Light: OFF[0m
+[0;32mI (79773) MAIN: [2026-05-17 10:01:18] PERSON confirmed (2/2) | score=0.862 | box=[23,0,239,238] | Brightness: 138 | Light: OFF[0m
+[0;32mI (80322) MAIN: [2026-05-17 10:01:19] No person confirmed (2/2) | f1=Y f2=N | Brightness: 138 | Light: OFF[0m
+[0;32mI (80872) MAIN: [2026-05-17 10:01:19] PERSON confirmed (2/2) | score=0.685 | box=[49,0,239,237] | Brightness: 143 | Light: OFF[0m
+[0;32mI (81422) MAIN: [2026-05-17 10:01:20] PERSON confirmed (2/2) | score=0.707 | box=[24,0,239,230] | Brightness: 153 | Light: OFF[0m
+[0;32mI (81581) MAIN: Saved: det_20260517_100000_0011.jpg | score=0.707 | 2026-05-17 10:01:20[0m
+[0;32mI (82122) MAIN: [2026-05-17 10:01:21] PERSON confirmed (2/2) | score=0.940 | box=[0,0,207,233] | Brightness: 142 | Light: OFF[0m
+[0;32mI (82671) MAIN: [2026-05-17 10:01:21] PERSON confirmed (2/2) | score=0.843 | box=[0,0,134,227] | Brightness: 137 | Light: OFF[0m
+[0;32mI (83220) MAIN: [2026-05-17 10:01:22] No person confirmed (2/2) | f1=N f2=N | Brightness: 123 | Light: OFF[0m
+[0;32mI (83770) MAIN: [2026-05-17 10:01:22] No person confirmed (2/2) | f1=N f2=N | Brightness: 118 | Light: OFF[0m
+[0;32mI (84320) MAIN: [2026-05-17 10:01:23] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (84870) MAIN: [2026-05-17 10:01:23] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (85420) MAIN: [2026-05-17 10:01:24] No person confirmed (2/2) | f1=N f2=N | Brightness: 120 | Light: OFF[0m
+[0;32mI (85969) MAIN: [2026-05-17 10:01:25] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (86520) MAIN: [2026-05-17 10:01:25] PERSON confirmed (2/2) | score=0.781 | box=[0,0,239,225] | Brightness: 154 | Light: OFF[0m
+[0;32mI (86677) MAIN: Saved: det_20260517_100000_0012.jpg | score=0.781 | 2026-05-17 10:01:25[0m
+[0;32mI (87269) MAIN: [2026-05-17 10:01:26] No person confirmed (2/2) | f1=N f2=N | Brightness: 127 | Light: OFF[0m
+[0;32mI (87819) MAIN: [2026-05-17 10:01:26] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (88369) MAIN: [2026-05-17 10:01:27] No person confirmed (2/2) | f1=N f2=Y | Brightness: 129 | Light: OFF[0m
+[0;32mI (88918) MAIN: [2026-05-17 10:01:28] No person confirmed (2/2) | f1=N f2=N | Brightness: 170 | Light: OFF[0m
+[0;32mI (89468) MAIN: [2026-05-17 10:01:28] No person confirmed (2/2) | f1=N f2=Y | Brightness: 123 | Light: OFF[0m
+[0;32mI (90018) MAIN: [2026-05-17 10:01:29] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (90568) MAIN: [2026-05-17 10:01:29] No person confirmed (2/2) | f1=Y f2=N | Brightness: 146 | Light: OFF[0m
+[0;32mI (91117) MAIN: [2026-05-17 10:01:30] No person confirmed (2/2) | f1=N f2=N | Brightness: 121 | Light: OFF[0m
+[0;32mI (91667) MAIN: [2026-05-17 10:01:30] No person confirmed (2/2) | f1=N f2=N | Brightness: 148 | Light: OFF[0m
+[0;32mI (92217) MAIN: [2026-05-17 10:01:31] No person confirmed (2/2) | f1=N f2=N | Brightness: 146 | Light: OFF[0m
+[0;32mI (92767) MAIN: [2026-05-17 10:01:31] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (93316) MAIN: [2026-05-17 10:01:32] No person confirmed (2/2) | f1=N f2=N | Brightness: 131 | Light: OFF[0m
+[0;32mI (93866) MAIN: [2026-05-17 10:01:32] No person confirmed (2/2) | f1=N f2=N | Brightness: 126 | Light: OFF[0m
+[0;32mI (94416) MAIN: [2026-05-17 10:01:33] No person confirmed (2/2) | f1=N f2=N | Brightness: 123 | Light: OFF[0m
+[0;32mI (94966) MAIN: [2026-05-17 10:01:34] No person confirmed (2/2) | f1=N f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (95515) MAIN: [2026-05-17 10:01:34] No person confirmed (2/2) | f1=N f2=N | Brightness: 127 | Light: OFF[0m
+[0;32mI (96066) MAIN: [2026-05-17 10:01:35] No person confirmed (2/2) | f1=N f2=Y | Brightness: 144 | Light: OFF[0m
+[0;32mI (96615) MAIN: [2026-05-17 10:01:35] No person confirmed (2/2) | f1=N f2=N | Brightness: 127 | Light: OFF[0m
+[0;32mI (97165) MAIN: [2026-05-17 10:01:36] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (97715) MAIN: [2026-05-17 10:01:36] No person confirmed (2/2) | f1=N f2=N | Brightness: 142 | Light: OFF[0m
+[0;32mI (98264) MAIN: [2026-05-17 10:01:37] No person confirmed (2/2) | f1=N f2=N | Brightness: 131 | Light: OFF[0m
+[0;32mI (98814) MAIN: [2026-05-17 10:01:37] No person confirmed (2/2) | f1=N f2=N | Brightness: 139 | Light: OFF[0m
+[0;32mI (99364) MAIN: [2026-05-17 10:01:38] No person confirmed (2/2) | f1=N f2=N | Brightness: 127 | Light: OFF[0m
+[0;32mI (99914) MAIN: [2026-05-17 10:01:39] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (100464) MAIN: [2026-05-17 10:01:39] No person confirmed (2/2) | f1=N f2=Y | Brightness: 168 | Light: OFF[0m
+[0;32mI (101014) MAIN: [2026-05-17 10:01:40] No person confirmed (2/2) | f1=N f2=Y | Brightness: 137 | Light: OFF[0m
+[0;32mI (101563) MAIN: [2026-05-17 10:01:40] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (102113) MAIN: [2026-05-17 10:01:41] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (102663) MAIN: [2026-05-17 10:01:41] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (103212) MAIN: [2026-05-17 10:01:42] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (103762) MAIN: [2026-05-17 10:01:42] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (104312) MAIN: [2026-05-17 10:01:43] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (104862) MAIN: [2026-05-17 10:01:43] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (105412) MAIN: [2026-05-17 10:01:44] No person confirmed (2/2) | f1=N f2=N | Brightness: 126 | Light: OFF[0m
+[0;32mI (105961) MAIN: [2026-05-17 10:01:45] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (106511) MAIN: [2026-05-17 10:01:45] No person confirmed (2/2) | f1=N f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (107062) MAIN: [2026-05-17 10:01:46] No person confirmed (2/2) | f1=N f2=Y | Brightness: 130 | Light: OFF[0m
+[0;32mI (107611) MAIN: [2026-05-17 10:01:46] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (108161) MAIN: [2026-05-17 10:01:47] No person confirmed (2/2) | f1=Y f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (108711) MAIN: [2026-05-17 10:01:47] No person confirmed (2/2) | f1=N f2=Y | Brightness: 135 | Light: OFF[0m
+[0;32mI (109260) MAIN: [2026-05-17 10:01:48] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (109810) MAIN: [2026-05-17 10:01:48] PERSON confirmed (2/2) | score=0.718 | box=[3,0,239,239] | Brightness: 136 | Light: OFF[0m
+[0;32mI (109958) MAIN: Saved: det_20260517_100000_0013.jpg | score=0.718 | 2026-05-17 10:01:48[0m
+[0;32mI (110510) MAIN: [2026-05-17 10:01:49] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (111059) MAIN: [2026-05-17 10:01:50] No person confirmed (2/2) | f1=Y f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (111609) MAIN: [2026-05-17 10:01:50] No person confirmed (2/2) | f1=N f2=Y | Brightness: 134 | Light: OFF[0m
+[0;32mI (112159) MAIN: [2026-05-17 10:01:51] No person confirmed (2/2) | f1=N f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (112709) MAIN: [2026-05-17 10:01:51] No person confirmed (2/2) | f1=N f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (113259) MAIN: [2026-05-17 10:01:52] No person confirmed (2/2) | f1=Y f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (113808) MAIN: [2026-05-17 10:01:52] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (114358) MAIN: [2026-05-17 10:01:53] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (114908) MAIN: [2026-05-17 10:01:54] No person confirmed (2/2) | f1=N f2=N | Brightness: 133 | Light: OFF[0m
+[0;32mI (115457) MAIN: [2026-05-17 10:01:54] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (116007) MAIN: [2026-05-17 10:01:55] No person confirmed (2/2) | f1=Y f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (116557) MAIN: [2026-05-17 10:01:55] No person confirmed (2/2) | f1=N f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (117107) MAIN: [2026-05-17 10:01:56] No person confirmed (2/2) | f1=N f2=N | Brightness: 126 | Light: OFF[0m
+[0;32mI (117657) MAIN: [2026-05-17 10:01:56] No person confirmed (2/2) | f1=N f2=Y | Brightness: 123 | Light: OFF[0m
+[0;32mI (118207) MAIN: [2026-05-17 10:01:57] PERSON confirmed (2/2) | score=0.857 | box=[12,0,239,239] | Brightness: 128 | Light: OFF[0m
+[0;32mI (118348) MAIN: Saved: det_20260517_100000_0014.jpg | score=0.857 | 2026-05-17 10:01:57[0m
+[0;32mI (118906) MAIN: [2026-05-17 10:01:58] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (119456) MAIN: [2026-05-17 10:01:58] No person confirmed (2/2) | f1=N f2=N | Brightness: 127 | Light: OFF[0m
+[0;32mI (120006) MAIN: [2026-05-17 10:01:59] No person confirmed (2/2) | f1=N f2=N | Brightness: 127 | Light: OFF[0m
+[0;32mI (120555) MAIN: [2026-05-17 10:01:59] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (121105) MAIN: [2026-05-17 10:02:00] No person confirmed (2/2) | f1=N f2=N | Brightness: 123 | Light: OFF[0m
+[0;32mI (121655) MAIN: [2026-05-17 10:02:00] No person confirmed (2/2) | f1=N f2=N | Brightness: 123 | Light: OFF[0m
+[0;32mI (122205) MAIN: [2026-05-17 10:02:01] No person confirmed (2/2) | f1=N f2=N | Brightness: 125 | Light: OFF[0m
+[0;32mI (122755) MAIN: [2026-05-17 10:02:01] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (123304) MAIN: [2026-05-17 10:02:02] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (123854) MAIN: [2026-05-17 10:02:02] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (124404) MAIN: [2026-05-17 10:02:03] No person confirmed (2/2) | f1=N f2=N | Brightness: 125 | Light: OFF[0m
+[0;32mI (124954) MAIN: [2026-05-17 10:02:04] No person confirmed (2/2) | f1=N f2=N | Brightness: 179 | Light: OFF[0m
+[0;32mI (125503) MAIN: [2026-05-17 10:02:04] No person confirmed (2/2) | f1=N f2=N | Brightness: 120 | Light: OFF[0m
+[0;32mI (126053) MAIN: [2026-05-17 10:02:05] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (126603) MAIN: [2026-05-17 10:02:05] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (127153) MAIN: [2026-05-17 10:02:06] No person confirmed (2/2) | f1=N f2=N | Brightness: 121 | Light: OFF[0m
+[0;32mI (127703) MAIN: [2026-05-17 10:02:06] No person confirmed (2/2) | f1=N f2=Y | Brightness: 131 | Light: OFF[0m
+[0;32mI (128252) MAIN: [2026-05-17 10:02:07] No person confirmed (2/2) | f1=N f2=N | Brightness: 125 | Light: OFF[0m
+[0;32mI (128802) MAIN: [2026-05-17 10:02:07] No person confirmed (2/2) | f1=N f2=N | Brightness: 131 | Light: OFF[0m
+[0;32mI (129352) MAIN: [2026-05-17 10:02:08] No person confirmed (2/2) | f1=Y f2=N | Brightness: 143 | Light: OFF[0m
+[0;32mI (129902) MAIN: [2026-05-17 10:02:09] No person confirmed (2/2) | f1=N f2=N | Brightness: 143 | Light: OFF[0m
+[0;32mI (130452) MAIN: [2026-05-17 10:02:09] PERSON confirmed (2/2) | score=0.667 | box=[69,0,239,239] | Brightness: 151 | Light: OFF[0m
+[0;32mI (130594) MAIN: Saved: det_20260517_100000_0015.jpg | score=0.667 | 2026-05-17 10:02:09[0m
+[0;32mI (131152) MAIN: [2026-05-17 10:02:10] PERSON confirmed (2/2) | score=0.667 | box=[36,0,218,239] | Brightness: 146 | Light: OFF[0m
+[0;32mI (131701) MAIN: [2026-05-17 10:02:10] PERSON confirmed (2/2) | score=0.750 | box=[29,0,235,239] | Brightness: 139 | Light: OFF[0m
+[0;32mI (132251) MAIN: [2026-05-17 10:02:11] No person confirmed (2/2) | f1=N f2=Y | Brightness: 135 | Light: OFF[0m
+[0;32mI (132801) MAIN: [2026-05-17 10:02:11] No person confirmed (2/2) | f1=Y f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (133351) MAIN: [2026-05-17 10:02:12] PERSON confirmed (2/2) | score=0.834 | box=[13,0,239,239] | Brightness: 135 | Light: OFF[0m
+[0;32mI (133900) MAIN: [2026-05-17 10:02:13] No person confirmed (2/2) | f1=N f2=Y | Brightness: 132 | Light: OFF[0m
+[0;32mI (134450) MAIN: [2026-05-17 10:02:13] PERSON confirmed (2/2) | score=0.661 | box=[27,0,207,239] | Brightness: 139 | Light: OFF[0m
+[0;32mI (134608) MAIN: Saved: det_20260517_100000_0016.jpg | score=0.661 | 2026-05-17 10:02:13[0m
+[0;32mI (135200) MAIN: [2026-05-17 10:02:14] PERSON confirmed (2/2) | score=0.745 | box=[41,0,239,239] | Brightness: 137 | Light: OFF[0m
+[0;32mI (135749) MAIN: [2026-05-17 10:02:14] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (136299) MAIN: [2026-05-17 10:02:15] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (136849) MAIN: [2026-05-17 10:02:15] No person confirmed (2/2) | f1=N f2=Y | Brightness: 138 | Light: OFF[0m
+[0;32mI (137399) MAIN: [2026-05-17 10:02:16] No person confirmed (2/2) | f1=Y f2=N | Brightness: 140 | Light: OFF[0m
+[0;32mI (137949) MAIN: [2026-05-17 10:02:17] No person confirmed (2/2) | f1=N f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (138498) MAIN: [2026-05-17 10:02:17] No person confirmed (2/2) | f1=Y f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (139048) MAIN: [2026-05-17 10:02:18] No person confirmed (2/2) | f1=N f2=N | Brightness: 158 | Light: OFF[0m
+[0;32mI (139598) MAIN: [2026-05-17 10:02:18] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (140148) MAIN: [2026-05-17 10:02:19] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (140697) MAIN: [2026-05-17 10:02:19] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (141247) MAIN: [2026-05-17 10:02:20] No person confirmed (2/2) | f1=N f2=N | Brightness: 147 | Light: OFF[0m
+[0;32mI (141797) MAIN: [2026-05-17 10:02:20] No person confirmed (2/2) | f1=N f2=N | Brightness: 141 | Light: OFF[0m
+[0;32mI (142347) MAIN: [2026-05-17 10:02:21] No person confirmed (2/2) | f1=N f2=N | Brightness: 166 | Light: OFF[0m
+[0;32mI (142897) MAIN: [2026-05-17 10:02:22] No person confirmed (2/2) | f1=N f2=N | Brightness: 190 | Light: OFF[0m
+[0;32mI (143447) MAIN: [2026-05-17 10:02:22] PERSON confirmed (2/2) | score=0.696 | box=[0,0,167,239] | Brightness: 167 | Light: OFF[0m
+[0;32mI (143597) MAIN: Saved: det_20260517_100000_0017.jpg | score=0.696 | 2026-05-17 10:02:22[0m
+[0;32mI (144147) MAIN: [2026-05-17 10:02:23] PERSON confirmed (2/2) | score=0.765 | box=[0,0,169,239] | Brightness: 149 | Light: OFF[0m
+[0;32mI (144696) MAIN: [2026-05-17 10:02:23] No person confirmed (2/2) | f1=Y f2=N | Brightness: 138 | Light: OFF[0m
+[0;32mI (145246) MAIN: [2026-05-17 10:02:24] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (145796) MAIN: [2026-05-17 10:02:24] No person confirmed (2/2) | f1=N f2=N | Brightness: 133 | Light: OFF[0m
+[0;32mI (146346) MAIN: [2026-05-17 10:02:25] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (146895) MAIN: [2026-05-17 10:02:26] PERSON confirmed (2/2) | score=0.760 | box=[0,0,125,239] | Brightness: 189 | Light: OFF[0m
+[0;32mI (147038) MAIN: Saved: det_20260517_100000_0018.jpg | score=0.760 | 2026-05-17 10:02:26[0m
+[0;32mI (147595) MAIN: [2026-05-17 10:02:26] No person confirmed (2/2) | f1=N f2=N | Brightness: 164 | Light: OFF[0m
+[0;32mI (148144) MAIN: [2026-05-17 10:02:27] No person confirmed (2/2) | f1=N f2=N | Brightness: 156 | Light: OFF[0m
+[0;32mI (148694) MAIN: [2026-05-17 10:02:27] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (149244) MAIN: [2026-05-17 10:02:28] No person confirmed (2/2) | f1=N f2=N | Brightness: 141 | Light: OFF[0m
+[0;32mI (149794) MAIN: [2026-05-17 10:02:28] No person confirmed (2/2) | f1=N f2=N | Brightness: 146 | Light: OFF[0m
+[0;32mI (150344) MAIN: [2026-05-17 10:02:29] No person confirmed (2/2) | f1=N f2=N | Brightness: 144 | Light: OFF[0m
+[0;32mI (150894) MAIN: [2026-05-17 10:02:30] No person confirmed (2/2) | f1=N f2=N | Brightness: 103 | Light: OFF[0m
+[0;32mI (151443) MAIN: [2026-05-17 10:02:30] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (151993) MAIN: [2026-05-17 10:02:31] No person confirmed (2/2) | f1=N f2=N | Brightness: 147 | Light: OFF[0m
+[0;32mI (152543) MAIN: [2026-05-17 10:02:31] No person confirmed (2/2) | f1=N f2=N | Brightness: 123 | Light: OFF[0m
+[0;32mI (153092) MAIN: [2026-05-17 10:02:32] No person confirmed (2/2) | f1=N f2=N | Brightness: 120 | Light: OFF[0m
+[0;32mI (153643) MAIN: [2026-05-17 10:02:32] No person confirmed (2/2) | f1=N f2=N | Brightness: 110 | Light: OFF[0m
+[0;32mI (154192) MAIN: [2026-05-17 10:02:33] No person confirmed (2/2) | f1=N f2=N | Brightness: 124 | Light: OFF[0m
+[0;32mI (154742) MAIN: [2026-05-17 10:02:33] No person confirmed (2/2) | f1=N f2=N | Brightness: 123 | Light: OFF[0m
+[0;32mI (155292) MAIN: [2026-05-17 10:02:34] No person confirmed (2/2) | f1=N f2=N | Brightness: 155 | Light: OFF[0m
+[0;32mI (155841) MAIN: [2026-05-17 10:02:34] No person confirmed (2/2) | f1=N f2=N | Brightness: 148 | Light: OFF[0m
+[0;32mI (156391) MAIN: [2026-05-17 10:02:35] No person confirmed (2/2) | f1=N f2=N | Brightness: 142 | Light: OFF[0m
+[0;32mI (156941) MAIN: [2026-05-17 10:02:36] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (157491) MAIN: [2026-05-17 10:02:36] No person confirmed (2/2) | f1=Y f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (158041) MAIN: [2026-05-17 10:02:37] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (158591) MAIN: [2026-05-17 10:02:37] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (159141) MAIN: [2026-05-17 10:02:38] PERSON confirmed (2/2) | score=0.786 | box=[0,0,236,239] | Brightness: 134 | Light: OFF[0m
+[0;32mI (159298) MAIN: Saved: det_20260517_100000_0019.jpg | score=0.786 | 2026-05-17 10:02:38[0m
+[0;32mI (159890) MAIN: [2026-05-17 10:02:39] No person confirmed (2/2) | f1=Y f2=N | Brightness: 140 | Light: OFF[0m
+[0;32mI (160439) MAIN: [2026-05-17 10:02:39] No person confirmed (2/2) | f1=N f2=N | Brightness: 148 | Light: OFF[0m
+[0;32mI (160990) MAIN: [2026-05-17 10:02:40] No person confirmed (2/2) | f1=Y f2=N | Brightness: 141 | Light: OFF[0m
+[0;32mI (161540) MAIN: [2026-05-17 10:02:40] No person confirmed (2/2) | f1=Y f2=N | Brightness: 127 | Light: OFF[0m
+[0;32mI (162089) MAIN: [2026-05-17 10:02:41] No person confirmed (2/2) | f1=N f2=N | Brightness: 171 | Light: OFF[0m
+[0;32mI (162639) MAIN: [2026-05-17 10:02:41] No person confirmed (2/2) | f1=N f2=N | Brightness: 138 | Light: OFF[0m
+[0;32mI (163189) MAIN: [2026-05-17 10:02:42] No person confirmed (2/2) | f1=Y f2=N | Brightness: 139 | Light: OFF[0m
+[0;32mI (163738) MAIN: [2026-05-17 10:02:42] No person confirmed (2/2) | f1=N f2=N | Brightness: 123 | Light: OFF[0m
+[0;32mI (164288) MAIN: [2026-05-17 10:02:43] No person confirmed (2/2) | f1=N f2=N | Brightness: 116 | Light: OFF[0m
+[0;32mI (164838) MAIN: [2026-05-17 10:02:43] No person confirmed (2/2) | f1=N f2=N | Brightness: 131 | Light: OFF[0m
+[0;32mI (165387) MAIN: [2026-05-17 10:02:44] No person confirmed (2/2) | f1=N f2=N | Brightness: 131 | Light: OFF[0m
+[0;32mI (165937) MAIN: [2026-05-17 10:02:45] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (166487) MAIN: [2026-05-17 10:02:45] No person confirmed (2/2) | f1=N f2=N | Brightness: 133 | Light: OFF[0m
+[0;32mI (167037) MAIN: [2026-05-17 10:02:46] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (167587) MAIN: [2026-05-17 10:02:46] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m

@@ -1,0 +1,121 @@
+Command: ninja flash
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.5.4\esp-who\examples\object_detect\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.4/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Espressif/frameworks/esp-idf-v5.5.4/esp-who/examples/object_detect/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5700 bytes. 0x2900 bytes (32%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building CXX object esp-idf/who_cam/CMakeFiles/__idf_who_cam.dir/who_s3_cam/who_s3_cam.cpp.obj
+In file included from C:/Espressif/frameworks/esp-idf-v5.5.4/esp-who/examples/object_detect/managed_components/espressif__esp32_s3_eye_noglib/include/bsp/esp-bsp.h:8,
+                 from C:/Espressif/frameworks/esp-idf-v5.5.4/esp-who/components/who_peripherals/who_cam/who_cam_define.hpp:9,
+                 from C:/Espressif/frameworks/esp-idf-v5.5.4/esp-who/components/who_peripherals/who_cam/who_cam_base.hpp:2,
+                 from C:/Espressif/frameworks/esp-idf-v5.5.4/esp-who/components/who_peripherals/who_cam/who_s3_cam/who_s3_cam.hpp:2,
+                 from C:/Espressif/frameworks/esp-idf-v5.5.4/esp-who/components/who_peripherals/who_cam/who_s3_cam/who_s3_cam.cpp:1:
+C:/Espressif/frameworks/esp-idf-v5.5.4/esp-who/components/who_peripherals/who_cam/who_s3_cam/who_s3_cam.cpp: In constructor 'who::cam::WhoS3Cam::WhoS3Cam(pixformat_t, framesize_t, uint8_t, bool, bool)':
+C:/Espressif/frameworks/esp-idf-v5.5.4/esp-who/examples/object_detect/managed_components/espressif__esp32_s3_eye_noglib/include/bsp/esp32_s3_eye.h:287:5: warning: missing initializer for member 'camera_config_t::grab_mode' [-Wmissing-field-initializers]
+  287 |     }
+      |     ^
+C:/Espressif/frameworks/esp-idf-v5.5.4/esp-who/components/who_peripherals/who_cam/who_s3_cam/who_s3_cam.cpp:18:37: note: in expansion of macro 'BSP_CAMERA_DEFAULT_CONFIG'
+   18 |     camera_config_t camera_config = BSP_CAMERA_DEFAULT_CONFIG;
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+[5/10] Linking C static library esp-idf\who_cam\libwho_cam.a
+[6/10] Generating esp-idf/esp_system/ld/sections.ld
+[7/10] Linking CXX executable object_detect.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.12.dev1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated C:/Espressif/frameworks/esp-idf-v5.5.4/esp-who/examples/object_detect/build/object_detect.bin
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.5.4\esp-who\examples\object_detect\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.4/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Espressif/frameworks/esp-idf-v5.5.4/esp-who/examples/object_detect/build/partition_table/partition-table.bin C:/Espressif/frameworks/esp-idf-v5.5.4/esp-who/examples/object_detect/build/object_detect.bin"
+object_detect.bin binary size 0x1e4800 bytes. Smallest app partition is 0x7d0000 bytes. 0x5eb800 bytes (76%) free.
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.5.4\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.5.4 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.5.4/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Espressif/frameworks/esp-idf-v5.5.4/esp-who/examples/object_detect/build -P C:/Espressif/frameworks/esp-idf-v5.5.4/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32s3 -p COM13 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x10000 object_detect.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.12.dev1
+Serial port COM13
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: 14:c1:9f:c1:30:f0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x001f4fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 22272 bytes to 14233...
+Writing at 0x00000000... (100 %)
+Wrote 22272 bytes (14233 compressed) at 0x00000000 in 0.6 seconds (effective 309.7 kbit/s)...
+Hash of data verified.
+Compressed 1984512 bytes to 937270...
+Writing at 0x00010000... (1 %)
+Writing at 0x0001ed70... (3 %)
+Writing at 0x00028e32... (5 %)
+Writing at 0x0002ed39... (6 %)
+Writing at 0x000344f3... (8 %)
+Writing at 0x0003a453... (10 %)
+Writing at 0x0003ff91... (12 %)
+Writing at 0x00045e1f... (13 %)
+Writing at 0x0004b8a7... (15 %)
+Writing at 0x00051dc3... (17 %)
+Writing at 0x000578ba... (18 %)
+Writing at 0x0005cf96... (20 %)
+Writing at 0x0006265c... (22 %)
+Writing at 0x000687e2... (24 %)
+Writing at 0x0006dd55... (25 %)
+Writing at 0x000744dd... (27 %)
+Writing at 0x0007951f... (29 %)
+Writing at 0x0007f53e... (31 %)
+Writing at 0x00085546... (32 %)
+Writing at 0x00095475... (34 %)
+Writing at 0x0009f689... (36 %)
+Writing at 0x000a554c... (37 %)
+Writing at 0x000ab28c... (39 %)
+Writing at 0x000b21ce... (41 %)
+Writing at 0x000b9dda... (43 %)
+Writing at 0x000c10f1... (44 %)
+Writing at 0x000c71dc... (46 %)
+Writing at 0x000cdcb5... (48 %)
+Writing at 0x000d59f9... (50 %)
+Writing at 0x000dc336... (51 %)
+Writing at 0x000e299a... (53 %)
+Writing at 0x000ecbbb... (55 %)
+Writing at 0x000f328b... (56 %)
+Writing at 0x000ff1ef... (58 %)
+Writing at 0x00104cb9... (60 %)
+Writing at 0x0010d0d5... (62 %)
+Writing at 0x001169b7... (63 %)
+Writing at 0x00121069... (65 %)
+Writing at 0x0012ba13... (67 %)
+Writing at 0x00137d23... (68 %)
+Writing at 0x001416c9... (70 %)
+Writing at 0x0014dcc6... (72 %)
+Writing at 0x0015fab2... (74 %)
+Writing at 0x0017a72e... (75 %)
+Writing at 0x0018052a... (77 %)
+Writing at 0x0018545a... (79 %)
+Writing at 0x0018b4c6... (81 %)
+Writing at 0x0019248a... (82 %)
+Writing at 0x00198137... (84 %)
+Writing at 0x0019e39f... (86 %)
+Writing at 0x001a37cf... (87 %)
+Writing at 0x001abf1f... (89 %)
+Writing at 0x001b4f4f... (91 %)
+Writing at 0x001db9fd... (93 %)
+Writing at 0x001e1569... (94 %)
+Writing at 0x001e738f... (96 %)
+Writing at 0x001ecec6... (98 %)
+Writing at 0x001f2e64... (100 %)
+Wrote 1984512 bytes (937270 compressed) at 0x00010000 in 21.2 seconds (effective 747.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.0 seconds (effective 571.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

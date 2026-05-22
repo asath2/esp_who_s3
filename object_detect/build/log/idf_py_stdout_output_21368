@@ -1,0 +1,366 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.4\tools/idf_monitor.py -p COM13 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Espressif\frameworks\esp-idf-v5.5.4\esp-who\examples\object_detect\build\object_detect.elf C:\Espressif\frameworks\esp-idf-v5.5.4\esp-who\examples\object_detect\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.4\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1668
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x317c
+entry 0x403c894c
+[0;32mI (24) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time May 18 2026 18:15:35[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 007d0000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3c150020 size=89a10h (563728) map[0m
+[0;32mI (174) esp_image: segment 1: paddr=00099a38 vaddr=3fc9ac00 size=05e98h ( 24216) load[0m
+[0;32mI (179) esp_image: segment 2: paddr=0009f8d8 vaddr=40378000 size=00740h (  1856) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=000a0020 vaddr=42000020 size=1423fch (1319932) map[0m
+[0;32mI (382) esp_image: segment 4: paddr=001e2424 vaddr=40378740 size=12448h ( 74824) load[0m
+[0;32mI (396) esp_image: segment 5: paddr=001f4874 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (404) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (405) boot: Disabling RNG early entropy source...[0m
+[0;32mI (415) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (415) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (415) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (417) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (421) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (426) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (430) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (435) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (439) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (444) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (449) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (453) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (458) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (461) esp_psram: Speed: 80MHz[0m
+[0;32mI (498) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (589) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (589) cpu_start: Multicore app[0m
+[0;32mI (805) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (814) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (814) cpu_start: Pro cpu start user code[0m
+[0;32mI (814) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (816) app_init: Application information:[0m
+[0;32mI (820) app_init: Project name:     object_detect[0m
+[0;32mI (824) app_init: App version:      v0.9.4-256-g68f9e6b-dirty[0m
+[0;32mI (830) app_init: Compile time:     May 19 2026 10:32:34[0m
+[0;32mI (835) app_init: ELF file SHA256:  bc965b5a2...[0m
+[0;32mI (839) app_init: ESP-IDF:          v5.5.4[0m
+[0;32mI (843) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (847) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (851) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (854) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (861) heap_init: At 3FCA4278 len 00045498 (277 KiB): RAM[0m
+[0;32mI (866) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (871) esp_psram: Adding pool of 6272K of PSRAM memory to heap allocator[0m
+[0;32mI (878) esp_psram: Adding pool of 25K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (889) spi_flash: detected chip: boya[0m
+[0;32mI (892) spi_flash: flash io: qio[0m
+[0;32mI (895) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (901) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (908) main_task: Started on CPU0[0m
+[0;32mI (921) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (921) main_task: Calling app_main()[0m
+[0;32mI (1922) MAIN: Boot time set: 2026-05-17 10:00:00[0m
+[0;32mI (1922) MAIN: === Person Detection + Light Control ===[0m
+[0;32mI (1922) MAIN: Frame sample rate  : every 7 frames[0m
+[0;32mI (1924) MAIN: Confirm window     : 2 consecutive frames[0m
+[0;32mI (1929) MAIN: Score threshold    : 0.60[0m
+[0;32mI (1933) MAIN: Brightness thresh  : 100[0m
+[0;32mI (1937) MAIN: SD max usage       : 12000 MB[0m
+[0;32mI (1941) MAIN: Person trigger GPIO: GPIO 47 | direct HIGH/LOW (no timer)[0m
+[0;32mI (1947) MAIN: Person trigger GPIO enabled: GPIO 47 (direct HIGH/LOW, no timer)[0m
+[0;33mW (1954) S3-EYE: Warning: Long filenames on SD card are disabled in menuconfig![0m
+[1;31mE (1988) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1988) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1988) MAIN: SD not available - saving disabled[0m
+[0;32mI (1993) LightController: Initialized on GPIO21 | threshold=100 | active_HIGH[0m
+[0;32mI (1999) MAIN: Loading model...[0m
+[0;33mW (2003) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (2010) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copied to PSRAM.[0m
+[0;33mW (2108) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;32mI (2111) MAIN: Model ready.[0m
+[0;32mI (2113) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2115) cam_hal: cam init ok[0m
+[0;32mI (5130) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (5130) camera: Detected OV2640 camera[0m
+[0;32mI (5130) camera: Detected camera at address=0x30[0m
+[0;32mI (5204) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (5204) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (5204) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (5214) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (5224) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (5229) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C0A0[0m
+[0;32mI (5234) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (5240) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AFD0[0m
+[0;32mI (5245) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (5251) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9F00[0m
+[0;32mI (5256) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (5261) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8E30[0m
+[0;32mI (5266) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (5272) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7D60[0m
+[0;32mI (5277) cam_hal: cam config ok[0m
+[0;32mI (5280) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (5352) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (5352) cam_hal: cam init ok[0m
+[0;32mI (8364) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (8364) camera: Detected OV2640 camera[0m
+[0;32mI (8364) camera: Detected camera at address=0x30[0m
+[0;32mI (8438) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (8438) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 8[0m
+[0;32mI (8438) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 11520, lines_per_half_buffer: 24, dma_buffer_size: 115200[0m
+[0;32mI (8448) cam_hal: buffer_size: 115200, half_buffer_size: 11520, node_buffer_size: 3840, node_cnt: 30, total_cnt: 11[0m
+[0;32mI (8458) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (8463) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C26C0A0[0m
+[0;32mI (8468) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (8474) cam_hal: Frame[1]: Offset: 16, Addr: 0x3C28AFD0[0m
+[0;32mI (8479) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (8485) cam_hal: Frame[2]: Offset: 16, Addr: 0x3C2A9F00[0m
+[0;32mI (8490) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (8495) cam_hal: Frame[3]: Offset: 16, Addr: 0x3C2C8E30[0m
+[0;32mI (8500) cam_hal: Allocating 126736 Byte frame buffer in PSRAM[0m
+[0;32mI (8506) cam_hal: Frame[4]: Offset: 16, Addr: 0x3C2E7D60[0m
+[0;32mI (8511) cam_hal: cam config ok[0m
+[0;32mI (8514) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (8586) WhoS3Cam: WhoS3Cam args: vertical_flip=0 horizontal_flip=1 -> sensor vflip=1 hmirror=0[0m
+[0;32mI (8588) MAIN: Running from 2026-05-17 10:00:07 | Every 7 frames | 2-frame confirm | Score >= 0.60[0m
+[0;32mI (8592) main_task: Returned from app_main()[0m
+[0;32mI (9323) MAIN: [2026-05-17 10:00:08] No person confirmed (2/2) | f1=N f2=N | Brightness: 141 | Light: OFF[0m
+[0;32mI (9871) MAIN: [2026-05-17 10:00:08] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (10420) MAIN: [2026-05-17 10:00:09] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (10970) MAIN: [2026-05-17 10:00:10] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (11520) MAIN: [2026-05-17 10:00:10] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (12070) MAIN: [2026-05-17 10:00:11] No person confirmed (2/2) | f1=N f2=N | Brightness: 127 | Light: OFF[0m
+[0;32mI (12620) MAIN: [2026-05-17 10:00:11] PERSON confirmed (2/2) | score=0.661 | box=[39,0,239,181] | Brightness: 134 | Light: OFF[0m
+[0;32mI (13170) MAIN: [2026-05-17 10:00:12] PERSON confirmed (2/2) | score=0.619 | box=[0,0,239,179] | Brightness: 133 | Light: OFF[0m
+[0;32mI (13719) MAIN: [2026-05-17 10:00:12] No person confirmed (2/2) | f1=Y f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (14269) MAIN: [2026-05-17 10:00:13] PERSON confirmed (2/2) | score=0.631 | box=[15,0,239,182] | Brightness: 132 | Light: OFF[0m
+[0;32mI (14819) MAIN: [2026-05-17 10:00:13] No person confirmed (2/2) | f1=N f2=N | Brightness: 131 | Light: OFF[0m
+[0;32mI (15368) MAIN: [2026-05-17 10:00:14] No person confirmed (2/2) | f1=N f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (15918) MAIN: [2026-05-17 10:00:15] No person confirmed (2/2) | f1=N f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (16468) MAIN: [2026-05-17 10:00:15] PERSON confirmed (2/2) | score=0.791 | box=[42,0,239,178] | Brightness: 132 | Light: OFF[0m
+[0;32mI (17018) MAIN: [2026-05-17 10:00:16] No person confirmed (2/2) | f1=N f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (17568) MAIN: [2026-05-17 10:00:16] No person confirmed (2/2) | f1=Y f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (18118) MAIN: [2026-05-17 10:00:17] No person confirmed (2/2) | f1=N f2=Y | Brightness: 130 | Light: OFF[0m
+[0;32mI (18667) MAIN: [2026-05-17 10:00:17] No person confirmed (2/2) | f1=N f2=N | Brightness: 129 | Light: OFF[0m
+[0;32mI (19217) MAIN: [2026-05-17 10:00:18] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (19767) MAIN: [2026-05-17 10:00:18] No person confirmed (2/2) | f1=N f2=N | Brightness: 128 | Light: OFF[0m
+[0;32mI (20316) MAIN: [2026-05-17 10:00:19] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (20866) MAIN: [2026-05-17 10:00:19] No person confirmed (2/2) | f1=N f2=Y | Brightness: 129 | Light: OFF[0m
+[0;32mI (21416) MAIN: [2026-05-17 10:00:20] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (21966) MAIN: [2026-05-17 10:00:21] No person confirmed (2/2) | f1=N f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (22516) MAIN: [2026-05-17 10:00:21] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (23065) MAIN: [2026-05-17 10:00:22] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (23615) MAIN: [2026-05-17 10:00:22] No person confirmed (2/2) | f1=N f2=Y | Brightness: 135 | Light: OFF[0m
+[0;32mI (24165) MAIN: [2026-05-17 10:00:23] No person confirmed (2/2) | f1=Y f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (24715) MAIN: [2026-05-17 10:00:23] No person confirmed (2/2) | f1=N f2=Y | Brightness: 138 | Light: OFF[0m
+[0;32mI (25265) MAIN: [2026-05-17 10:00:24] No person confirmed (2/2) | f1=Y f2=N | Brightness: 140 | Light: OFF[0m
+[0;32mI (25815) MAIN: [2026-05-17 10:00:24] PERSON confirmed (2/2) | score=0.707 | box=[36,89,223,239] | Brightness: 139 | Light: OFF[0m
+[0;32mI (26364) MAIN: [2026-05-17 10:00:25] PERSON confirmed (2/2) | score=0.661 | box=[46,88,181,239] | Brightness: 140 | Light: OFF[0m
+[0;32mI (26914) MAIN: [2026-05-17 10:00:26] No person confirmed (2/2) | f1=Y f2=N | Brightness: 140 | Light: OFF[0m
+[0;32mI (27464) MAIN: [2026-05-17 10:00:26] PERSON confirmed (2/2) | score=0.690 | box=[48,95,184,239] | Brightness: 140 | Light: OFF[0m
+[0;32mI (28014) MAIN: [2026-05-17 10:00:27] PERSON confirmed (2/2) | score=0.815 | box=[53,96,185,239] | Brightness: 140 | Light: OFF[0m
+[0;32mI (28564) MAIN: [2026-05-17 10:00:27] PERSON confirmed (2/2) | score=0.734 | box=[50,96,186,239] | Brightness: 138 | Light: OFF[0m
+[0;32mI (29113) MAIN: [2026-05-17 10:00:28] PERSON confirmed (2/2) | score=0.734 | box=[52,99,185,239] | Brightness: 140 | Light: OFF[0m
+[0;32mI (29663) MAIN: [2026-05-17 10:00:28] PERSON confirmed (2/2) | score=0.606 | box=[32,99,182,239] | Brightness: 139 | Light: OFF[0m
+[0;32mI (30213) MAIN: [2026-05-17 10:00:29] PERSON confirmed (2/2) | score=0.679 | box=[31,101,183,239] | Brightness: 139 | Light: OFF[0m
+[0;32mI (30762) MAIN: [2026-05-17 10:00:29] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (31312) MAIN: [2026-05-17 10:00:30] No person confirmed (2/2) | f1=N f2=N | Brightness: 130 | Light: OFF[0m
+[0;32mI (31862) MAIN: [2026-05-17 10:00:30] No person confirmed (2/2) | f1=N f2=Y | Brightness: 141 | Light: OFF[0m
+[0;32mI (32412) MAIN: [2026-05-17 10:00:31] PERSON confirmed (2/2) | score=0.643 | box=[18,106,223,239] | Brightness: 143 | Light: OFF[0m
+[0;32mI (32962) MAIN: [2026-05-17 10:00:32] No person confirmed (2/2) | f1=Y f2=N | Brightness: 145 | Light: OFF[0m
+[0;32mI (33511) MAIN: [2026-05-17 10:00:32] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (34061) MAIN: [2026-05-17 10:00:33] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (34611) MAIN: [2026-05-17 10:00:33] No person confirmed (2/2) | f1=N f2=N | Brightness: 138 | Light: OFF[0m
+[0;32mI (35161) MAIN: [2026-05-17 10:00:34] No person confirmed (2/2) | f1=N f2=N | Brightness: 133 | Light: OFF[0m
+[0;32mI (35710) MAIN: [2026-05-17 10:00:34] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (36260) MAIN: [2026-05-17 10:00:35] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (36810) MAIN: [2026-05-17 10:00:35] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (37360) MAIN: [2026-05-17 10:00:36] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (37909) MAIN: [2026-05-17 10:00:37] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (38459) MAIN: [2026-05-17 10:00:37] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (39009) MAIN: [2026-05-17 10:00:38] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (39559) MAIN: [2026-05-17 10:00:38] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (40109) MAIN: [2026-05-17 10:00:39] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (40658) MAIN: [2026-05-17 10:00:39] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (41208) MAIN: [2026-05-17 10:00:40] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (41758) MAIN: [2026-05-17 10:00:40] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (42308) MAIN: [2026-05-17 10:00:41] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (42857) MAIN: [2026-05-17 10:00:41] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (43407) MAIN: [2026-05-17 10:00:42] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (43957) MAIN: [2026-05-17 10:00:43] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (44507) MAIN: [2026-05-17 10:00:43] No person confirmed (2/2) | f1=N f2=N | Brightness: 133 | Light: OFF[0m
+[0;32mI (45057) MAIN: [2026-05-17 10:00:44] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (45606) MAIN: [2026-05-17 10:00:44] No person confirmed (2/2) | f1=N f2=N | Brightness: 133 | Light: OFF[0m
+[0;32mI (46156) MAIN: [2026-05-17 10:00:45] No person confirmed (2/2) | f1=N f2=N | Brightness: 132 | Light: OFF[0m
+[0;32mI (46706) MAIN: [2026-05-17 10:00:45] No person confirmed (2/2) | f1=N f2=N | Brightness: 133 | Light: OFF[0m
+[0;32mI (47256) MAIN: [2026-05-17 10:00:46] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (47806) MAIN: [2026-05-17 10:00:46] No person confirmed (2/2) | f1=N f2=Y | Brightness: 134 | Light: OFF[0m
+[0;32mI (48355) MAIN: [2026-05-17 10:00:47] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (48905) MAIN: [2026-05-17 10:00:48] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (49455) MAIN: [2026-05-17 10:00:48] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (50005) MAIN: [2026-05-17 10:00:49] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (50554) MAIN: [2026-05-17 10:00:49] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (51104) MAIN: [2026-05-17 10:00:50] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (51654) MAIN: [2026-05-17 10:00:50] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (52204) MAIN: [2026-05-17 10:00:51] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (52753) MAIN: [2026-05-17 10:00:51] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (53303) MAIN: [2026-05-17 10:00:52] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (53853) MAIN: [2026-05-17 10:00:52] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (54403) MAIN: [2026-05-17 10:00:53] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (54953) MAIN: [2026-05-17 10:00:54] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (55502) MAIN: [2026-05-17 10:00:54] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (56052) MAIN: [2026-05-17 10:00:55] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (56602) MAIN: [2026-05-17 10:00:55] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (57152) MAIN: [2026-05-17 10:00:56] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (57701) MAIN: [2026-05-17 10:00:56] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (58251) MAIN: [2026-05-17 10:00:57] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (58801) MAIN: [2026-05-17 10:00:57] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (59351) MAIN: [2026-05-17 10:00:58] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (59901) MAIN: [2026-05-17 10:00:59] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (60450) MAIN: [2026-05-17 10:00:59] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (61000) MAIN: [2026-05-17 10:01:00] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (61550) MAIN: [2026-05-17 10:01:00] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (62100) MAIN: [2026-05-17 10:01:01] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (62649) MAIN: [2026-05-17 10:01:01] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (63199) MAIN: [2026-05-17 10:01:02] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (63749) MAIN: [2026-05-17 10:01:02] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (64299) MAIN: [2026-05-17 10:01:03] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (64849) MAIN: [2026-05-17 10:01:03] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (65398) MAIN: [2026-05-17 10:01:04] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (65948) MAIN: [2026-05-17 10:01:05] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (66498) MAIN: [2026-05-17 10:01:05] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (67048) MAIN: [2026-05-17 10:01:06] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (67598) MAIN: [2026-05-17 10:01:06] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (68147) MAIN: [2026-05-17 10:01:07] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (68697) MAIN: [2026-05-17 10:01:07] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (69247) MAIN: [2026-05-17 10:01:08] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (69797) MAIN: [2026-05-17 10:01:08] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (70346) MAIN: [2026-05-17 10:01:09] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (70896) MAIN: [2026-05-17 10:01:10] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (71446) MAIN: [2026-05-17 10:01:10] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (71996) MAIN: [2026-05-17 10:01:11] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (72546) MAIN: [2026-05-17 10:01:11] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (73095) MAIN: [2026-05-17 10:01:12] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (73645) MAIN: [2026-05-17 10:01:12] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (74195) MAIN: [2026-05-17 10:01:13] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (74745) MAIN: [2026-05-17 10:01:13] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (75294) MAIN: [2026-05-17 10:01:14] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (75844) MAIN: [2026-05-17 10:01:14] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (76394) MAIN: [2026-05-17 10:01:15] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (76944) MAIN: [2026-05-17 10:01:16] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (77494) MAIN: [2026-05-17 10:01:16] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (78043) MAIN: [2026-05-17 10:01:17] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (78593) MAIN: [2026-05-17 10:01:17] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (79143) MAIN: [2026-05-17 10:01:18] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (79693) MAIN: [2026-05-17 10:01:18] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (80242) MAIN: [2026-05-17 10:01:19] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (80792) MAIN: [2026-05-17 10:01:19] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (81342) MAIN: [2026-05-17 10:01:20] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (81892) MAIN: [2026-05-17 10:01:21] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (82442) MAIN: [2026-05-17 10:01:21] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (82991) MAIN: [2026-05-17 10:01:22] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (83541) MAIN: [2026-05-17 10:01:22] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (84091) MAIN: [2026-05-17 10:01:23] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (84641) MAIN: [2026-05-17 10:01:23] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (85190) MAIN: [2026-05-17 10:01:24] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (85740) MAIN: [2026-05-17 10:01:24] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (86290) MAIN: [2026-05-17 10:01:25] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (86840) MAIN: [2026-05-17 10:01:25] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (87390) MAIN: [2026-05-17 10:01:26] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (87939) MAIN: [2026-05-17 10:01:27] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (88489) MAIN: [2026-05-17 10:01:27] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (89039) MAIN: [2026-05-17 10:01:28] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (89589) MAIN: [2026-05-17 10:01:28] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (90138) MAIN: [2026-05-17 10:01:29] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (90688) MAIN: [2026-05-17 10:01:29] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (91238) MAIN: [2026-05-17 10:01:30] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (91788) MAIN: [2026-05-17 10:01:30] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (92338) MAIN: [2026-05-17 10:01:31] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (92887) MAIN: [2026-05-17 10:01:32] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (93437) MAIN: [2026-05-17 10:01:32] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (93987) MAIN: [2026-05-17 10:01:33] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (94537) MAIN: [2026-05-17 10:01:33] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (95087) MAIN: [2026-05-17 10:01:34] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (95636) MAIN: [2026-05-17 10:01:34] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (96186) MAIN: [2026-05-17 10:01:35] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (96736) MAIN: [2026-05-17 10:01:35] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (97286) MAIN: [2026-05-17 10:01:36] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (97835) MAIN: [2026-05-17 10:01:36] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (98385) MAIN: [2026-05-17 10:01:37] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (98935) MAIN: [2026-05-17 10:01:38] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (99485) MAIN: [2026-05-17 10:01:38] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (100035) MAIN: [2026-05-17 10:01:39] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (100584) MAIN: [2026-05-17 10:01:39] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (101134) MAIN: [2026-05-17 10:01:40] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (101684) MAIN: [2026-05-17 10:01:40] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (102234) MAIN: [2026-05-17 10:01:41] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (102783) MAIN: [2026-05-17 10:01:41] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (103333) MAIN: [2026-05-17 10:01:42] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (103883) MAIN: [2026-05-17 10:01:43] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (104433) MAIN: [2026-05-17 10:01:43] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (104983) MAIN: [2026-05-17 10:01:44] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (105532) MAIN: [2026-05-17 10:01:44] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (106082) MAIN: [2026-05-17 10:01:45] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (106632) MAIN: [2026-05-17 10:01:45] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (107182) MAIN: [2026-05-17 10:01:46] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (107731) MAIN: [2026-05-17 10:01:46] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (108281) MAIN: [2026-05-17 10:01:47] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (108831) MAIN: [2026-05-17 10:01:47] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (109381) MAIN: [2026-05-17 10:01:48] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (109931) MAIN: [2026-05-17 10:01:49] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (110480) MAIN: [2026-05-17 10:01:49] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (111030) MAIN: [2026-05-17 10:01:50] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (111580) MAIN: [2026-05-17 10:01:50] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (112130) MAIN: [2026-05-17 10:01:51] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (112679) MAIN: [2026-05-17 10:01:51] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (113229) MAIN: [2026-05-17 10:01:52] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (113779) MAIN: [2026-05-17 10:01:52] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (114329) MAIN: [2026-05-17 10:01:53] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (114879) MAIN: [2026-05-17 10:01:54] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (115428) MAIN: [2026-05-17 10:01:54] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (115978) MAIN: [2026-05-17 10:01:55] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (116528) MAIN: [2026-05-17 10:01:55] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (117078) MAIN: [2026-05-17 10:01:56] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (117627) MAIN: [2026-05-17 10:01:56] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (118177) MAIN: [2026-05-17 10:01:57] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (118727) MAIN: [2026-05-17 10:01:57] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (119277) MAIN: [2026-05-17 10:01:58] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (119827) MAIN: [2026-05-17 10:01:58] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (120376) MAIN: [2026-05-17 10:01:59] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (120926) MAIN: [2026-05-17 10:02:00] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (121476) MAIN: [2026-05-17 10:02:00] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (122026) MAIN: [2026-05-17 10:02:01] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (122576) MAIN: [2026-05-17 10:02:01] No person confirmed (2/2) | f1=N f2=N | Brightness: 134 | Light: OFF[0m
+[0;32mI (123125) MAIN: [2026-05-17 10:02:02] No person confirmed (2/2) | f1=N f2=N | Brightness: 135 | Light: OFF[0m
+[0;32mI (123675) MAIN: [2026-05-17 10:02:02] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (124225) MAIN: [2026-05-17 10:02:03] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (124775) MAIN: [2026-05-17 10:02:03] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (125324) MAIN: [2026-05-17 10:02:04] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (125874) MAIN: [2026-05-17 10:02:05] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (126424) MAIN: [2026-05-17 10:02:05] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (126974) MAIN: [2026-05-17 10:02:06] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (127524) MAIN: [2026-05-17 10:02:06] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (128073) MAIN: [2026-05-17 10:02:07] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (128623) MAIN: [2026-05-17 10:02:07] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (129173) MAIN: [2026-05-17 10:02:08] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (129723) MAIN: [2026-05-17 10:02:08] No person confirmed (2/2) | f1=N f2=N | Brightness: 138 | Light: OFF[0m
+[0;32mI (130272) MAIN: [2026-05-17 10:02:09] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (130822) MAIN: [2026-05-17 10:02:09] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (131372) MAIN: [2026-05-17 10:02:10] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (131922) MAIN: [2026-05-17 10:02:11] No person confirmed (2/2) | f1=N f2=N | Brightness: 137 | Light: OFF[0m
+[0;32mI (132472) MAIN: [2026-05-17 10:02:11] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m
+[0;32mI (133021) MAIN: [2026-05-17 10:02:12] No person confirmed (2/2) | f1=N f2=N | Brightness: 136 | Light: OFF[0m

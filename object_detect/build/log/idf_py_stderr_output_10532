@@ -1,0 +1,1 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe -DESP_PLATFORM=1 -DDETECT_MODEL=pedestrian_detect -DSDKCONFIG_DEFAULTS=sdkconfig.bsp.esp32_s3_eye_noglib -DBSP=esp32_s3_eye_noglib -DIDF_TARGET=esp32s3 -DCCACHE_ENABLE=1 C:\Espressif\frameworks\esp-idf-v5.5.4\esp-who\examples\object_detect
